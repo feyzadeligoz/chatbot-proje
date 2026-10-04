@@ -1,0 +1,4149 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "hyperedges": [
+      {
+        "id": "kentsel_donusum_surecleri",
+        "label": "Kentsel Dönüşüm ve İmar Süreçleri",
+        "nodes": [
+          "6306_sayili_kanun",
+          "yarisi_bizden_kampanyasi",
+          "bagcilar_belediyesi",
+          "istanbul_buyuksehir_belediyesi"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 0.9,
+        "source_file": "Yarısı_Bizden_Bilgilendirme_Noktaları.txt"
+      },
+      {
+        "id": "belediye_sosyal_hizmetler",
+        "label": "Belediye Sosyal ve Kültürel Etkinlikleri",
+        "nodes": [
+          "turk_halk_muzigi_korosu_secmeleri_etkinlik",
+          "yaz_spor_okullari_kapanis_programi_2023_etkinlik",
+          "bag_kart"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.8,
+        "source_file": "Çocuklarımızın_Sevincine_Ortak_Oluyoruz.txt"
+      },
+      {
+        "id": "mehmed_akif_ersoy_center_courses",
+        "label": "Courses at Mehmed Akif Ersoy Cultural Center",
+        "nodes": [
+          "aile_ve_evlilik_hayatı_eğitim_başvurusu_başladı_aile_ve_evlilik_hayatı_eğitimi",
+          "diksiyon_eğitimi",
+          "osmanlı_türkçesi_kursu",
+          "iş_ve_sosyal_hayatta_iletişim_kursu"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "Aile_ve_Evlilik_Hayatı_Eğitim_Başvurusu_Başladı.txt"
+      },
+      {
+        "id": "bağcılar_municipality_educational_services",
+        "label": "Bağcılar Municipality Educational and Social Services",
+        "nodes": [
+          "bilgi_evleri_kayıtları",
+          "mahallenin_yıldızları_3_yaz_spor_okulu",
+          "izcilik_kampı",
+          "çocuklarda_duygu_ve_davranış_geliştirme_kursu"
+        ],
+        "relation": "form",
+        "confidence": "INFERRED",
+        "confidence_score": 0.85,
+        "source_file": "Bilgi_Evleri_2024-2025_Kayıtları_Başladı.txt"
+      },
+      {
+        "id": "bagcilar_kentsel_donusum_projeleri",
+        "label": "Bağcılar Kentsel Dönüşüm ve İmar Projeleri",
+        "nodes": [
+          "albayraklar_sitesi_tapu_teslim",
+          "asburcaklar_sitesi_duyurusu",
+          "albayraklar_sitesi_basin_aciklamasi",
+          "15_temmuz_mahallesi_imar_plani",
+          "yavuzselim_mah_imar_plani_degisikligi",
+          "fevzi_cakmak_mah_imar_plani_degisikligi",
+          "plan_notu_degisikligi_2025"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.9
+      },
+      {
+        "id": "bagcilar_egitim_ve_kurs_faaliyetleri",
+        "label": "Bağcılar Belediyesi Eğitim ve Kurs Faaliyetleri",
+        "nodes": [
+          "2024_universite_hazirlik_kursu",
+          "barista_kursu",
+          "barista_ve_servis_komisi_kursu",
+          "kisacik_film_akademisi",
+          "bagcilar_tiyatro_akademisi",
+          "bilgi_evi_yaz_donemi_kayitlari",
+          "bilgi_evleri_yeni_donem_kayitlari",
+          "diksiyon_egitimi",
+          "hitabet_ve_diksiyon_kursu",
+          "osmanli_turkcesi_kursu",
+          "mehmet_akif_ersoy_ksm_kurslar"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.95
+      },
+      {
+        "id": "bagcilar_afet_ve_guvenlik_yonetimi",
+        "label": "Bağcılar Afet ve Güvenlik Yönetimi",
+        "nodes": [
+          "afad_acil_mobil_uygulamasi",
+          "afet_gonullusu_basvurusu",
+          "afet_cantasi_hazirligi",
+          "deprem_bilgilendirme_rehberi",
+          "gecici_barinma_ve_toplanma_alanlari",
+          "kar_yagisi_uyarisi_ve_onlemler",
+          "kopeginiz_bir_hayat_kurtarabilir"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.9
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "label": "15 Temmuz Darbe Girişimi Ortak Deklarasyon",
+      "file_type": "code",
+      "source_file": "15_Temmuz_Darbe_Girişimi_İle_İlgili_Ortak_Deklarasyon.txt",
+      "community": 17,
+      "norm_label": "15 temmuz darbe girisimi ortak deklarasyon",
+      "id": "15_temmuz_ortak_deklarasyon",
+      "community_name": "Political Declarations"
+    },
+    {
+      "label": "Lokman Çağırıcı",
+      "file_type": "concept",
+      "source_file": "15_Temmuz_Darbe_Girişimi_İle_İlgili_Ortak_Deklarasyon.txt",
+      "community": 8,
+      "norm_label": "lokman cagırıcı",
+      "id": "lokman_cagirici",
+      "community_name": "Municipal Building Projects"
+    },
+    {
+      "label": "Bağcılar Belediyesi",
+      "file_type": "concept",
+      "source_file": "15_Temmuz_Darbe_Girişimi_İle_İlgili_Ortak_Deklarasyon.txt",
+      "community": 0,
+      "norm_label": "bagcılar belediyesi",
+      "id": "bagcilar_belediyesi",
+      "community_name": "Municipal Services and Announcements",
+      "icerik_hash": "02fa49a240904dcb072a9f3e410deb79"
+    },
+    {
+      "label": "2017 Yılı Denetim Komisyonu Raporu",
+      "file_type": "code",
+      "source_file": "2017_Yılı_Denetim_Komisyonu_Raporu.txt",
+      "community": 19,
+      "norm_label": "2017 yılı denetim komisyonu raporu",
+      "id": "2017_denetim_komisyonu_raporu",
+      "community_name": "Audit Commission Report",
+      "icerik_hash": "87e7800cd1b7a2cef3d2eac039204748"
+    },
+    {
+      "label": "3D Güvenlik Sistemi",
+      "file_type": "code",
+      "source_file": "3D_Güvenlik_Sistemi.txt",
+      "community": 30,
+      "norm_label": "3d guvenlik sistemi",
+      "id": "3d_guvenlik_sistemi",
+      "community_name": "Payment Security Systems",
+      "icerik_hash": "9c4fbe6a8213cd0f7190e8de7330267c"
+    },
+    {
+      "label": "AFAD Acil Mobil Uygulaması",
+      "file_type": "code",
+      "source_file": "Afad_Acil_Mobil_Uygulaması.txt",
+      "community": 6,
+      "norm_label": "afad acil mobil uygulaması",
+      "id": "afad_acil_mobil_uygulamasi",
+      "community_name": "Disaster Preparedness Resources",
+      "icerik_hash": "d027ed3daadf05a326d7f91aa64ca7aa"
+    },
+    {
+      "label": "Afet Çantası Hazırlığı",
+      "file_type": "code",
+      "source_file": "Afet_Çantanı_Hazırla_ki_Canın_Sağolsun.txt",
+      "community": 6,
+      "norm_label": "afet cantası hazırlıgı",
+      "id": "afet_cantasi_hazirligi",
+      "community_name": "Disaster Preparedness Resources",
+      "icerik_hash": "0dc4e5c2a22dcc5ec858005e5293813e"
+    },
+    {
+      "label": "Altın Karınca Ödülleri",
+      "file_type": "code",
+      "source_file": "Altın_Karınca_Ödüllerine_Layık_Görülen_Projelerimiz.txt",
+      "community": 36,
+      "norm_label": "altın karınca odulleri",
+      "id": "altin_karinca_odulleri",
+      "community_name": "Municipal Excellence Awards",
+      "icerik_hash": "91d8abcacdcd9f7848c49d64f65eaa30"
+    },
+    {
+      "label": "Asburçaklar Sitesi Basın Duyurusu",
+      "file_type": "code",
+      "source_file": "Asburçaklar_Sitesi_Hakkında_Basın_Duyurusu.txt",
+      "community": 0,
+      "norm_label": "asburcaklar sitesi basın duyurusu",
+      "id": "asburcaklar_sitesi_duyurusu",
+      "community_name": "Municipal Services and Announcements",
+      "icerik_hash": "7db787dcc1c219eda1c59a00d946af82"
+    },
+    {
+      "label": "Bağcılar Belediyesi Bina Basın Açıklaması",
+      "file_type": "code",
+      "source_file": "BAĞCILAR_DA_DİKKAT_ÇEKEN_BİNA_İLE_İLGİLİ_BAĞCILAR_BELEDİYESİ_BASIN_AÇIKLAMASI_14.txt",
+      "community": 0,
+      "norm_label": "bagcılar belediyesi bina basın acıklaması",
+      "id": "bagcilar_belediyesi_basin_aciklamasi_bina",
+      "community_name": "Municipal Services and Announcements",
+      "icerik_hash": "47d9997b6b6619aecd97b1d02e4078b5"
+    },
+    {
+      "label": "Albayraklar Sitesi Basın Açıklaması",
+      "file_type": "code",
+      "source_file": "Basın_Açıklaması_-_Albayraklar_Sitesi.txt",
+      "community": 0,
+      "norm_label": "albayraklar sitesi basın acıklaması",
+      "id": "albayraklar_sitesi_basin_aciklamasi",
+      "community_name": "Municipal Services and Announcements",
+      "icerik_hash": "f332cec47b6f869eb66620e7bd171ec7"
+    },
+    {
+      "label": "ilan.gov.tr İlan Portalı",
+      "file_type": "code",
+      "source_file": "Basın_İlan_Kurumu__ilan_gov_tr__İlan_Portalı_Hakkında.txt",
+      "community": 84,
+      "norm_label": "ilan.gov.tr ilan portalı",
+      "id": "ilan_gov_tr_portal",
+      "community_name": "Official Announcement Portal",
+      "icerik_hash": "9a9b0071867987bf6071c48f5e55b372"
+    },
+    {
+      "label": "Bağcılar Belediyesi Yeni Hizmet Binası",
+      "file_type": "code",
+      "source_file": "Bağcılar_Belediyesi_Yeni_Binası_Hizmete_Girdi.txt",
+      "community": 8,
+      "norm_label": "bagcılar belediyesi yeni hizmet binası",
+      "id": "bagcilar_belediyesi_yeni_hizmet_binasi",
+      "community_name": "Municipal Building Projects",
+      "icerik_hash": "002ec20ffefc250edf52c19524540ceb"
+    },
+    {
+      "label": "Bağcılar Pazar Yerleri",
+      "file_type": "code",
+      "source_file": "Bağcılar_Pazar_Yerleri_Semt_Pazarları_Günleri_ve_Adresleri.txt",
+      "community": 48,
+      "norm_label": "bagcılar pazar yerleri",
+      "id": "bagcilar_pazar_yerleri",
+      "community_name": "Local Market Locations",
+      "icerik_hash": "6328bdbd34bfb7638e9e63489ace9fb6"
+    },
+    {
+      "label": "Bağcılar İlçe Milli Eğitim Müdürlüğü Adres Bilgisi",
+      "file_type": "code",
+      "source_file": "Bağcılar_İlçe_Milli_Eğitim_Müdürlüğü_Adres_Bilgisi.txt",
+      "community": 44,
+      "norm_label": "bagcılar ilce milli egitim mudurlugu adres bilgisi",
+      "id": "bagcilar_ilce_milli_egitim_adres",
+      "community_name": "Education District Directory",
+      "icerik_hash": "142cd7879ab4573aca88da673eb3888e"
+    },
+    {
+      "label": "Bağcılar Değişen Sokak İsim Listesi",
+      "file_type": "code",
+      "source_file": "Bağcılar_İlçesi_Değişen_Sokak_İsim_Listesi_-_İSTOÇ.txt",
+      "community": 43,
+      "norm_label": "bagcılar degisen sokak isim listesi",
+      "id": "bagcilar_degisen_sokak_isimleri",
+      "community_name": "Street Name Changes",
+      "icerik_hash": "41a2eed41aa4abc1e39436e9d052ef94"
+    },
+    {
+      "label": "Bağcılar'ın Tanıkları Belgeseli",
+      "file_type": "code",
+      "source_file": "Bağcılar_ın_Tanıkları_Belgeseli.txt",
+      "community": 51,
+      "norm_label": "bagcılar'ın tanıkları belgeseli",
+      "id": "bagcilarin_taniklari_belgeseli",
+      "community_name": "Local History Documentaries",
+      "icerik_hash": "50ef646c56a7faff36e9b353f776ca06"
+    },
+    {
+      "label": "15 Temmuz Dayanışma Kampanyası",
+      "file_type": "code",
+      "source_file": "Başbakanlık_tan__15_Temmuz_Dayanışma_Kampanyası__Genelgesi.txt",
+      "community": 15,
+      "norm_label": "15 temmuz dayanısma kampanyası",
+      "id": "15_temmuz_dayanisma_kampanyasi",
+      "community_name": "Solidarity Campaign",
+      "icerik_hash": "44aee55685c2f31ca29246ad519396ea"
+    },
+    {
+      "label": "Online Belediye İşlemleri Çağrısı",
+      "file_type": "code",
+      "source_file": "Belediyeye_Gelmeden_İşlemlerinizi_İnternet_Üzerinden_Yapın.txt",
+      "community": 106,
+      "norm_label": "online belediye islemleri cagrısı",
+      "id": "online_belediye_islemleri_cagrisi",
+      "community_name": "Online Municipal Services",
+      "icerik_hash": "79ef9b386cdbde44650fd719582ab5cb"
+    },
+    {
+      "label": "Erişilebilir Türkiye Portalı",
+      "file_type": "code",
+      "source_file": "Ben_de_Buradayım_Erişilebilir_Türkiye.txt",
+      "community": 75,
+      "norm_label": "erisilebilir turkiye portalı",
+      "id": "erisilebilir_turkiye_portali",
+      "community_name": "Accessibility Portals",
+      "icerik_hash": "42e872e2d0a3c0edd975dafe6862e488"
+    },
+    {
+      "label": "Deprem Bilgilendirme Rehberi",
+      "file_type": "code",
+      "source_file": "Deprem_Öncesi__Anında_ve_Sonrasında_Yapılması_Gerekenler.txt",
+      "community": 6,
+      "norm_label": "deprem bilgilendirme rehberi",
+      "id": "deprem_bilgilendirme_rehberi",
+      "community_name": "Disaster Preparedness Resources",
+      "icerik_hash": "d7e982c61522119c129e9966006a90d6"
+    },
+    {
+      "label": "E-Belediye Kapısı Giriş İşlemleri",
+      "file_type": "code",
+      "source_file": "E-Belediye_Kapısına_Yeni_Giriş_İşlemleri.txt",
+      "community": 70,
+      "norm_label": "e-belediye kapısı giris islemleri",
+      "id": "e_belediye_giris_islemleri",
+      "community_name": "E-Government Portal Access",
+      "icerik_hash": "b94ccb0ca4e3698c01bef42341f201a4"
+    },
+    {
+      "label": "Emlak Rayiç Değer Belgesi Online Alımı",
+      "file_type": "code",
+      "source_file": "Emlak_Rayiç_Değer_Belgesi.txt",
+      "community": 71,
+      "norm_label": "emlak rayic deger belgesi online alımı",
+      "id": "emlak_rayic_deger_belgesi_online",
+      "community_name": "Property Tax Documents",
+      "icerik_hash": "6a29e1ca0ea0f64c3bc1543e14a66705"
+    },
+    {
+      "label": "Enderun Yetenekli Çocuklar Merkezi Başvurusu",
+      "file_type": "code",
+      "source_type": "code",
+      "source_file": "Enderun_Yetenekli_Çocuklar_Merkezi_Ön_Değerlendirme_Katılım_Formu.txt",
+      "community": 72,
+      "norm_label": "enderun yetenekli cocuklar merkezi basvurusu",
+      "id": "enderun_yetenekli_cocuklar_merkezi",
+      "community_name": "Gifted Children Programs",
+      "icerik_hash": "97c6415eb83fc4f4fd34bbd9f407b957"
+    },
+    {
+      "label": "Genel Bilgi Güvenliği Politikası",
+      "file_type": "code",
+      "source_file": "Genel_Bilgi_Güvenliği_Politikası.txt",
+      "community": 80,
+      "norm_label": "genel bilgi guvenligi politikası",
+      "id": "genel_bilgi_guvenligi_politikasi",
+      "community_name": "Information Security Policy",
+      "icerik_hash": "3825e1db557ea6b12303e11a0a94f24b"
+    },
+    {
+      "label": "Hazır Beyan Sistemi",
+      "file_type": "code",
+      "source_file": "Hazır_Beyan_Sistemi.txt",
+      "community": 82,
+      "norm_label": "hazır beyan sistemi",
+      "id": "hazir_beyan_sistemi",
+      "community_name": "Tax Declaration System",
+      "icerik_hash": "c632774439b16626d5b5433a781e132f"
+    },
+    {
+      "label": "Bağcılar Belediyesi Mobil Uygulamalar",
+      "file_type": "code",
+      "source_file": "Mobil_Uygulamalarımız.txt",
+      "community": 103,
+      "norm_label": "bagcılar belediyesi mobil uygulamalar",
+      "id": "mobil_uygulamalar_indirme",
+      "community_name": "Municipal Mobile Applications",
+      "icerik_hash": "cbcdc918fdd2f080c165dc5b684fd971"
+    },
+    {
+      "label": "İstanbul Büyükşehir Belediyesi",
+      "file_type": "concept",
+      "source_file": "Riskli_Yapılar_İle_İlgili_Plan_Tadilatı_İşlemleri_Hakkında.txt",
+      "community": 10,
+      "norm_label": "istanbul buyuksehir belediyesi",
+      "id": "istanbul_buyuksehir_belediyesi",
+      "community_name": "Metropolitan Land Parcels",
+      "icerik_hash": "380b525869226ed449ff5e9ff7a59efa"
+    },
+    {
+      "label": "Yavuzselim Mah. 458 Ada 42-43 Parsel",
+      "file_type": "code",
+      "source_file": "Yavuzselim_Mahallesi__458_ada_42_43_parsellere_ilişkin_1_1000_Ölçekli_Uygulama_İ.txt",
+      "community": 10,
+      "norm_label": "yavuzselim mah. 458 ada 42-43 parsel",
+      "id": "yavuzselim_mahallesi_458_ada_42_43_parsellere_iliskin_1_1000_olcekli_uygulama_i_tasinmaz",
+      "community_name": "Metropolitan Land Parcels",
+      "icerik_hash": "5c1ed9c3bb2d3ec42e770320bdd40b68"
+    },
+    {
+      "label": "Diksiyon Eğitimi",
+      "file_type": "code",
+      "source_file": "Diksiyon_Eğitimi_Başlıyor_-_Şubat_2024.txt",
+      "community": 2,
+      "norm_label": "diksiyon egitimi",
+      "id": "diksiyon_eğitimi",
+      "community_name": "Cultural Center Educational Courses",
+      "icerik_hash": "c4fff1c296773fff04538bdec2992ead"
+    },
+    {
+      "label": "Bağcılar Afet Toplanma Alanları",
+      "file_type": "code",
+      "source_file": "Semtindeki_Toplanma_Alanını_Öğren_ki_Canın_Sağ_Olsun.txt",
+      "community": 57,
+      "norm_label": "bagcılar afet toplanma alanları",
+      "id": "bağcılar_afet_toplanma_alanları",
+      "community_name": "Emergency Assembly Areas",
+      "icerik_hash": "4b84594b74d8c8ddb4abf75cd2110c72"
+    },
+    {
+      "label": "Yüzyıl Semt Havuzu ve Spor Kompleksi",
+      "file_type": "concept",
+      "source_file": "Yüzme_Havuzları_2018-2019_Dönemi_Kayıtları_Başladı.txt",
+      "community": 119,
+      "norm_label": "yuzyıl semt havuzu ve spor kompleksi",
+      "id": "yüzyıl_semt_havuzu_ve_spor_kompleksi",
+      "community_name": "Yüzyıl Semt Havuzu ve Spor Kompleksi",
+      "icerik_hash": "a506c5434fc0dfe118194ba7ea511de5"
+    },
+    {
+      "label": "Ruhsat ve Denetim Müdürlüğü",
+      "file_type": "concept",
+      "source_file": "İşyeri_Açma_ve_Çalışma_Ruhsatı_İşlemleri.txt",
+      "community": 113,
+      "norm_label": "ruhsat ve denetim mudurlugu",
+      "id": "ruhsat_ve_denetim_müdürlüğü",
+      "community_name": "Licensing and Inspection Department",
+      "icerik_hash": "e4dcb5c13ab00082789c7a729604ec4a"
+    },
+    {
+      "label": "Aile ve Evlilik Hayatı Eğitimi Kurs Başvurusu",
+      "file_type": "code",
+      "source_file": "Aile_ve_Evlilik_Hayatı_Eğitimi_Kurs_Başvurusu.txt",
+      "community": 121,
+      "norm_label": "aile ve evlilik hayatı eğitimi kurs başvurusu",
+      "id": "aile_ve_evlilik_hayat_e_itimi_kurs_ba_vurusu",
+      "community_name": "Duyuru",
+      "icerik_hash": "d0f5b73972d1ac922f8fe142098ba1f4"
+    },
+    {
+      "label": "Birlikte Daha Güzel Dergi Arşivi",
+      "file_type": "code",
+      "source_file": "Birlikte_Daha_Güzel_Dergi_Arşivi.txt",
+      "community": 124,
+      "norm_label": "birlikte daha güzel dergi arşivi",
+      "id": "birlikte_daha_g_zel_dergi_ar_ivi",
+      "community_name": "Duyuru",
+      "icerik_hash": "1d7cf5423e619b62cb4a2ac8d23460d7"
+    },
+    {
+      "label": "Bağcılar, Para Atletizm’de Türkiye Şampiyonu Oldu",
+      "file_type": "code",
+      "source_file": "HABER_Bağcılar__Para_Atletizm_de_Türkiye_Şampiyonu_Oldu.txt",
+      "community": 263,
+      "norm_label": "bağcılar, para atletizm’de türkiye şampiyonu oldu",
+      "id": "haber_ba_c_lar_para_atletizm_de_t_rkiye_ampiyonu_oldu",
+      "community_name": "Haber",
+      "icerik_hash": "7d35fe8518a2096c76cfda36dadfcc74"
+    },
+    {
+      "label": "Bağcılar’da Camilerde Sağlık Taraması Yapıldı",
+      "file_type": "code",
+      "source_file": "HABER_Bağcılar_da_Camilerde_Sağlık_Taraması_Yapıldı.txt",
+      "community": 285,
+      "norm_label": "bağcılar’da camilerde sağlık taraması yapıldı",
+      "id": "haber_ba_c_lar_da_camilerde_sa_l_k_taramas_yap_ld",
+      "community_name": "Haber",
+      "icerik_hash": "b076f957d2437922fc8fc3443cd29071"
+    },
+    {
+      "label": "Bağcılarlı Engelli Milli Atletler, Para Atletizm Dünya Şampiyonası’nda Ülkemizi Temsil Edecekler",
+      "file_type": "code",
+      "source_file": "HABER_Bağcılarlı_Engelli_Milli_Atletler__Para_Atletizm_Dünya_Şampiyonası_nda_Ülkemizi_.txt",
+      "community": 338,
+      "norm_label": "bağcılarlı engelli milli atletler, para atletizm dünya şampiyonası’nda ülkemizi temsil edecekler",
+      "id": "haber_ba_c_larl_engelli_milli_atletler_para_atletizm_d_nya_ampiyonas_nda_lkemizi",
+      "community_name": "Haber",
+      "icerik_hash": "082abd546a4b06f0c7e4cac7430f2336"
+    },
+    {
+      "label": "Engelli Emine’nin Kep Takma Hayali Gerçek Oldu",
+      "file_type": "code",
+      "source_file": "HABER_Engelli_Emine_nin_Kep_Takma_Hayali_Gerçek_Oldu.txt",
+      "community": 365,
+      "norm_label": "engelli emine’nin kep takma hayali gerçek oldu",
+      "id": "haber_engelli_emine_nin_kep_takma_hayali_ger_ek_oldu",
+      "community_name": "Haber",
+      "icerik_hash": "85ddb43b9c31c1affaebd29ff323a732"
+    },
+    {
+      "label": "Hazır Beyan Sistemi 2022",
+      "file_type": "code",
+      "source_file": "Hazır_Beyan_Sistemi_2022.txt",
+      "community": 455,
+      "norm_label": "hazır beyan sistemi 2022",
+      "id": "haz_r_beyan_sistemi_2022",
+      "community_name": "Duyuru",
+      "icerik_hash": "6732b4182237eda55af12d78aeeaf8af"
+    },
+    {
+      "label": "100. Yıl Mahallesi Kütüphane ve Yüzme Havuzu Gençlik Merkezi (42 Evler)",
+      "file_type": "code",
+      "source_file": "PROJE_100__Yıl_Mahallesi_Kütüphane_ve_Yüzme_Havuzu_Gençlik_Merkezi__42_Evler_.txt",
+      "community": 458,
+      "norm_label": "100. yıl mahallesi kütüphane ve yüzme havuzu gençlik merkezi (42 evler)",
+      "id": "proje_100_y_l_mahallesi_k_t_phane_ve_y_zme_havuzu_gen_lik_merkezi_42_evler",
+      "community_name": "Proje",
+      "icerik_hash": "ada9f954986d3f482bf7ac0c8748a0e6"
+    },
+    {
+      "label": "15 Temmuz Millet Bahçesi",
+      "file_type": "code",
+      "source_file": "PROJE_15_Temmuz_Millet_Bahçesi.txt",
+      "community": 459,
+      "norm_label": "15 temmuz millet bahçesi",
+      "id": "proje_15_temmuz_millet_bah_esi",
+      "community_name": "Proje",
+      "icerik_hash": "062e268bffc3b68411fc2412005692d9"
+    },
+    {
+      "label": "Alev Alatlı Şehir Kütüphanesi ve Tiyatro Binası",
+      "file_type": "code",
+      "source_file": "PROJE_Alev_Alatlı_Şehir_Kütüphanesi_ve_Tiyatro_Binası.txt",
+      "community": 460,
+      "norm_label": "alev alatlı şehir kütüphanesi ve tiyatro binası",
+      "id": "proje_alev_alatl_ehir_k_t_phanesi_ve_tiyatro_binas",
+      "community_name": "Proje",
+      "icerik_hash": "9e6598b3a9e5ff3c160fb979c6886560"
+    },
+    {
+      "label": "Bağ Kafe Gençlik Parkı",
+      "file_type": "code",
+      "source_file": "PROJE_Bağ_Kafe_Gençlik_Parkı.txt",
+      "community": 461,
+      "norm_label": "bağ kafe gençlik parkı",
+      "id": "proje_ba_kafe_gen_lik_park",
+      "community_name": "Proje",
+      "icerik_hash": "9523f265d858e141e607e3ad4f08fa55"
+    },
+    {
+      "label": "Bağcılar Belediyesi Çeyiz Evi (proje)",
+      "file_type": "code",
+      "source_file": "PROJE_Bağcılar_Belediyesi_Çeyiz_Evi__proje_.txt",
+      "community": 462,
+      "norm_label": "bağcılar belediyesi çeyiz evi (proje)",
+      "id": "proje_ba_c_lar_belediyesi_eyiz_evi_proje",
+      "community_name": "Proje",
+      "icerik_hash": "661b03b75a8517aebcffdabf771a514e"
+    },
+    {
+      "label": "Bağcılar Millet Bahçesi ve Bağ Kafe",
+      "file_type": "code",
+      "source_file": "PROJE_Bağcılar_Millet_Bahçesi_ve_Bağ_Kafe.txt",
+      "community": 463,
+      "norm_label": "bağcılar millet bahçesi ve bağ kafe",
+      "id": "proje_ba_c_lar_millet_bah_esi_ve_ba_kafe",
+      "community_name": "Proje",
+      "icerik_hash": "43603ac1344cbe2e87ca8ebd9bd18731"
+    },
+    {
+      "label": "Diğer Tamamlanan Projeler - Tesislerimiz",
+      "file_type": "code",
+      "source_file": "PROJE_Diğer_Tamamlanan_Projeler_-_Tesislerimiz.txt",
+      "community": 464,
+      "norm_label": "diğer tamamlanan projeler - tesislerimiz",
+      "id": "proje_di_er_tamamlanan_projeler_tesislerimiz",
+      "community_name": "Proje",
+      "icerik_hash": "3e200c62d2ec3a13f59d6efbfba76f83"
+    },
+    {
+      "label": "Hürriyet Mahallesi Kütüphanesi ve Gençlik Merkezi, Yüzme Havuzu",
+      "file_type": "code",
+      "source_file": "PROJE_Hürriyet_Mahallesi_Kütüphanesi_ve_Gençlik_Merkezi__Yüzme_Havuzu.txt",
+      "community": 465,
+      "norm_label": "hürriyet mahallesi kütüphanesi ve gençlik merkezi, yüzme havuzu",
+      "id": "proje_h_rriyet_mahallesi_k_t_phanesi_ve_gen_lik_merkezi_y_zme_havuzu",
+      "community_name": "Proje",
+      "icerik_hash": "1f1aad9ec8e3b965e04f851906ad5168"
+    },
+    {
+      "label": "Ulubatlı Hasan Parkı Sosyal Tesisi (100. Yıl Bağ Kafe )",
+      "file_type": "code",
+      "source_file": "PROJE_Ulubatlı_Hasan_Parkı_Sosyal_Tesisi__100__Yıl_Bağ_Kafe__.txt",
+      "community": 466,
+      "norm_label": "ulubatlı hasan parkı sosyal tesisi (100. yıl bağ kafe )",
+      "id": "proje_ulubatl_hasan_park_sosyal_tesisi_100_y_l_ba_kafe",
+      "community_name": "Proje",
+      "icerik_hash": "143354020a8d03c39c142e65599396f3"
+    },
+    {
+      "label": "Yavuz Selim Parkı, Bağ Yuva Çocuk Etkinlik Merkezi ve Bağ Kafe",
+      "file_type": "code",
+      "source_file": "PROJE_Yavuz_Selim_Parkı__Bağ_Yuva_Çocuk_Etkinlik_Merkezi_ve_Bağ_Kafe.txt",
+      "community": 467,
+      "norm_label": "yavuz selim parkı, bağ yuva çocuk etkinlik merkezi ve bağ kafe",
+      "id": "proje_yavuz_selim_park_ba_yuva_ocuk_etkinlik_merkezi_ve_ba_kafe",
+      "community_name": "Proje",
+      "icerik_hash": "ac57b45897d1187af3475c97a07365d5"
+    },
+    {
+      "label": "Çınar Mahallesi Havuz ve Kütüphane, Gençlik Merkezi",
+      "file_type": "code",
+      "source_file": "PROJE_Çınar_Mahallesi_Havuz_ve_Kütüphane__Gençlik_Merkezi.txt",
+      "community": 468,
+      "norm_label": "çınar mahallesi havuz ve kütüphane, gençlik merkezi",
+      "id": "proje_nar_mahallesi_havuz_ve_k_t_phane_gen_lik_merkezi",
+      "community_name": "Proje",
+      "icerik_hash": "a062a8f63716235cb459eb991fb28103"
+    },
+    {
+      "label": "Spor Okulları İçin Ön Kayıtlar Başladı",
+      "file_type": "code",
+      "source_file": "Spor_Okulları_İçin_Ön_Kayıtlar_Başladı.txt",
+      "community": 473,
+      "norm_label": "spor okulları i̇çin ön kayıtlar başladı",
+      "id": "spor_okullar_i_in_n_kay_tlar_ba_lad",
+      "community_name": "Duyuru",
+      "icerik_hash": "33a97f1695f7aac65efc3635f2425989"
+    },
+    {
+      "label": "100. Yıl 42 Evler Açık Halı Saha",
+      "file_type": "code",
+      "source_file": "TESIS_100__Yıl_42_Evler_Açık_Halı_Saha.txt",
+      "community": 474,
+      "norm_label": "100. yıl 42 evler açık halı saha",
+      "id": "tesis_100_y_l_42_evler_a_k_hal_saha",
+      "community_name": "Tesis",
+      "icerik_hash": "b096313595157c5ad4732557881ee54c"
+    },
+    {
+      "label": "15 Temmuz Semt Havuzu",
+      "file_type": "code",
+      "source_file": "TESIS_15_Temmuz_Semt_Havuzu.txt",
+      "community": 475,
+      "norm_label": "15 temmuz semt havuzu",
+      "id": "tesis_15_temmuz_semt_havuzu",
+      "community_name": "Tesis",
+      "icerik_hash": "9ec0315605d45247c611429c89f45f29"
+    },
+    {
+      "label": "15 Temmuz Şehit Ramazan Sarıkaya Parkı",
+      "file_type": "code",
+      "source_file": "TESIS_15_Temmuz_Şehit_Ramazan_Sarıkaya_Parkı.txt",
+      "community": 476,
+      "norm_label": "15 temmuz şehit ramazan sarıkaya parkı",
+      "id": "tesis_15_temmuz_ehit_ramazan_sar_kaya_park",
+      "community_name": "Tesis",
+      "icerik_hash": "2dc56277210a641164430bf8487ef1d5"
+    },
+    {
+      "label": "Akşemsettin Parkı",
+      "file_type": "code",
+      "source_file": "TESIS_Akşemsettin_Parkı.txt",
+      "community": 477,
+      "norm_label": "akşemsettin parkı",
+      "id": "tesis_ak_emsettin_park",
+      "community_name": "Tesis",
+      "icerik_hash": "93ba3a68a961549571c573c1d84a7279"
+    },
+    {
+      "label": "Aliya İzzetbegoviç Kültür Evi ve Çınarlı Park",
+      "file_type": "code",
+      "source_file": "TESIS_Aliya_İzzetbegoviç_Kültür_Evi_ve_Çınarlı_Park.txt",
+      "community": 478,
+      "norm_label": "aliya i̇zzetbegoviç kültür evi ve çınarlı park",
+      "id": "tesis_aliya_i_zzetbegovi_k_lt_r_evi_ve_narl_park",
+      "community_name": "Tesis",
+      "icerik_hash": "e0d75e8495a2fa642b57dd68ae61d269"
+    },
+    {
+      "label": "Aliya İzzetbegoviç Parkı Sosyal Tesisleri",
+      "file_type": "code",
+      "source_file": "TESIS_Aliya_İzzetbegoviç_Parkı_Sosyal_Tesisleri.txt",
+      "community": 479,
+      "norm_label": "aliya i̇zzetbegoviç parkı sosyal tesisleri",
+      "id": "tesis_aliya_i_zzetbegovi_park_sosyal_tesisleri",
+      "community_name": "Tesis",
+      "icerik_hash": "018bf8692f36312112717d46a5c750a0"
+    },
+    {
+      "label": "Aliya İzzetbegoviç Parkı ve Elma Bahçesi",
+      "file_type": "code",
+      "source_file": "TESIS_Aliya_İzzetbegoviç_Parkı_ve_Elma_Bahçesi.txt",
+      "community": 480,
+      "norm_label": "aliya i̇zzetbegoviç parkı ve elma bahçesi",
+      "id": "tesis_aliya_i_zzetbegovi_park_ve_elma_bah_esi",
+      "community_name": "Tesis",
+      "icerik_hash": "e5473ed85c33ff06fe1af0377c4ac1b0"
+    },
+    {
+      "label": "Ateştuğla Kütüphanesi",
+      "file_type": "code",
+      "source_file": "TESIS_Ateştuğla_Kütüphanesi.txt",
+      "community": 481,
+      "norm_label": "ateştuğla kütüphanesi",
+      "id": "tesis_ate_tu_la_k_t_phanesi",
+      "community_name": "Tesis",
+      "icerik_hash": "c3f2166b6298acf9ffd541116430aed7"
+    },
+    {
+      "label": "BKS Sahne",
+      "file_type": "code",
+      "source_file": "TESIS_BKS_Sahne.txt",
+      "community": 482,
+      "norm_label": "bks sahne",
+      "id": "tesis_bks_sahne",
+      "community_name": "Tesis",
+      "icerik_hash": "68e8bd633d150687da88ab1323c09ee0"
+    },
+    {
+      "label": "Barbaros Yüzme Havuzu",
+      "file_type": "code",
+      "source_file": "TESIS_Barbaros_Yüzme_Havuzu.txt",
+      "community": 483,
+      "norm_label": "barbaros yüzme havuzu",
+      "id": "tesis_barbaros_y_zme_havuzu",
+      "community_name": "Tesis",
+      "icerik_hash": "6bec3262d69fad1f3beab3f4c3de9294"
+    },
+    {
+      "label": "Bağ Burger Kafe Demirkapı",
+      "file_type": "code",
+      "source_file": "TESIS_Bağ_Burger_Kafe_Demirkapı.txt",
+      "community": 484,
+      "norm_label": "bağ burger kafe demirkapı",
+      "id": "tesis_ba_burger_kafe_demirkap",
+      "community_name": "Tesis",
+      "icerik_hash": "f71151c6b99a8124ef176d6d52488966"
+    },
+    {
+      "label": "Bağ Kafe - Mahmutbey Köy Kahvesi",
+      "file_type": "code",
+      "source_file": "TESIS_Bağ_Kafe_-_Mahmutbey_Köy_Kahvesi.txt",
+      "community": 485,
+      "norm_label": "bağ kafe - mahmutbey köy kahvesi",
+      "id": "tesis_ba_kafe_mahmutbey_k_y_kahvesi",
+      "community_name": "Tesis",
+      "icerik_hash": "3c95aa90f1b171458510708d06386ba1"
+    },
+    {
+      "label": "Bağ Kafe Bağcılar Millet Bahçesi",
+      "file_type": "code",
+      "source_file": "TESIS_Bağ_Kafe_Bağcılar_Millet_Bahçesi.txt",
+      "community": 486,
+      "norm_label": "bağ kafe bağcılar millet bahçesi",
+      "id": "tesis_ba_kafe_ba_c_lar_millet_bah_esi",
+      "community_name": "Tesis",
+      "icerik_hash": "148781d382aaa7cdbe8a0ad81af89a02"
+    },
+    {
+      "label": "Bağ Kafe Gençlik Parkı (E-Spor Merkezi arkası)",
+      "file_type": "code",
+      "source_file": "TESIS_Bağ_Kafe_Gençlik_Parkı__E-Spor_Merkezi_arkası_.txt",
+      "community": 487,
+      "norm_label": "bağ kafe gençlik parkı (e-spor merkezi arkası)",
+      "id": "tesis_ba_kafe_gen_lik_park_e_spor_merkezi_arkas",
+      "community_name": "Tesis",
+      "icerik_hash": "b5625c8713700c60bcb4add180e0a80b"
+    },
+    {
+      "label": "Bağ Kafe Güneşli",
+      "file_type": "code",
+      "source_file": "TESIS_Bağ_Kafe_Güneşli.txt",
+      "community": 488,
+      "norm_label": "bağ kafe güneşli",
+      "id": "tesis_ba_kafe_g_ne_li",
+      "community_name": "Tesis",
+      "icerik_hash": "f7121f7e2fcf6a73cf7b47aec40b454f"
+    },
+    {
+      "label": "Bağ Kafe Kazım Karabekir ve Halı Saha Sosyal Tesisleri",
+      "file_type": "code",
+      "source_file": "TESIS_Bağ_Kafe_Kazım_Karabekir_ve_Halı_Saha_Sosyal_Tesisleri.txt",
+      "community": 489,
+      "norm_label": "bağ kafe kazım karabekir ve halı saha sosyal tesisleri",
+      "id": "tesis_ba_kafe_kaz_m_karabekir_ve_hal_saha_sosyal_tesisleri",
+      "community_name": "Tesis",
+      "icerik_hash": "e3b59e2ab230e774c6acafb6fbb3275a"
+    },
+    {
+      "label": "Bağ Kafe Kiraz Bahçesi",
+      "file_type": "code",
+      "source_file": "TESIS_Bağ_Kafe_Kiraz_Bahçesi.txt",
+      "community": 490,
+      "norm_label": "bağ kafe kiraz bahçesi",
+      "id": "tesis_ba_kafe_kiraz_bah_esi",
+      "community_name": "Tesis",
+      "icerik_hash": "f44e49fcad640d026a408c870ebf5864"
+    },
+    {
+      "label": "Bağ Kafe Mahmutbey Sosyal Tesisleri",
+      "file_type": "code",
+      "source_file": "TESIS_Bağ_Kafe_Mahmutbey_Sosyal_Tesisleri.txt",
+      "community": 491,
+      "norm_label": "bağ kafe mahmutbey sosyal tesisleri",
+      "id": "tesis_ba_kafe_mahmutbey_sosyal_tesisleri",
+      "community_name": "Tesis",
+      "icerik_hash": "cf2892f75537b905e3a64b19a88e77cf"
+    },
+    {
+      "label": "Bağ Kafe Meydan Sosyal Tesisleri",
+      "file_type": "code",
+      "source_file": "TESIS_Bağ_Kafe_Meydan_Sosyal_Tesisleri.txt",
+      "community": 492,
+      "norm_label": "bağ kafe meydan sosyal tesisleri",
+      "id": "tesis_ba_kafe_meydan_sosyal_tesisleri",
+      "community_name": "Tesis",
+      "icerik_hash": "f9eba6231dae20bb0696e85ff2b0527b"
+    },
+    {
+      "label": "Bağ Kafe Yüzyıl",
+      "file_type": "code",
+      "source_file": "TESIS_Bağ_Kafe_Yüzyıl.txt",
+      "community": 493,
+      "norm_label": "bağ kafe yüzyıl",
+      "id": "tesis_ba_kafe_y_zy_l",
+      "community_name": "Tesis",
+      "icerik_hash": "68e3d9967b3b3187357a77a9066cf404"
+    },
+    {
+      "label": "Bağ Yuva Barbaros Çocuk Etkinlik Merkezi",
+      "file_type": "code",
+      "source_file": "TESIS_Bağ_Yuva_Barbaros_Çocuk_Etkinlik_Merkezi.txt",
+      "community": 494,
+      "norm_label": "bağ yuva barbaros çocuk etkinlik merkezi",
+      "id": "tesis_ba_yuva_barbaros_ocuk_etkinlik_merkezi",
+      "community_name": "Tesis",
+      "icerik_hash": "e2d90d4291c35c4c9b3a005b77ec6dea"
+    },
+    {
+      "label": "Bağ Yuva Bağlar Çocuk Etkinlik Merkezi",
+      "file_type": "code",
+      "source_file": "TESIS_Bağ_Yuva_Bağlar_Çocuk_Etkinlik_Merkezi.txt",
+      "community": 495,
+      "norm_label": "bağ yuva bağlar çocuk etkinlik merkezi",
+      "id": "tesis_ba_yuva_ba_lar_ocuk_etkinlik_merkezi",
+      "community_name": "Tesis",
+      "icerik_hash": "84d7fdf5cdb5361bd5c8300665a17eb6"
+    },
+    {
+      "label": "Bağ Yuva Göztepe İrfan Özer Çocuk Etkinlik Merkezi",
+      "file_type": "code",
+      "source_file": "TESIS_Bağ_Yuva_Göztepe_İrfan_Özer_Çocuk_Etkinlik_Merkezi.txt",
+      "community": 496,
+      "norm_label": "bağ yuva göztepe i̇rfan özer çocuk etkinlik merkezi",
+      "id": "tesis_ba_yuva_g_ztepe_i_rfan_zer_ocuk_etkinlik_merkezi",
+      "community_name": "Tesis",
+      "icerik_hash": "dec63e6c7adb5d9d84e4c26e252b8952"
+    },
+    {
+      "label": "Bağ Yuva Güneşli Çocuk Etkinlik Merkezi",
+      "file_type": "code",
+      "source_file": "TESIS_Bağ_Yuva_Güneşli_Çocuk_Etkinlik_Merkezi.txt",
+      "community": 497,
+      "norm_label": "bağ yuva güneşli çocuk etkinlik merkezi",
+      "id": "tesis_ba_yuva_g_ne_li_ocuk_etkinlik_merkezi",
+      "community_name": "Tesis",
+      "icerik_hash": "c03c70dfd1331af05b06a97f443be35b"
+    },
+    {
+      "label": "Bağ Yuva Mahmutbey Çocuk Etkinlik Merkezi",
+      "file_type": "code",
+      "source_file": "TESIS_Bağ_Yuva_Mahmutbey_Çocuk_Etkinlik_Merkezi.txt",
+      "community": 498,
+      "norm_label": "bağ yuva mahmutbey çocuk etkinlik merkezi",
+      "id": "tesis_ba_yuva_mahmutbey_ocuk_etkinlik_merkezi",
+      "community_name": "Tesis",
+      "icerik_hash": "8eb388fcb6d282075cb597eb2e292e81"
+    },
+    {
+      "label": "Bağ Yuva Yavuz Selim Çocuk Etkinlik Merkezi",
+      "file_type": "code",
+      "source_file": "TESIS_Bağ_Yuva_Yavuz_Selim_Çocuk_Etkinlik_Merkezi.txt",
+      "community": 499,
+      "norm_label": "bağ yuva yavuz selim çocuk etkinlik merkezi",
+      "id": "tesis_ba_yuva_yavuz_selim_ocuk_etkinlik_merkezi",
+      "community_name": "Tesis",
+      "icerik_hash": "923e4059839e539a37d7b52dd1ef6d85"
+    },
+    {
+      "label": "Bağ Yuva Yenimahalle Sait Yılmaz Çocuk Etkinlik Merkezi",
+      "file_type": "code",
+      "source_file": "TESIS_Bağ_Yuva_Yenimahalle_Sait_Yılmaz_Çocuk_Etkinlik_Merkezi.txt",
+      "community": 500,
+      "norm_label": "bağ yuva yenimahalle sait yılmaz çocuk etkinlik merkezi",
+      "id": "tesis_ba_yuva_yenimahalle_sait_y_lmaz_ocuk_etkinlik_merkezi",
+      "community_name": "Tesis",
+      "icerik_hash": "3470d88298df135f73bd0e9876bd2e7c"
+    },
+    {
+      "label": "Bağ Yuva Yüzyıl Çocuk Etkinlik Merkezi",
+      "file_type": "code",
+      "source_file": "TESIS_Bağ_Yuva_Yüzyıl_Çocuk_Etkinlik_Merkezi.txt",
+      "community": 501,
+      "norm_label": "bağ yuva yüzyıl çocuk etkinlik merkezi",
+      "id": "tesis_ba_yuva_y_zy_l_ocuk_etkinlik_merkezi",
+      "community_name": "Tesis",
+      "icerik_hash": "c5de5b7e07b45f02cf88f40f806ffabb"
+    },
+    {
+      "label": "Bağ Yuva Yıldıztepe Çocuk Etkinlik Merkezi",
+      "file_type": "code",
+      "source_file": "TESIS_Bağ_Yuva_Yıldıztepe_Çocuk_Etkinlik_Merkezi.txt",
+      "community": 502,
+      "norm_label": "bağ yuva yıldıztepe çocuk etkinlik merkezi",
+      "id": "tesis_ba_yuva_y_ld_ztepe_ocuk_etkinlik_merkezi",
+      "community_name": "Tesis",
+      "icerik_hash": "02b1f63e280d033463b02938a22f71ae"
+    },
+    {
+      "label": "Bağcılar Afet İşleri ve Risk Yönetimi Müdürlüğü",
+      "file_type": "code",
+      "source_file": "TESIS_Bağcılar_Afet_İşleri_ve_Risk_Yönetimi_Müdürlüğü.txt",
+      "community": 503,
+      "norm_label": "bağcılar afet i̇şleri ve risk yönetimi müdürlüğü",
+      "id": "tesis_ba_c_lar_afet_i_leri_ve_risk_y_netimi_m_d_rl",
+      "community_name": "Tesis",
+      "icerik_hash": "19e7bd5cfa4a0083885d223dc3396aa2"
+    },
+    {
+      "label": "Bağcılar Belediyesi Ambalaj Atığı Toplama ve Ayırma Tesisi",
+      "file_type": "code",
+      "source_file": "TESIS_Bağcılar_Belediyesi_Ambalaj_Atığı_Toplama_ve_Ayırma_Tesisi.txt",
+      "community": 504,
+      "norm_label": "bağcılar belediyesi ambalaj atığı toplama ve ayırma tesisi",
+      "id": "tesis_ba_c_lar_belediyesi_ambalaj_at_toplama_ve_ay_rma_tesisi",
+      "community_name": "Tesis",
+      "icerik_hash": "cd1f1f99d4b546c725828a2bb87ab0b7"
+    },
+    {
+      "label": "Bağcılar Belediyesi Dil Evi",
+      "file_type": "code",
+      "source_file": "TESIS_Bağcılar_Belediyesi_Dil_Evi.txt",
+      "community": 505,
+      "norm_label": "bağcılar belediyesi dil evi",
+      "id": "tesis_ba_c_lar_belediyesi_dil_evi",
+      "community_name": "Tesis",
+      "icerik_hash": "95e5eeed27cdeb1fc26d03da86f6edb4"
+    },
+    {
+      "label": "Bağcılar Belediyesi Güneşli Açık Otoparkı",
+      "file_type": "code",
+      "source_file": "TESIS_Bağcılar_Belediyesi_Güneşli_Açık_Otoparkı.txt",
+      "community": 506,
+      "norm_label": "bağcılar belediyesi güneşli açık otoparkı",
+      "id": "tesis_ba_c_lar_belediyesi_g_ne_li_a_k_otopark",
+      "community_name": "Tesis",
+      "icerik_hash": "7b43b0e076a38013b23bf0a6b30f07a4"
+    },
+    {
+      "label": "Bağcılar Belediyesi Hayvan Barınma ve Müşahade Merkezi",
+      "file_type": "code",
+      "source_file": "TESIS_Bağcılar_Belediyesi_Hayvan_Barınma_ve_Müşahade_Merkezi.txt",
+      "community": 507,
+      "norm_label": "bağcılar belediyesi hayvan barınma ve müşahade merkezi",
+      "id": "tesis_ba_c_lar_belediyesi_hayvan_bar_nma_ve_m_ahade_merkezi",
+      "community_name": "Tesis",
+      "icerik_hash": "4fe077584c25c12973de8d3e98866080"
+    },
+    {
+      "label": "Bağcılar Belediyesi Kadir TOPBAŞ Halk Sarayı",
+      "file_type": "code",
+      "source_file": "TESIS_Bağcılar_Belediyesi_Kadir_TOPBAŞ_Halk_Sarayı.txt",
+      "community": 508,
+      "norm_label": "bağcılar belediyesi kadir topbaş halk sarayı",
+      "id": "tesis_ba_c_lar_belediyesi_kadir_topba_halk_saray",
+      "community_name": "Tesis",
+      "icerik_hash": "5b6248424371545e9806006444624058"
+    },
+    {
+      "label": "Bağcılar Belediyesi Mahmutbey Stadyumu",
+      "file_type": "code",
+      "source_file": "TESIS_Bağcılar_Belediyesi_Mahmutbey_Stadyumu.txt",
+      "community": 509,
+      "norm_label": "bağcılar belediyesi mahmutbey stadyumu",
+      "id": "tesis_ba_c_lar_belediyesi_mahmutbey_stadyumu",
+      "community_name": "Tesis",
+      "icerik_hash": "746880eef825824ad88fcde74a290c4c"
+    },
+    {
+      "label": "Bağcılar Belediyesi e-Spor Merkezi",
+      "file_type": "code",
+      "source_file": "TESIS_Bağcılar_Belediyesi_e-Spor_Merkezi.txt",
+      "community": 510,
+      "norm_label": "bağcılar belediyesi e-spor merkezi",
+      "id": "tesis_ba_c_lar_belediyesi_e_spor_merkezi",
+      "community_name": "Tesis",
+      "icerik_hash": "cd4cb7b59275f7579df4fd237e2abe3b"
+    },
+    {
+      "label": "Bağcılar Belediyesi Çeyiz Evi",
+      "file_type": "code",
+      "source_file": "TESIS_Bağcılar_Belediyesi_Çeyiz_Evi.txt",
+      "community": 511,
+      "norm_label": "bağcılar belediyesi çeyiz evi",
+      "id": "tesis_ba_c_lar_belediyesi_eyiz_evi",
+      "community_name": "Tesis",
+      "icerik_hash": "a70a0658ec0e8f9245e8b36adab3762a"
+    },
+    {
+      "label": "Bağcılar Belediyesi Özel Başak Rehabilitasyon Merkezi",
+      "file_type": "code",
+      "source_file": "TESIS_Bağcılar_Belediyesi_Özel_Başak_Rehabilitasyon_Merkezi.txt",
+      "community": 512,
+      "norm_label": "bağcılar belediyesi özel başak rehabilitasyon merkezi",
+      "id": "tesis_ba_c_lar_belediyesi_zel_ba_ak_rehabilitasyon_merkezi",
+      "community_name": "Tesis",
+      "icerik_hash": "000fe23aac934111222a5d08b162dcdd"
+    },
+    {
+      "label": "Bağcılar Belediyesi İSTOÇ Spor ve Sosyal Tesisleri",
+      "file_type": "code",
+      "source_file": "TESIS_Bağcılar_Belediyesi_İSTOÇ_Spor_ve_Sosyal_Tesisleri.txt",
+      "community": 513,
+      "norm_label": "bağcılar belediyesi i̇stoç spor ve sosyal tesisleri",
+      "id": "tesis_ba_c_lar_belediyesi_i_sto_spor_ve_sosyal_tesisleri",
+      "community_name": "Tesis",
+      "icerik_hash": "cdd448d983791440ce62fee69551a4e1"
+    },
+    {
+      "label": "Bağcılar Fuat Sezgin Bilim Merkezi",
+      "file_type": "code",
+      "source_file": "TESIS_Bağcılar_Fuat_Sezgin_Bilim_Merkezi.txt",
+      "community": 514,
+      "norm_label": "bağcılar fuat sezgin bilim merkezi",
+      "id": "tesis_ba_c_lar_fuat_sezgin_bilim_merkezi",
+      "community_name": "Tesis",
+      "icerik_hash": "ed9b16703e09ad70fe86173c2f0e4c47"
+    },
+    {
+      "label": "Bağcılar Gençlik Merkezi",
+      "file_type": "code",
+      "source_file": "TESIS_Bağcılar_Gençlik_Merkezi.txt",
+      "community": 515,
+      "norm_label": "bağcılar gençlik merkezi",
+      "id": "tesis_ba_c_lar_gen_lik_merkezi",
+      "community_name": "Tesis",
+      "icerik_hash": "fa805b23ce86fd097018f7ad8342007b"
+    },
+    {
+      "label": "Bağcılar Millet Bahçesi",
+      "file_type": "code",
+      "source_file": "TESIS_Bağcılar_Millet_Bahçesi.txt",
+      "community": 516,
+      "norm_label": "bağcılar millet bahçesi",
+      "id": "tesis_ba_c_lar_millet_bah_esi",
+      "community_name": "Tesis",
+      "icerik_hash": "2934f20033bf90a4a7947d38e2cc8a51"
+    },
+    {
+      "label": "Bağcılar Sosyal Market",
+      "file_type": "code",
+      "source_file": "TESIS_Bağcılar_Sosyal_Market.txt",
+      "community": 517,
+      "norm_label": "bağcılar sosyal market",
+      "id": "tesis_ba_c_lar_sosyal_market",
+      "community_name": "Tesis",
+      "icerik_hash": "17c0f5ac9f073f93144c8e20c5fe6ca3"
+    },
+    {
+      "label": "Bilgi Evleri Koordinatörlüğü",
+      "file_type": "code",
+      "source_file": "TESIS_Bilgi_Evleri_Koordinatörlüğü.txt",
+      "community": 518,
+      "norm_label": "bilgi evleri koordinatörlüğü",
+      "id": "tesis_bilgi_evleri_koordinat_rl",
+      "community_name": "Tesis",
+      "icerik_hash": "641095716f5d8ba2f98fc60f1310c94b"
+    },
+    {
+      "label": "Ceviz Bahçesi ve Bitlis Evi",
+      "file_type": "code",
+      "source_file": "TESIS_Ceviz_Bahçesi_ve_Bitlis_Evi.txt",
+      "community": 519,
+      "norm_label": "ceviz bahçesi ve bitlis evi",
+      "id": "tesis_ceviz_bah_esi_ve_bitlis_evi",
+      "community_name": "Tesis",
+      "icerik_hash": "a6b3be1c8fed0bae7861071bfb4148db"
+    },
+    {
+      "label": "Demirkapı Bilgi Evi",
+      "file_type": "code",
+      "source_file": "TESIS_Demirkapı_Bilgi_Evi.txt",
+      "community": 520,
+      "norm_label": "demirkapı bilgi evi",
+      "id": "tesis_demirkap_bilgi_evi",
+      "community_name": "Tesis",
+      "icerik_hash": "d6c5831a5ccfc5408afb1de0c8202dff"
+    },
+    {
+      "label": "Demirkapı Etüt Merkezi ve Kütüphanesi",
+      "file_type": "code",
+      "source_file": "TESIS_Demirkapı_Etüt_Merkezi_ve_Kütüphanesi.txt",
+      "community": 521,
+      "norm_label": "demirkapı etüt merkezi ve kütüphanesi",
+      "id": "tesis_demirkap_et_t_merkezi_ve_k_t_phanesi",
+      "community_name": "Tesis",
+      "icerik_hash": "62734e5fa9b8f1db0af1c611b5df3d81"
+    },
+    {
+      "label": "Demirkapı Semt Havuzu",
+      "file_type": "code",
+      "source_file": "TESIS_Demirkapı_Semt_Havuzu.txt",
+      "community": 522,
+      "norm_label": "demirkapı semt havuzu",
+      "id": "tesis_demirkap_semt_havuzu",
+      "community_name": "Tesis",
+      "icerik_hash": "289b5de66ad4b1fac0ebe5b1ce0dcc75"
+    },
+    {
+      "label": "Enderun Yetenekli Çocuklar Merkezi",
+      "file_type": "code",
+      "source_file": "TESIS_Enderun_Yetenekli_Çocuklar_Merkezi.txt",
+      "community": 523,
+      "norm_label": "enderun yetenekli çocuklar merkezi",
+      "id": "tesis_enderun_yetenekli_ocuklar_merkezi",
+      "community_name": "Tesis",
+      "icerik_hash": "ea91209e98d05b202bd10d166eea66c8"
+    },
+    {
+      "label": "Ertuğrul Gazi Bilgi Evi",
+      "file_type": "code",
+      "source_file": "TESIS_Ertuğrul_Gazi_Bilgi_Evi.txt",
+      "community": 524,
+      "norm_label": "ertuğrul gazi bilgi evi",
+      "id": "tesis_ertu_rul_gazi_bilgi_evi",
+      "community_name": "Tesis",
+      "icerik_hash": "3df8dfc0ad45ef08359b6d3c7ac82db1"
+    },
+    {
+      "label": "Ertuğrul Gazi Bilgi Evi Kitaplığı",
+      "file_type": "code",
+      "source_file": "TESIS_Ertuğrul_Gazi_Bilgi_Evi_Kitaplığı.txt",
+      "community": 525,
+      "norm_label": "ertuğrul gazi bilgi evi kitaplığı",
+      "id": "tesis_ertu_rul_gazi_bilgi_evi_kitapl",
+      "community_name": "Tesis",
+      "icerik_hash": "1e33bdc651682fb958cf382c14f2e9e7"
+    },
+    {
+      "label": "Fatih Sultan Mehmet Parkı",
+      "file_type": "code",
+      "source_file": "TESIS_Fatih_Sultan_Mehmet_Parkı.txt",
+      "community": 526,
+      "norm_label": "fatih sultan mehmet parkı",
+      "id": "tesis_fatih_sultan_mehmet_park",
+      "community_name": "Tesis",
+      "icerik_hash": "2ace184d65fcbabbab27c96455fe41a3"
+    },
+    {
+      "label": "Feyzullah KIYIKLIK Engelliler Sarayı",
+      "file_type": "code",
+      "source_file": "TESIS_Feyzullah_KIYIKLIK_Engelliler_Sarayı.txt",
+      "community": 527,
+      "norm_label": "feyzullah kiyiklik engelliler sarayı",
+      "id": "tesis_feyzullah_kiyiklik_engelliler_saray",
+      "community_name": "Tesis",
+      "icerik_hash": "ba7ffc4c489812f947965ff9d327853d"
+    },
+    {
+      "label": "Fındık Bahçesi ve Giresun Konağı",
+      "file_type": "code",
+      "source_file": "TESIS_Fındık_Bahçesi_ve_Giresun_Konağı.txt",
+      "community": 528,
+      "norm_label": "fındık bahçesi ve giresun konağı",
+      "id": "tesis_f_nd_k_bah_esi_ve_giresun_kona",
+      "community_name": "Tesis",
+      "icerik_hash": "df66433bd287db57903ac049c50286b6"
+    },
+    {
+      "label": "Gençlik Merkezi Kütüphanesi",
+      "file_type": "code",
+      "source_file": "TESIS_Gençlik_Merkezi_Kütüphanesi.txt",
+      "community": 529,
+      "norm_label": "gençlik merkezi kütüphanesi",
+      "id": "tesis_gen_lik_merkezi_k_t_phanesi",
+      "community_name": "Tesis",
+      "icerik_hash": "964e177119f58fbcf28e80e28e32dc39"
+    },
+    {
+      "label": "Göztepe Bilgi Evi",
+      "file_type": "code",
+      "source_file": "TESIS_Göztepe_Bilgi_Evi.txt",
+      "community": 530,
+      "norm_label": "göztepe bilgi evi",
+      "id": "tesis_g_ztepe_bilgi_evi",
+      "community_name": "Tesis",
+      "icerik_hash": "adb70cf7ba484b1636ac8114be12ff8a"
+    },
+    {
+      "label": "Göztepe Etüt Merkezi ve Kütüphanesi",
+      "file_type": "code",
+      "source_file": "TESIS_Göztepe_Etüt_Merkezi_ve_Kütüphanesi.txt",
+      "community": 531,
+      "norm_label": "göztepe etüt merkezi ve kütüphanesi",
+      "id": "tesis_g_ztepe_et_t_merkezi_ve_k_t_phanesi",
+      "community_name": "Tesis",
+      "icerik_hash": "e9431db47dd14ffc6ccf18f4939e4e56"
+    },
+    {
+      "label": "Göztepe Yüzme Havuzu ve Spor Kompleksi",
+      "file_type": "code",
+      "source_file": "TESIS_Göztepe_Yüzme_Havuzu_ve_Spor_Kompleksi.txt",
+      "community": 532,
+      "norm_label": "göztepe yüzme havuzu ve spor kompleksi",
+      "id": "tesis_g_ztepe_y_zme_havuzu_ve_spor_kompleksi",
+      "community_name": "Tesis",
+      "icerik_hash": "61b2cf9d442b8c44194b75542ae7c4a6"
+    },
+    {
+      "label": "Güneşli Kocayusuf Parkı",
+      "file_type": "code",
+      "source_file": "TESIS_Güneşli_Kocayusuf_Parkı.txt",
+      "community": 533,
+      "norm_label": "güneşli kocayusuf parkı",
+      "id": "tesis_g_ne_li_kocayusuf_park",
+      "community_name": "Tesis",
+      "icerik_hash": "e742ef1b8f3c3dba0b8059d80151c42d"
+    },
+    {
+      "label": "Hacı Bektaşi Veli Parkı",
+      "file_type": "code",
+      "source_file": "TESIS_Hacı_Bektaşi_Veli_Parkı.txt",
+      "community": 534,
+      "norm_label": "hacı bektaşi veli parkı",
+      "id": "tesis_hac_bekta_i_veli_park",
+      "community_name": "Tesis",
+      "icerik_hash": "d63bd7320c08a5e0385a1b2260a262a6"
+    },
+    {
+      "label": "Hasan Nail Canat Bilgi Evi ve Kültür Merkezi",
+      "file_type": "code",
+      "source_file": "TESIS_Hasan_Nail_Canat_Bilgi_Evi_ve_Kültür_Merkezi.txt",
+      "community": 535,
+      "norm_label": "hasan nail canat bilgi evi ve kültür merkezi",
+      "id": "tesis_hasan_nail_canat_bilgi_evi_ve_k_lt_r_merkezi",
+      "community_name": "Tesis",
+      "icerik_hash": "3c850ffe4897756a46f1cdee2d9cbfa4"
+    },
+    {
+      "label": "Hasan Nail Canat Bilgi Evi ve Kültür Merkezi (Bilgi Evlerimiz)",
+      "file_type": "code",
+      "source_file": "TESIS_Hasan_Nail_Canat_Bilgi_Evi_ve_Kültür_Merkezi__Bilgi_Evlerimiz_.txt",
+      "community": 536,
+      "norm_label": "hasan nail canat bilgi evi ve kültür merkezi (bilgi evlerimiz)",
+      "id": "tesis_hasan_nail_canat_bilgi_evi_ve_k_lt_r_merkezi_bilgi_evlerimiz",
+      "community_name": "Tesis",
+      "icerik_hash": "9d5e14dd4bdba6c362aecebdf6c2ef01"
+    },
+    {
+      "label": "Hasan Nail Canat Kültür Merkezi ve Bilgi Evi Kütüphanesi",
+      "file_type": "code",
+      "source_file": "TESIS_Hasan_Nail_Canat_Kültür_Merkezi_ve_Bilgi_Evi_Kütüphanesi.txt",
+      "community": 537,
+      "norm_label": "hasan nail canat kültür merkezi ve bilgi evi kütüphanesi",
+      "id": "tesis_hasan_nail_canat_k_lt_r_merkezi_ve_bilgi_evi_k_t_phanesi",
+      "community_name": "Tesis",
+      "icerik_hash": "218b98ef6265fbff950ad556c4880da7"
+    },
+    {
+      "label": "Hayır Çarşısı",
+      "file_type": "code",
+      "source_file": "TESIS_Hayır_Çarşısı.txt",
+      "community": 538,
+      "norm_label": "hayır çarşısı",
+      "id": "tesis_hay_r_ar_s",
+      "community_name": "Tesis",
+      "icerik_hash": "9fc0d86fc4ab84aa5971cf4bf0ac747d"
+    },
+    {
+      "label": "Hicret Parkı",
+      "file_type": "code",
+      "source_file": "TESIS_Hicret_Parkı.txt",
+      "community": 539,
+      "norm_label": "hicret parkı",
+      "id": "tesis_hicret_park",
+      "community_name": "Tesis",
+      "icerik_hash": "ff8816379d23a323a955fea2cd69ead3"
+    },
+    {
+      "label": "Kadın ve Aile Kültür Sanat Merkezi",
+      "file_type": "code",
+      "source_file": "TESIS_Kadın_ve_Aile_Kültür_Sanat_Merkezi.txt",
+      "community": 540,
+      "norm_label": "kadın ve aile kültür sanat merkezi",
+      "id": "tesis_kad_n_ve_aile_k_lt_r_sanat_merkezi",
+      "community_name": "Tesis",
+      "icerik_hash": "1474fcd874a24eee186ba2c78df86dc3"
+    },
+    {
+      "label": "Kayısı Bahçesi ve Malatya Konağı",
+      "file_type": "code",
+      "source_file": "TESIS_Kayısı_Bahçesi_ve_Malatya_Konağı.txt",
+      "community": 541,
+      "norm_label": "kayısı bahçesi ve malatya konağı",
+      "id": "tesis_kay_s_bah_esi_ve_malatya_kona",
+      "community_name": "Tesis",
+      "icerik_hash": "9e9da827c0f84e72cadef3e6570614cd"
+    },
+    {
+      "label": "Kazım Karabekir Engelsiz Yüzme Havuzu",
+      "file_type": "code",
+      "source_file": "TESIS_Kazım_Karabekir_Engelsiz_Yüzme_Havuzu.txt",
+      "community": 542,
+      "norm_label": "kazım karabekir engelsiz yüzme havuzu",
+      "id": "tesis_kaz_m_karabekir_engelsiz_y_zme_havuzu",
+      "community_name": "Tesis",
+      "icerik_hash": "96dbe9460500502600182cd8326159a7"
+    },
+    {
+      "label": "Kemalpaşa Bilgi Evi",
+      "file_type": "code",
+      "source_file": "TESIS_Kemalpaşa_Bilgi_Evi.txt",
+      "community": 543,
+      "norm_label": "kemalpaşa bilgi evi",
+      "id": "tesis_kemalpa_a_bilgi_evi",
+      "community_name": "Tesis",
+      "icerik_hash": "5a35a8d9e0802acca10c563e398095a0"
+    },
+    {
+      "label": "Kemalpaşa Bilgi Evi Kitaplığı",
+      "file_type": "code",
+      "source_file": "TESIS_Kemalpaşa_Bilgi_Evi_Kitaplığı.txt",
+      "community": 544,
+      "norm_label": "kemalpaşa bilgi evi kitaplığı",
+      "id": "tesis_kemalpa_a_bilgi_evi_kitapl",
+      "community_name": "Tesis",
+      "icerik_hash": "b4ae9df3a3c269872d758ccfcacf7924"
+    },
+    {
+      "label": "Kemalpaşa Semt Havuzu",
+      "file_type": "code",
+      "source_file": "TESIS_Kemalpaşa_Semt_Havuzu.txt",
+      "community": 545,
+      "norm_label": "kemalpaşa semt havuzu",
+      "id": "tesis_kemalpa_a_semt_havuzu",
+      "community_name": "Tesis",
+      "icerik_hash": "2a793145d69e424db6a58fffb45daa4d"
+    },
+    {
+      "label": "Kestane Bahçesi ve Kastamonu Evi",
+      "file_type": "code",
+      "source_file": "TESIS_Kestane_Bahçesi_ve_Kastamonu_Evi.txt",
+      "community": 546,
+      "norm_label": "kestane bahçesi ve kastamonu evi",
+      "id": "tesis_kestane_bah_esi_ve_kastamonu_evi",
+      "community_name": "Tesis",
+      "icerik_hash": "c6e991df7243f404ac4f8526f644ebcc"
+    },
+    {
+      "label": "Kiraz Bahçesi",
+      "file_type": "code",
+      "source_file": "TESIS_Kiraz_Bahçesi.txt",
+      "community": 547,
+      "norm_label": "kiraz bahçesi",
+      "id": "tesis_kiraz_bah_esi",
+      "community_name": "Tesis",
+      "icerik_hash": "156548661cfdd7e309338b072b751b52"
+    },
+    {
+      "label": "Kızılcık Bahçesi ve Sosyal Tesisi",
+      "file_type": "code",
+      "source_file": "TESIS_Kızılcık_Bahçesi_ve_Sosyal_Tesisi.txt",
+      "community": 548,
+      "norm_label": "kızılcık bahçesi ve sosyal tesisi",
+      "id": "tesis_k_z_lc_k_bah_esi_ve_sosyal_tesisi",
+      "community_name": "Tesis",
+      "icerik_hash": "6b3978f0325574a17bdf7d43230d13b7"
+    },
+    {
+      "label": "Mehmed Akif Ersoy Kültür Merkezi, Bilgi Evi Kitaplığı",
+      "file_type": "code",
+      "source_file": "TESIS_Mehmed_Akif_Ersoy_Kültür_Merkezi__Bilgi_Evi_Kitaplığı.txt",
+      "community": 549,
+      "norm_label": "mehmed akif ersoy kültür merkezi, bilgi evi kitaplığı",
+      "id": "tesis_mehmed_akif_ersoy_k_lt_r_merkezi_bilgi_evi_kitapl",
+      "community_name": "Tesis",
+      "icerik_hash": "fd19d365df4df69c0a6d6051109bcc57"
+    },
+    {
+      "label": "Mehmed Akif Ersoy Kültür Merkezi ve Bilgi Evi",
+      "file_type": "code",
+      "source_file": "TESIS_Mehmed_Akif_Ersoy_Kültür_Merkezi_ve_Bilgi_Evi.txt",
+      "community": 550,
+      "norm_label": "mehmed akif ersoy kültür merkezi ve bilgi evi",
+      "id": "tesis_mehmed_akif_ersoy_k_lt_r_merkezi_ve_bilgi_evi",
+      "community_name": "Tesis",
+      "icerik_hash": "04dadac5fab8ee4ab5092e71f952a00b"
+    },
+    {
+      "label": "Mehmed Akif Ersoy Kültür Sanat Merkezi ve Müzesi, Taceddin Dergâhı",
+      "file_type": "code",
+      "source_file": "TESIS_Mehmed_Akif_Ersoy_Kültür_Sanat_Merkezi_ve_Müzesi__Taceddin_Dergâhı.txt",
+      "community": 551,
+      "norm_label": "mehmed akif ersoy kültür sanat merkezi ve müzesi, taceddin dergâhı",
+      "id": "tesis_mehmed_akif_ersoy_k_lt_r_sanat_merkezi_ve_m_zesi_taceddin_derg_h",
+      "community_name": "Tesis",
+      "icerik_hash": "96aa8e104599370df219d7f201d6f3a6"
+    },
+    {
+      "label": "Merkez Mahallesi Aile Parkı",
+      "file_type": "code",
+      "source_file": "TESIS_Merkez_Mahallesi_Aile_Parkı.txt",
+      "community": 552,
+      "norm_label": "merkez mahallesi aile parkı",
+      "id": "tesis_merkez_mahallesi_aile_park",
+      "community_name": "Tesis",
+      "icerik_hash": "7141feb104592ac1c3b39d35d7c9017b"
+    },
+    {
+      "label": "Mevlana Parkı",
+      "file_type": "code",
+      "source_file": "TESIS_Mevlana_Parkı.txt",
+      "community": 553,
+      "norm_label": "mevlana parkı",
+      "id": "tesis_mevlana_park",
+      "community_name": "Tesis",
+      "icerik_hash": "7fb71d1baff7a74d472029033ee74cab"
+    },
+    {
+      "label": "Millet Bahçesi Etüt Merkezi ve  Kütüphanesi",
+      "file_type": "code",
+      "source_file": "TESIS_Millet_Bahçesi_Etüt_Merkezi_ve__Kütüphanesi.txt",
+      "community": 554,
+      "norm_label": "millet bahçesi etüt merkezi ve  kütüphanesi",
+      "id": "tesis_millet_bah_esi_et_t_merkezi_ve_k_t_phanesi",
+      "community_name": "Tesis",
+      "icerik_hash": "8524543c505fcc3357b5a8dc1cfcdfc7"
+    },
+    {
+      "label": "Mustafa Kemal Parkı",
+      "file_type": "code",
+      "source_file": "TESIS_Mustafa_Kemal_Parkı.txt",
+      "community": 555,
+      "norm_label": "mustafa kemal parkı",
+      "id": "tesis_mustafa_kemal_park",
+      "community_name": "Tesis",
+      "icerik_hash": "e9ff175226f864fa0ca0ec7d161fb165"
+    },
+    {
+      "label": "Nazif Hafize Hançer Parkı",
+      "file_type": "code",
+      "source_file": "TESIS_Nazif_Hafize_Hançer_Parkı.txt",
+      "community": 556,
+      "norm_label": "nazif hafize hançer parkı",
+      "id": "tesis_nazif_hafize_han_er_park",
+      "community_name": "Tesis",
+      "icerik_hash": "d858be0b8a7410905512ba0994d87dd7"
+    },
+    {
+      "label": "Prof. Dr. Nurullah Genç Etüt Merkezi ve Kütüphanesi",
+      "file_type": "code",
+      "source_file": "TESIS_Prof__Dr__Nurullah_Genç_Etüt_Merkezi_ve_Kütüphanesi.txt",
+      "community": 557,
+      "norm_label": "prof. dr. nurullah genç etüt merkezi ve kütüphanesi",
+      "id": "tesis_prof_dr_nurullah_gen_et_t_merkezi_ve_k_t_phanesi",
+      "community_name": "Tesis",
+      "icerik_hash": "8b8c4f5ad168a72e4e7a9a3871ebca01"
+    },
+    {
+      "label": "Prof. Dr. Nurullah Genç Çocuk Kütüphanesi",
+      "file_type": "code",
+      "source_file": "TESIS_Prof__Dr__Nurullah_Genç_Çocuk_Kütüphanesi.txt",
+      "community": 558,
+      "norm_label": "prof. dr. nurullah genç çocuk kütüphanesi",
+      "id": "tesis_prof_dr_nurullah_gen_ocuk_k_t_phanesi",
+      "community_name": "Tesis",
+      "icerik_hash": "fc6e1bbab903c8807845f52aecdbdef0"
+    },
+    {
+      "label": "Psikolojik Danışmanlık ve Yaşam Merkezi",
+      "file_type": "code",
+      "source_file": "TESIS_Psikolojik_Danışmanlık_ve_Yaşam_Merkezi.txt",
+      "community": 559,
+      "norm_label": "psikolojik danışmanlık ve yaşam merkezi",
+      "id": "tesis_psikolojik_dan_manl_k_ve_ya_am_merkezi",
+      "community_name": "Tesis",
+      "icerik_hash": "b551b5bd06700dbfe0c3fcf6c206e24b"
+    },
+    {
+      "label": "Saraybosna Parkı ve Öğretmen Evi",
+      "file_type": "code",
+      "source_file": "TESIS_Saraybosna_Parkı_ve_Öğretmen_Evi.txt",
+      "community": 560,
+      "norm_label": "saraybosna parkı ve öğretmen evi",
+      "id": "tesis_saraybosna_park_ve_retmen_evi",
+      "community_name": "Tesis",
+      "icerik_hash": "13ec1318176246c87a5478c953749ea3"
+    },
+    {
+      "label": "Soğuksu Parkı",
+      "file_type": "code",
+      "source_file": "TESIS_Soğuksu_Parkı.txt",
+      "community": 561,
+      "norm_label": "soğuksu parkı",
+      "id": "tesis_so_uksu_park",
+      "community_name": "Tesis",
+      "icerik_hash": "d57267a52314f328d76040f3523a45b4"
+    },
+    {
+      "label": "Taceddin Dergâhı",
+      "file_type": "code",
+      "source_file": "TESIS_Taceddin_Dergâhı.txt",
+      "community": 562,
+      "norm_label": "taceddin dergâhı",
+      "id": "tesis_taceddin_derg_h",
+      "community_name": "Tesis",
+      "icerik_hash": "c32ee64f79c18ac3ee23eadce797c6b7"
+    },
+    {
+      "label": "Türk - Fin Hamamı, Sauna",
+      "file_type": "code",
+      "source_file": "TESIS_Türk_-_Fin_Hamamı__Sauna.txt",
+      "community": 563,
+      "norm_label": "türk - fin hamamı, sauna",
+      "id": "tesis_t_rk_fin_hamam_sauna",
+      "community_name": "Tesis",
+      "icerik_hash": "83ca3a239143e4e218479773e156f1bc"
+    },
+    {
+      "label": "Vefahâne Yaşam Merkezi",
+      "file_type": "code",
+      "source_file": "TESIS_Vefahâne_Yaşam_Merkezi.txt",
+      "community": 564,
+      "norm_label": "vefahâne yaşam merkezi",
+      "id": "tesis_vefah_ne_ya_am_merkezi",
+      "community_name": "Tesis",
+      "icerik_hash": "c009a0ff9a2c0f31abdb02fd665ee894"
+    },
+    {
+      "label": "Yenigün Bilgi Evi",
+      "file_type": "code",
+      "source_file": "TESIS_Yenigün_Bilgi_Evi.txt",
+      "community": 565,
+      "norm_label": "yenigün bilgi evi",
+      "id": "tesis_yenig_n_bilgi_evi",
+      "community_name": "Tesis",
+      "icerik_hash": "7a5fa7a286c4cd76aa40a5036953d64a"
+    },
+    {
+      "label": "Yüzyıl Bilgi Evi",
+      "file_type": "code",
+      "source_file": "TESIS_Yüzyıl_Bilgi_Evi.txt",
+      "community": 566,
+      "norm_label": "yüzyıl bilgi evi",
+      "id": "tesis_y_zy_l_bilgi_evi",
+      "community_name": "Tesis",
+      "icerik_hash": "7aa7621e6780ee54d2e06ac9789b3cf5"
+    },
+    {
+      "label": "Yüzyıl Bilgi Evi Kitaplığı",
+      "file_type": "code",
+      "source_file": "TESIS_Yüzyıl_Bilgi_Evi_Kitaplığı.txt",
+      "community": 567,
+      "norm_label": "yüzyıl bilgi evi kitaplığı",
+      "id": "tesis_y_zy_l_bilgi_evi_kitapl",
+      "community_name": "Tesis",
+      "icerik_hash": "64f8968971d83227fa6099ad60b564ce"
+    },
+    {
+      "label": "Yüzyıl Semt Havuzu ve Spor Kompleksi",
+      "file_type": "code",
+      "source_file": "TESIS_Yüzyıl_Semt_Havuzu_ve_Spor_Kompleksi.txt",
+      "community": 568,
+      "norm_label": "yüzyıl semt havuzu ve spor kompleksi",
+      "id": "tesis_y_zy_l_semt_havuzu_ve_spor_kompleksi",
+      "community_name": "Tesis",
+      "icerik_hash": "989bb8a0246dd8224ca1539cf9c04080"
+    },
+    {
+      "label": "Yıldıztepe Yüzme Havuzu",
+      "file_type": "code",
+      "source_file": "TESIS_Yıldıztepe_Yüzme_Havuzu.txt",
+      "community": 569,
+      "norm_label": "yıldıztepe yüzme havuzu",
+      "id": "tesis_y_ld_ztepe_y_zme_havuzu",
+      "community_name": "Tesis",
+      "icerik_hash": "69e9cea1ef2c936c44197c7ca2832d2f"
+    },
+    {
+      "label": "Çanakkale Zafer Müzesi ve Şehitler Parkı",
+      "file_type": "code",
+      "source_file": "TESIS_Çanakkale_Zafer_Müzesi_ve_Şehitler_Parkı.txt",
+      "community": 570,
+      "norm_label": "çanakkale zafer müzesi ve şehitler parkı",
+      "id": "tesis_anakkale_zafer_m_zesi_ve_ehitler_park",
+      "community_name": "Tesis",
+      "icerik_hash": "9e5c11a85ca087f67d80b8ce57400b5f"
+    },
+    {
+      "label": "Üzüm Bağı",
+      "file_type": "code",
+      "source_file": "TESIS_Üzüm_Bağı.txt",
+      "community": 571,
+      "norm_label": "üzüm bağı",
+      "id": "tesis_z_m_ba",
+      "community_name": "Tesis",
+      "icerik_hash": "d074264d007fb82fdad35b32baa3c98b"
+    },
+    {
+      "label": "Şehit Abdullah Tayyip Olçok Bilgi Evi ve Kültür Merkezi",
+      "file_type": "code",
+      "source_file": "TESIS_Şehit_Abdullah_Tayyip_Olçok_Bilgi_Evi_ve_Kültür_Merkezi.txt",
+      "community": 572,
+      "norm_label": "şehit abdullah tayyip olçok bilgi evi ve kültür merkezi",
+      "id": "tesis_ehit_abdullah_tayyip_ol_ok_bilgi_evi_ve_k_lt_r_merkezi",
+      "community_name": "Tesis",
+      "icerik_hash": "415c9fb2c988167c9c3a775d45a4f84f"
+    },
+    {
+      "label": "Şehit Abdullah Tayyip Olçok Bilgi Evi ve Kültür Merkezi Kütüphanesi",
+      "file_type": "code",
+      "source_file": "TESIS_Şehit_Abdullah_Tayyip_Olçok_Bilgi_Evi_ve_Kültür_Merkezi_Kütüphanesi.txt",
+      "community": 573,
+      "norm_label": "şehit abdullah tayyip olçok bilgi evi ve kültür merkezi kütüphanesi",
+      "id": "tesis_ehit_abdullah_tayyip_ol_ok_bilgi_evi_ve_k_lt_r_merkezi_k_t_phanesi",
+      "community_name": "Tesis",
+      "icerik_hash": "409a8ccbc13eff1300289b388664d09f"
+    },
+    {
+      "label": "Şehit Abdullah Tayyip Olçok Bilgi Evi ve Kültür Merkezi (Bilgi Evlerimiz)",
+      "file_type": "code",
+      "source_file": "TESIS_Şehit_Abdullah_Tayyip_Olçok_Bilgi_Evi_ve_Kültür_Merkezi__Bilgi_Evlerimiz_.txt",
+      "community": 574,
+      "norm_label": "şehit abdullah tayyip olçok bilgi evi ve kültür merkezi (bilgi evlerimiz)",
+      "id": "tesis_ehit_abdullah_tayyip_ol_ok_bilgi_evi_ve_k_lt_r_merkezi_bilgi_evlerimiz",
+      "community_name": "Tesis",
+      "icerik_hash": "89df06491bdb03035ea7689b20940cb5"
+    },
+    {
+      "label": "Şehit Savcı Mehmet Selim Kiraz Halk Kütüphanesi",
+      "file_type": "code",
+      "source_file": "TESIS_Şehit_Savcı_Mehmet_Selim_Kiraz_Halk_Kütüphanesi.txt",
+      "community": 575,
+      "norm_label": "şehit savcı mehmet selim kiraz halk kütüphanesi",
+      "id": "tesis_ehit_savc_mehmet_selim_kiraz_halk_k_t_phanesi",
+      "community_name": "Tesis",
+      "icerik_hash": "bf47765188b1b9ffb3210f362143c49b"
+    },
+    {
+      "label": "Şehit Savcı Mehmet Selim Kiraz Kültür Merkezi ve Halk Kütüphanesi",
+      "file_type": "code",
+      "source_file": "TESIS_Şehit_Savcı_Mehmet_Selim_Kiraz_Kültür_Merkezi_ve_Halk_Kütüphanesi.txt",
+      "community": 576,
+      "norm_label": "şehit savcı mehmet selim kiraz kültür merkezi ve halk kütüphanesi",
+      "id": "tesis_ehit_savc_mehmet_selim_kiraz_k_lt_r_merkezi_ve_halk_k_t_phanesi",
+      "community_name": "Tesis",
+      "icerik_hash": "9be7379be239ab3157eb3a46be59bddc"
+    },
+    {
+      "label": "Şerife Bacı Konağı Sosyal Tesisi",
+      "file_type": "code",
+      "source_file": "TESIS_Şerife_Bacı_Konağı_Sosyal_Tesisi.txt",
+      "community": 577,
+      "norm_label": "şerife bacı konağı sosyal tesisi",
+      "id": "tesis_erife_bac_kona_sosyal_tesisi",
+      "community_name": "Tesis",
+      "icerik_hash": "bb20b59ebdb4ee2032be1b7c6115ec78"
+    },
+    {
+      "label": "Şölen Parkı",
+      "file_type": "code",
+      "source_file": "TESIS_Şölen_Parkı.txt",
+      "community": 578,
+      "norm_label": "şölen parkı",
+      "id": "tesis_len_park",
+      "community_name": "Tesis",
+      "icerik_hash": "213382f68b661239795bdb02c3c363bf"
+    },
+    {
+      "label": "Türkiye Adres Kodu'nu Öğreniyor",
+      "file_type": "code",
+      "source_file": "Türkiye_Adres_Kodu_nu_Öğreniyor.txt",
+      "community": 581,
+      "norm_label": "türkiye adres kodu'nu öğreniyor",
+      "id": "t_rkiye_adres_kodu_nu_reniyor",
+      "community_name": "Duyuru",
+      "icerik_hash": "d1e5e20707a1e8558c22d12f421a3ba7"
+    },
+    {
+      "label": "Ulusal Kent Rehberi - Yerel Veri Platformları",
+      "file_type": "code",
+      "source_file": "Ulusal_Kent_Rehberi_-_Yerel_Veri_Platformları.txt",
+      "community": 582,
+      "norm_label": "ulusal kent rehberi - yerel veri platformları",
+      "id": "ulusal_kent_rehberi_yerel_veri_platformlar",
+      "community_name": "Duyuru",
+      "icerik_hash": "eb8ba91137e8689e3295086bb872249d"
+    },
+    {
+      "label": "Vizyon Projelerimiz 2019 - 2024",
+      "file_type": "code",
+      "source_file": "Vizyon_Projelerimiz_2019_-_2024.txt",
+      "community": 585,
+      "norm_label": "vizyon projelerimiz 2019 - 2024",
+      "id": "vizyon_projelerimiz_2019_2024",
+      "community_name": "Duyuru",
+      "icerik_hash": "ca982c66f36d9c9276689189e592876f"
+    },
+    {
+      "label": "Yüzyıl Havuzu ve Spor Kompleksinde Bayanlara Özel  Step ve Pilates Dersleri",
+      "file_type": "code",
+      "source_file": "Yüzyıl_Havuzu_ve_Spor_Kompleksinde_Bayanlara_Özel__Step_ve_Pilates_Dersleri.txt",
+      "community": 591,
+      "norm_label": "yüzyıl havuzu ve spor kompleksinde bayanlara özel  step ve pilates dersleri",
+      "id": "y_zy_l_havuzu_ve_spor_kompleksinde_bayanlara_zel_step_ve_pilates_dersleri",
+      "community_name": "Duyuru",
+      "icerik_hash": "ca35ce7beecab56c94d8ac79db184913"
+    },
+    {
+      "label": "'SARAYDAN BAKMAK' Belgeseli - Bağcılar Belediyesi Katkılarıyla...",
+      "file_type": "code",
+      "source_file": "_SARAYDAN_BAKMAK__Belgeseli_-_Bağcılar_Belediyesi_Katkılarıyla___.txt",
+      "community": 592,
+      "norm_label": "'saraydan bakmak' belgeseli - bağcılar belediyesi katkılarıyla...",
+      "id": "saraydan_bakmak_belgeseli_ba_c_lar_belediyesi_katk_lar_yla",
+      "community_name": "Duyuru",
+      "icerik_hash": "dffc7ffdb4a5b92b9809136514a97d4b"
+    },
+    {
+      "label": "Çınar Olimpiapark Konutları Site Yönetimi'nin 14/03/2019 tarihli ve sayılı yazısı Hk.",
+      "file_type": "code",
+      "source_file": "Çınar_Olimpiapark_Konutları_Site_Yönetimi_nin_14_03_2019_tarihli_ve_sayılı_yazıs.txt",
+      "community": 595,
+      "norm_label": "çınar olimpiapark konutları site yönetimi'nin 14/03/2019 tarihli ve sayılı yazısı hk.",
+      "id": "nar_olimpiapark_konutlar_site_y_netimi_nin_14_03_2019_tarihli_ve_say_l_yaz_s",
+      "community_name": "Duyuru",
+      "icerik_hash": "8640429bf5091d830bb96597467c2808"
+    },
+    {
+      "label": "Ücretsiz Eğitim Platformu https://kayit.csb.gov.tr/",
+      "file_type": "code",
+      "source_file": "Ücretsiz_Eğitim_Platformu_https___kayit_csb_gov_tr_.txt",
+      "community": 596,
+      "norm_label": "ücretsiz eğitim platformu https://kayit.csb.gov.tr/",
+      "id": "cretsiz_e_itim_platformu_https_kayit_csb_gov_tr",
+      "community_name": "Duyuru",
+      "icerik_hash": "06bee3655f10ccd29c0a4a53ba0e2ff8"
+    },
+    {
+      "label": "İlçe Geneli Çöp Toplama Zamanı ve Saatleri",
+      "file_type": "code",
+      "source_file": "İlçe_Geneli_Çöp_Toplama_Zamanı_ve_Saatleri.txt",
+      "community": 599,
+      "norm_label": "i̇lçe geneli çöp toplama zamanı ve saatleri",
+      "id": "i_l_e_geneli_p_toplama_zaman_ve_saatleri",
+      "community_name": "Duyuru",
+      "icerik_hash": "56b9bc21f94dc97598e369bf202324b9"
+    },
+    {
+      "label": "İstanbul İli, Bağcılar İlçesi, Göztepe Mahallesi Riskli Alan ve Çevresine ilişkin 1/5000 ölçekli Nazım İmar Planı ve 1/1000 ölçekli Uygulama İmar Planı",
+      "file_type": "code",
+      "source_file": "İstanbul_İli__Bağcılar_İlçesi__Göztepe_Mahallesi_Riskli_Alan_ve_Çevresine_ilişki.txt",
+      "community": 602,
+      "norm_label": "i̇stanbul i̇li, bağcılar i̇lçesi, göztepe mahallesi riskli alan ve çevresine ilişkin 1/5000 ölçekli nazım i̇mar planı ve 1/1000 ölçekli uygulama i̇mar planı",
+      "id": "i_stanbul_i_li_ba_c_lar_i_l_esi_g_ztepe_mahallesi_riskli_alan_ve_evresine_ili_ki",
+      "community_name": "Duyuru",
+      "icerik_hash": "1f7058fa59f85c4cea4328a6fcf9b3a5"
+    },
+    {
+      "label": "BESYO - Beden Eğitimi Meslek Yüksekokulu",
+      "file_type": "code",
+      "source_file": "KURS_BESYO_-_Beden_Eğitimi_Meslek_Yüksekokulu.txt",
+      "community": 603,
+      "norm_label": "besyo - beden eğitimi meslek yüksekokulu",
+      "id": "kurs_besyo_beden_e_itimi_meslek_y_ksekokulu",
+      "community_name": "Kurs",
+      "icerik_hash": "797f829c7af479c8dbfe81e6738a2d7d"
+    },
+    {
+      "label": "Badminton Eğitimi Başlıyor",
+      "file_type": "code",
+      "source_file": "KURS_Badminton_Eğitimi_Başlıyor.txt",
+      "community": 604,
+      "norm_label": "badminton eğitimi başlıyor",
+      "id": "kurs_badminton_e_itimi_ba_l_yor",
+      "community_name": "Kurs",
+      "icerik_hash": "dc0534b9a9fb27db6533ced121ca8fe0"
+    },
+    {
+      "label": "Basketbol",
+      "file_type": "code",
+      "source_file": "KURS_Basketbol.txt",
+      "community": 605,
+      "norm_label": "basketbol",
+      "id": "kurs_basketbol",
+      "community_name": "Kurs",
+      "icerik_hash": "63ac627041a8e51b3862b7a3b3cbce6a"
+    },
+    {
+      "label": "Boks",
+      "file_type": "code",
+      "source_file": "KURS_Boks.txt",
+      "community": 606,
+      "norm_label": "boks",
+      "id": "kurs_boks",
+      "community_name": "Kurs",
+      "icerik_hash": "6ae897c064f668b02b7101362b74e4d0"
+    },
+    {
+      "label": "Cimnastik",
+      "file_type": "code",
+      "source_file": "KURS_Cimnastik.txt",
+      "community": 607,
+      "norm_label": "cimnastik",
+      "id": "kurs_cimnastik",
+      "community_name": "Kurs",
+      "icerik_hash": "7a859b4d1fc6d992eaf8c2f3c15b5cf6"
+    },
+    {
+      "label": "E-SPOR",
+      "file_type": "code",
+      "source_file": "KURS_E-SPOR.txt",
+      "community": 608,
+      "norm_label": "e-spor",
+      "id": "kurs_e_spor",
+      "community_name": "Kurs",
+      "icerik_hash": "c9fed9b7c07777490105b752ce14174c"
+    },
+    {
+      "label": "Fitness",
+      "file_type": "code",
+      "source_file": "KURS_Fitness.txt",
+      "community": 609,
+      "norm_label": "fitness",
+      "id": "kurs_fitness",
+      "community_name": "Kurs",
+      "icerik_hash": "96f1325392f43f8a947c47d7f9c6973c"
+    },
+    {
+      "label": "Futsal",
+      "file_type": "code",
+      "source_file": "KURS_Futsal.txt",
+      "community": 610,
+      "norm_label": "futsal",
+      "id": "kurs_futsal",
+      "community_name": "Kurs",
+      "icerik_hash": "f9b78af398dc18f20e92cfd70ea2266b"
+    },
+    {
+      "label": "Gençlik  Merkezi Branşları",
+      "file_type": "code",
+      "source_file": "KURS_Gençlik__Merkezi_Branşları.txt",
+      "community": 611,
+      "norm_label": "gençlik  merkezi branşları",
+      "id": "kurs_gen_lik_merkezi_bran_lar",
+      "community_name": "Kurs",
+      "icerik_hash": "7eb469d7209fcc96b25f811032555eda"
+    },
+    {
+      "label": "Güreş",
+      "file_type": "code",
+      "source_file": "KURS_Güreş.txt",
+      "community": 612,
+      "norm_label": "güreş",
+      "id": "kurs_g_re",
+      "community_name": "Kurs",
+      "icerik_hash": "998fe5856f115fb4a8039d791e18eb19"
+    },
+    {
+      "label": "Kadınlar Sabah Sporunda Buluşuyor",
+      "file_type": "code",
+      "source_file": "KURS_Kadınlar_Sabah_Sporunda_Buluşuyor.txt",
+      "community": 613,
+      "norm_label": "kadınlar sabah sporunda buluşuyor",
+      "id": "kurs_kad_nlar_sabah_sporunda_bulu_uyor",
+      "community_name": "Kurs",
+      "icerik_hash": "61618fcbe854bf8aa1d47cc8b97ed035"
+    },
+    {
+      "label": "Karate",
+      "file_type": "code",
+      "source_file": "KURS_Karate.txt",
+      "community": 614,
+      "norm_label": "karate",
+      "id": "kurs_karate",
+      "community_name": "Kurs",
+      "icerik_hash": "199f77aeb4283a20e9b6b680b0a684db"
+    },
+    {
+      "label": "Kick Boks",
+      "file_type": "code",
+      "source_file": "KURS_Kick_Boks.txt",
+      "community": 615,
+      "norm_label": "kick boks",
+      "id": "kurs_kick_boks",
+      "community_name": "Kurs",
+      "icerik_hash": "d620619f9d31af24b7ee7a237139b042"
+    },
+    {
+      "label": "Masa Tenisi",
+      "file_type": "code",
+      "source_file": "KURS_Masa_Tenisi.txt",
+      "community": 616,
+      "norm_label": "masa tenisi",
+      "id": "kurs_masa_tenisi",
+      "community_name": "Kurs",
+      "icerik_hash": "1266b1e3ad5c35d192fab3b54bb69389"
+    },
+    {
+      "label": "Okçuluk",
+      "file_type": "code",
+      "source_file": "KURS_Okçuluk.txt",
+      "community": 617,
+      "norm_label": "okçuluk",
+      "id": "kurs_ok_uluk",
+      "community_name": "Kurs",
+      "icerik_hash": "b6247788d39b1ddef55834563a2add25"
+    },
+    {
+      "label": "Oyun Yazılım Eğitimi",
+      "file_type": "code",
+      "source_file": "KURS_Oyun_Yazılım_Eğitimi.txt",
+      "community": 618,
+      "norm_label": "oyun yazılım eğitimi",
+      "id": "kurs_oyun_yaz_l_m_e_itimi",
+      "community_name": "Kurs",
+      "icerik_hash": "708285dbce8edef7299dd746ab824069"
+    },
+    {
+      "label": "PMYO - Polis Meslek Yüksek Okulu",
+      "file_type": "code",
+      "source_file": "KURS_PMYO_-_Polis_Meslek_Yüksek_Okulu.txt",
+      "community": 619,
+      "norm_label": "pmyo - polis meslek yüksek okulu",
+      "id": "kurs_pmyo_polis_meslek_y_ksek_okulu",
+      "community_name": "Kurs",
+      "icerik_hash": "b298c39119984e186bdf291b96955234"
+    },
+    {
+      "label": "Pilates",
+      "file_type": "code",
+      "source_file": "KURS_Pilates.txt",
+      "community": 620,
+      "norm_label": "pilates",
+      "id": "kurs_pilates",
+      "community_name": "Kurs",
+      "icerik_hash": "2a23f67e1f6759f6c6e7d5bd76cd7016"
+    },
+    {
+      "label": "Pomem - Polis Meslek Eğitim Merkezi",
+      "file_type": "code",
+      "source_file": "KURS_Pomem_-_Polis_Meslek_Eğitim_Merkezi.txt",
+      "community": 621,
+      "norm_label": "pomem - polis meslek eğitim merkezi",
+      "id": "kurs_pomem_polis_meslek_e_itim_merkezi",
+      "community_name": "Kurs",
+      "icerik_hash": "1c4320e2091392cf9ec7ff55f5e51cb5"
+    },
+    {
+      "label": "Siber Güvenlik Eğitimi",
+      "file_type": "code",
+      "source_file": "KURS_Siber_Güvenlik_Eğitimi.txt",
+      "community": 622,
+      "norm_label": "siber güvenlik eğitimi",
+      "id": "kurs_siber_g_venlik_e_itimi",
+      "community_name": "Kurs",
+      "icerik_hash": "af7f68cf853f28dce0a95e4cacc4aa27"
+    },
+    {
+      "label": "Taekwondo",
+      "file_type": "code",
+      "source_file": "KURS_Taekwondo.txt",
+      "community": 623,
+      "norm_label": "taekwondo",
+      "id": "kurs_taekwondo",
+      "community_name": "Kurs",
+      "icerik_hash": "ccf5a6a23ca3fb5f5bceafb146b12457"
+    },
+    {
+      "label": "Temel Bisiklet Eğitimi",
+      "file_type": "code",
+      "source_file": "KURS_Temel_Bisiklet_Eğitimi.txt",
+      "community": 624,
+      "norm_label": "temel bisiklet eğitimi",
+      "id": "kurs_temel_bisiklet_e_itimi",
+      "community_name": "Kurs",
+      "icerik_hash": "614a19994c69ebc04765f46ae2691467"
+    },
+    {
+      "label": "Voleybol",
+      "file_type": "code",
+      "source_file": "KURS_Voleybol.txt",
+      "community": 625,
+      "norm_label": "voleybol",
+      "id": "kurs_voleybol",
+      "community_name": "Kurs",
+      "icerik_hash": "b68f2d1807fd70b96bd5620bf728aac0"
+    },
+    {
+      "label": "Wushu",
+      "file_type": "code",
+      "source_file": "KURS_Wushu.txt",
+      "community": 626,
+      "norm_label": "wushu",
+      "id": "kurs_wushu",
+      "community_name": "Kurs",
+      "icerik_hash": "fe6120600c7aec402827d6e4c67364a8"
+    },
+    {
+      "label": "Yüzme",
+      "file_type": "code",
+      "source_file": "KURS_Yüzme.txt",
+      "community": 627,
+      "norm_label": "yüzme",
+      "id": "kurs_y_zme",
+      "community_name": "Kurs",
+      "icerik_hash": "7623bfc5cd5374e3541140ad3513b86b"
+    },
+    {
+      "label": "Bağ-Kart Nedir ve Nasıl Başvurulur",
+      "file_type": "code",
+      "source_file": "KURS_Bag_Kart_Nedir.txt",
+      "community": 628,
+      "norm_label": "bağ-kart nedir ve nasıl başvurulur",
+      "id": "kurs_bag_kart_nedir",
+      "community_name": "Hizmet",
+      "icerik_hash": "ea74cde7c1b77550c4cb2a28fd84565e"
+    },
+    {
+      "label": "e-Belediye Nedir ve Neler Yapılabilir",
+      "file_type": "code",
+      "source_file": "KURS_E_Belediye_Nedir.txt",
+      "community": 629,
+      "norm_label": "e-belediye nedir ve neler yapılabilir",
+      "id": "kurs_e_belediye_nedir",
+      "community_name": "Hizmet",
+      "icerik_hash": "2a3aec838c3a62f73fa1715f61422ec5"
+    },
+    {
+      "label": "Kent Rehberi",
+      "file_type": "code",
+      "source_file": "KURS_Kent_Rehberi.txt",
+      "community": 630,
+      "norm_label": "kent rehberi",
+      "id": "kurs_kent_rehberi",
+      "community_name": "Hizmet",
+      "icerik_hash": "32ed11fadbfc59963d4f5b3dc1cc470f"
+    },
+    {
+      "label": "2026 Yılı Performans Programı",
+      "file_type": "code",
+      "source_file": "YAYIN_2026_Yılı_Performans_Programı.txt",
+      "community": 631,
+      "norm_label": "2026 yılı performans programı",
+      "id": "yayin_2026_y_l_performans_program",
+      "community_name": "Yayin",
+      "icerik_hash": "65929bdb43e21baeefcc75dc36cc4908"
+    },
+    {
+      "label": "Haziran 2026 Kültür Sanat Bülteni",
+      "file_type": "code",
+      "source_file": "YAYIN_Haziran_2026_Kültür_Sanat_Bülteni.txt",
+      "community": 632,
+      "norm_label": "haziran 2026 kültür sanat bülteni",
+      "id": "yayin_haziran_2026_k_lt_r_sanat_b_lteni",
+      "community_name": "Yayin",
+      "icerik_hash": "3352651a3495a83c43a810b0527c795d"
+    },
+    {
+      "label": "Mayıs 2026 Hizmet Bülteni",
+      "file_type": "code",
+      "source_file": "YAYIN_Mayıs_2026_Hizmet_Bülteni.txt",
+      "community": 633,
+      "norm_label": "mayıs 2026 hizmet bülteni",
+      "id": "yayin_may_s_2026_hizmet_b_lteni",
+      "community_name": "Yayin",
+      "icerik_hash": "e5591be0e167d038aa5822c4eac07a79"
+    },
+    {
+      "label": "Mayıs 2026 Kültür Sanat Bülteni",
+      "file_type": "code",
+      "source_file": "YAYIN_Mayıs_2026_Kültür_Sanat_Bülteni.txt",
+      "community": 634,
+      "norm_label": "mayıs 2026 kültür sanat bülteni",
+      "id": "yayin_may_s_2026_k_lt_r_sanat_b_lteni",
+      "community_name": "Yayin",
+      "icerik_hash": "3cfc302f1f346807d8678105f1907d46"
+    },
+    {
+      "label": "Nisan 2026 Hizmet Bülteni",
+      "file_type": "code",
+      "source_file": "YAYIN_Nisan_2026_Hizmet_Bülteni.txt",
+      "community": 635,
+      "norm_label": "nisan 2026 hizmet bülteni",
+      "id": "yayin_nisan_2026_hizmet_b_lteni",
+      "community_name": "Yayin",
+      "icerik_hash": "4378821384647213d840d3d7ce2ccd29"
+    },
+    {
+      "label": "Nisan 2026 Kültür Sanat Bülteni",
+      "file_type": "code",
+      "source_file": "YAYIN_Nisan_2026_Kültür_Sanat_Bülteni.txt",
+      "community": 636,
+      "norm_label": "nisan 2026 kültür sanat bülteni",
+      "id": "yayin_nisan_2026_k_lt_r_sanat_b_lteni",
+      "community_name": "Yayin",
+      "icerik_hash": "a7f65f08415619c3eabedf13075a2789"
+    },
+    {
+      "label": "Ocak 2026 Hizmet Bülteni",
+      "file_type": "code",
+      "source_file": "YAYIN_Ocak_2026_Hizmet_Bülteni.txt",
+      "community": 637,
+      "norm_label": "ocak 2026 hizmet bülteni",
+      "id": "yayin_ocak_2026_hizmet_b_lteni",
+      "community_name": "Yayin",
+      "icerik_hash": "ed61741e7e24da8f81c97645247dca62"
+    },
+    {
+      "label": "Ocak 2026 Kültür Sanat Bülteni",
+      "file_type": "code",
+      "source_file": "YAYIN_Ocak_2026_Kültür_Sanat_Bülteni.txt",
+      "community": 638,
+      "norm_label": "ocak 2026 kültür sanat bülteni",
+      "id": "yayin_ocak_2026_k_lt_r_sanat_b_lteni",
+      "community_name": "Yayin",
+      "icerik_hash": "357e554aff32d131d6b34ceb505e92bf"
+    },
+    {
+      "label": "Şubat - Mart 2026 Hizmet Bülteni",
+      "file_type": "code",
+      "source_file": "YAYIN_Şubat_-_Mart_2026_Hizmet_Bülteni.txt",
+      "community": 639,
+      "norm_label": "şubat - mart 2026 hizmet bülteni",
+      "id": "yayin_ubat_mart_2026_hizmet_b_lteni",
+      "community_name": "Yayin",
+      "icerik_hash": "3c3a29d14b98bc0b7f0e4cce2d860e57"
+    },
+    {
+      "label": "Şubat 2026 Kültür Sanat Bülteni",
+      "file_type": "code",
+      "source_file": "YAYIN_Şubat_2026_Kültür_Sanat_Bülteni.txt",
+      "community": 640,
+      "norm_label": "şubat 2026 kültür sanat bülteni",
+      "id": "yayin_ubat_2026_k_lt_r_sanat_b_lteni",
+      "community_name": "Yayin",
+      "icerik_hash": "d0f6665c2803e1cae6df47750cb24a7d"
+    },
+    {
+      "label": "Toplu Taşıma / Nasıl Giderim",
+      "file_type": "code",
+      "source_file": "KURS_Nasil_Giderim.txt",
+      "community": 641,
+      "norm_label": "toplu taşıma / nasıl giderim",
+      "id": "kurs_nasil_giderim",
+      "community_name": "Hizmet",
+      "icerik_hash": "940b6a3a4366a9d6b8c7b470507fb448"
+    },
+    {
+      "label": "Banka Hesap Numaraları",
+      "file_type": "code",
+      "source_file": "KURS_Banka_Hesap_Numaralari.txt",
+      "community": 642,
+      "norm_label": "banka hesap numaraları",
+      "id": "kurs_banka_hesap_numaralari",
+      "community_name": "Hizmet",
+      "icerik_hash": "bb54772943c77236f8357a31e4cbca2e"
+    },
+    {
+      "label": "İşyeri Açma ve Çalışma Ruhsatı İşlemleri",
+      "file_type": "code",
+      "source_file": "KURS_Isyeri_Acma_Ruhsat.txt",
+      "community": 643,
+      "norm_label": "i̇şyeri açma ve çalışma ruhsatı i̇şlemleri",
+      "id": "kurs_isyeri_acma_ruhsat",
+      "community_name": "Hizmet",
+      "icerik_hash": "ab78c90d27dbf7ef961332b1416d7535"
+    },
+    {
+      "label": "Bağcılar'da Ulaşım Hatları",
+      "file_type": "code",
+      "source_file": "KURS_Bagcilarda_Ulasim_Hatlari.txt",
+      "community": 644,
+      "norm_label": "bağcılar'da ulaşım hatları",
+      "id": "kurs_bagcilarda_ulasim_hatlari",
+      "community_name": "Hizmet",
+      "icerik_hash": "10ce0cc85e8ee07ff23617602f8d17f4"
+    },
+    {
+      "label": "Hizmet Rehberi",
+      "file_type": "code",
+      "source_file": "KURS_Hizmet_Rehberi.txt",
+      "community": 645,
+      "norm_label": "hizmet rehberi",
+      "id": "kurs_hizmet_rehberi",
+      "community_name": "Hizmet",
+      "icerik_hash": "19691659dcbda308e9caab4ccd752fb1"
+    },
+    {
+      "label": "Başvuru Rehberi",
+      "file_type": "code",
+      "source_file": "KURS_Basvuru_Rehberi.txt",
+      "community": 646,
+      "norm_label": "başvuru rehberi",
+      "id": "kurs_basvuru_rehberi",
+      "community_name": "Hizmet",
+      "icerik_hash": "e45534fc44b38089e93a1f785638f225"
+    },
+    {
+      "label": "Asansör Yıllık Kontrol İşlemleri",
+      "file_type": "code",
+      "source_file": "KURS_Asansor_Yillik_Kontrol.txt",
+      "community": 647,
+      "norm_label": "asansör yıllık kontrol i̇şlemleri",
+      "id": "kurs_asansor_yillik_kontrol",
+      "community_name": "Hizmet",
+      "icerik_hash": "eda46a6d282b39579bc12baf4b77739e"
+    },
+    {
+      "label": "Cenaze İşlemleri İçin Gerekli Evraklar",
+      "file_type": "code",
+      "source_file": "KURS_Cenaze_Islemleri_Evraklar.txt",
+      "community": 648,
+      "norm_label": "cenaze i̇şlemleri i̇çin gerekli evraklar",
+      "id": "kurs_cenaze_islemleri_evraklar",
+      "community_name": "Hizmet",
+      "icerik_hash": "2e1c819f7be1a7e6294aa95c3d0a8905"
+    },
+    {
+      "label": "Harita Uygulamaları",
+      "file_type": "code",
+      "source_file": "KURS_Harita_Uygulamalari.txt",
+      "community": 649,
+      "norm_label": "harita uygulamaları",
+      "id": "kurs_harita_uygulamalari",
+      "community_name": "Hizmet",
+      "icerik_hash": "f336ad8bfc3db066c79f715e78d348b2"
+    },
+    {
+      "label": "Nikah İşlemleri İçin Gereken Belgeler",
+      "file_type": "code",
+      "source_file": "KURS_Nikah_Islemleri_Belgeler.txt",
+      "community": 650,
+      "norm_label": "nikah i̇şlemleri i̇çin gereken belgeler",
+      "id": "kurs_nikah_islemleri_belgeler",
+      "community_name": "Hizmet",
+      "icerik_hash": "1d2b791b24536e692254ccc38ffa7e6e"
+    },
+    {
+      "label": "Resmi Kurumların Tranşe Ruhsatı",
+      "file_type": "code",
+      "source_file": "KURS_Resmi_Kurumlar_Transe_Ruhsati.txt",
+      "community": 651,
+      "norm_label": "resmi kurumların tranşe ruhsatı",
+      "id": "kurs_resmi_kurumlar_transe_ruhsati",
+      "community_name": "Hizmet",
+      "icerik_hash": "58dc49184c794054d4a0c40405aa3193"
+    },
+    {
+      "label": "Yapı Ruhsatı Süreçleri Rehberi",
+      "file_type": "code",
+      "source_file": "KURS_Yapi_Ruhsati_Surecleri_Rehberi.txt",
+      "community": 652,
+      "norm_label": "yapı ruhsatı süreçleri rehberi",
+      "id": "kurs_yapi_ruhsati_surecleri_rehberi",
+      "community_name": "Hizmet",
+      "icerik_hash": "138a79633cf21c433a1d82ce2810d8c8"
+    },
+    {
+      "label": "Ambalaj Atıklarının Geri Dönüşümü",
+      "file_type": "code",
+      "source_file": "KURS_Ambalaj_Atiklari_Geri_Donusumu.txt",
+      "community": 653,
+      "norm_label": "ambalaj atıklarının geri dönüşümü",
+      "id": "kurs_ambalaj_atiklari_geri_donusumu",
+      "community_name": "Hizmet",
+      "icerik_hash": "b92717ed99ff0d1f4db81ea37d33ce62"
+    },
+    {
+      "label": "Atık Pillerin Geri Dönüşümü",
+      "file_type": "code",
+      "source_file": "KURS_Atik_Pillerin_Geri_Donusumu.txt",
+      "community": 654,
+      "norm_label": "atık pillerin geri dönüşümü",
+      "id": "kurs_atik_pillerin_geri_donusumu",
+      "community_name": "Hizmet",
+      "icerik_hash": "861b988aea9f2b0e2150b0d14999fe10"
+    },
+    {
+      "label": "Bitkisel Atık Yağların Geri Dönüşümü",
+      "file_type": "code",
+      "source_file": "KURS_Bitkisel_Atik_Yaglarin_Geri_Donusumu.txt",
+      "community": 655,
+      "norm_label": "bitkisel atık yağların geri dönüşümü",
+      "id": "kurs_bitkisel_atik_yaglarin_geri_donusumu",
+      "community_name": "Hizmet",
+      "icerik_hash": "b2d0e171175addead5836ccfe5ba45b0"
+    },
+    {
+      "label": "Geri Dönüşüm",
+      "file_type": "code",
+      "source_file": "KURS_Geri_Donusum.txt",
+      "community": 656,
+      "norm_label": "geri dönüşüm",
+      "id": "kurs_geri_donusum",
+      "community_name": "Hizmet",
+      "icerik_hash": "2c15dee5e80348ae837fae47387347d1"
+    },
+    {
+      "label": "Giysi Atıklarının Geri Dönüşümü",
+      "file_type": "code",
+      "source_file": "KURS_Giysi_Atiklarinin_Geri_Donusumu.txt",
+      "community": 657,
+      "norm_label": "giysi atıklarının geri dönüşümü",
+      "id": "kurs_giysi_atiklarinin_geri_donusumu",
+      "community_name": "Hizmet",
+      "icerik_hash": "07240ebf29f4b7997ac2deca8b7b2cff"
+    },
+    {
+      "label": "Ömrünü Tamamlamış Lastiklerin Geri Dönüşümü",
+      "file_type": "code",
+      "source_file": "KURS_Omrunu_Tamamlamis_Lastiklerin_Geri_Donusumu.txt",
+      "community": 658,
+      "norm_label": "ömrünü tamamlamış lastiklerin geri dönüşümü",
+      "id": "kurs_omrunu_tamamlamis_lastiklerin_geri_donusumu",
+      "community_name": "Hizmet",
+      "icerik_hash": "b1639e0d74d45fcbb4464b44f0b49d3c"
+    },
+    {
+      "label": "Yapı Ruhsatı Süreçleri Rehberi",
+      "file_type": "code",
+      "source_file": "Yapı_Ruhsatı_Süreçleri_Rehberi.txt",
+      "community": 1092,
+      "norm_label": "yapı ruhsatı süreçleri rehberi",
+      "id": "yap_ruhsat_s_re_leri_rehberi",
+      "community_name": "Duyuru",
+      "icerik_hash": "7d3ea4d92be89fcd48255f1a86b2763d"
+    },
+    {
+      "label": "Yıldızlı Çocuk Akşamları Etkinlikleri",
+      "file_type": "code",
+      "source_file": "ETKINLIK_Yıldızlı_Çocuk_Akşamları_Etkinlikleri.txt",
+      "community": 1112,
+      "norm_label": "yıldızlı çocuk akşamları etkinlikleri",
+      "id": "etkinlik_y_ld_zl_ocuk_ak_amlar_etkinlikleri",
+      "community_name": "Etkinlik",
+      "icerik_hash": "a17303c0adf69b61875be5bd8b992bbb"
+    },
+    {
+      "label": "Ali Erdoğan - Başkan Yardımcısı",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Ali_Erdogan.txt",
+      "community": 1113,
+      "norm_label": "ali erdoğan - başkan yardımcısı",
+      "id": "kurumsal_ali_erdogan",
+      "community_name": "Kurumsal",
+      "icerik_hash": "933447b79d20beda9c51b8ae7739c6d3"
+    },
+    {
+      "label": "Emre Urlu - Başkan Yardımcısı",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Emre_Urlu.txt",
+      "community": 1114,
+      "norm_label": "emre urlu - başkan yardımcısı",
+      "id": "kurumsal_emre_urlu",
+      "community_name": "Kurumsal",
+      "icerik_hash": "263bfd5ddf0264605de182cc6ef009fe"
+    },
+    {
+      "label": "Fatih Sarıaslan - Başkan Yardımcısı",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Fatih_Sariaslan.txt",
+      "community": 1115,
+      "norm_label": "fatih sarıaslan - başkan yardımcısı",
+      "id": "kurumsal_fatih_sariaslan",
+      "community_name": "Kurumsal",
+      "icerik_hash": "a111e02c1e9307810ea606d4f7d05d27"
+    },
+    {
+      "label": "Av. Mehmet Şirin - Başkan Yardımcısı",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Mehmet_Sirin.txt",
+      "community": 1116,
+      "norm_label": "av. mehmet şirin - başkan yardımcısı",
+      "id": "kurumsal_mehmet_sirin",
+      "community_name": "Kurumsal",
+      "icerik_hash": "f6bc645d84f788bb29162b45334c169a"
+    },
+    {
+      "label": "Muharrem Erdal - Başkan Yardımcısı",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Muharrem_Erdal.txt",
+      "community": 1117,
+      "norm_label": "muharrem erdal - başkan yardımcısı",
+      "id": "kurumsal_muharrem_erdal",
+      "community_name": "Kurumsal",
+      "icerik_hash": "781d3dbc125ca01e5497bfdcf11aa407"
+    },
+    {
+      "label": "Doç. Dr. Ertuğrul Selçuk Güldüler - Başkan Yardımcısı",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Selcuk_Gulduler.txt",
+      "community": 1118,
+      "norm_label": "doç. dr. ertuğrul selçuk güldüler - başkan yardımcısı",
+      "id": "kurumsal_selcuk_gulduler",
+      "community_name": "Kurumsal",
+      "icerik_hash": "85d43668b986b3ed6997715d782cb5ae"
+    },
+    {
+      "label": "Volkan Çakmak - Başkan Yardımcısı",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Volkan_Cakmak.txt",
+      "community": 1119,
+      "norm_label": "volkan çakmak - başkan yardımcısı",
+      "id": "kurumsal_volkan_cakmak",
+      "community_name": "Kurumsal",
+      "icerik_hash": "76acabc67827d4bef6955a4956caf83e"
+    },
+    {
+      "label": "Yasin Yıldız - Belediye Başkanı",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Yasin_Yildiz.txt",
+      "community": 1120,
+      "norm_label": "yasin yıldız - belediye başkanı",
+      "id": "kurumsal_yasin_yildiz",
+      "community_name": "Kurumsal",
+      "icerik_hash": "1d0b34888bf9cbdc8f60d8559b94b5b5"
+    },
+    {
+      "label": "İç Denetçiler",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Birim_IcDenetciler.txt",
+      "community": 1121,
+      "norm_label": "i̇ç denetçiler",
+      "id": "kurumsal_birim_icdenetciler",
+      "community_name": "Kurumsal",
+      "icerik_hash": "7dce251024d56332b6c4e141906fdee4"
+    },
+    {
+      "label": "Özel Kalem Müdürlüğü",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Birim_OzelKalem.txt",
+      "community": 1122,
+      "norm_label": "özel kalem müdürlüğü",
+      "id": "kurumsal_birim_ozelkalem",
+      "community_name": "Kurumsal",
+      "icerik_hash": "edc49c4ca6dc111c2cd00549c6487987"
+    },
+    {
+      "label": "Rehberlik ve Teftiş Kurulu Müdürlüğü",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Birim_RehberlikTeftis.txt",
+      "community": 1123,
+      "norm_label": "rehberlik ve teftiş kurulu müdürlüğü",
+      "id": "kurumsal_birim_rehberlikteftis",
+      "community_name": "Kurumsal",
+      "icerik_hash": "aaec7a54801b7b350eaa6903604f5d8e"
+    },
+    {
+      "label": "Yazı İşleri Müdürlüğü",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Birim_YaziIsleri.txt",
+      "community": 1124,
+      "norm_label": "yazı i̇şleri müdürlüğü",
+      "id": "kurumsal_birim_yaziisleri",
+      "community_name": "Kurumsal",
+      "icerik_hash": "242f2cc5506ace64f85d85d12bd6f72c"
+    },
+    {
+      "label": "Afet İşleri ve Risk Yönetimi Müdürlüğü",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Mudurluk_AfetRisk.txt",
+      "community": 1125,
+      "norm_label": "afet i̇şleri ve risk yönetimi müdürlüğü",
+      "id": "kurumsal_mudurluk_afetrisk",
+      "community_name": "Kurumsal",
+      "icerik_hash": "36893ddc58975e72127bd6c91b9be666"
+    },
+    {
+      "label": "Basın, Yayın ve Halkla İlişkiler Müdürlüğü",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Mudurluk_BasinYayinHalkla.txt",
+      "community": 1126,
+      "norm_label": "basın, yayın ve halkla i̇lişkiler müdürlüğü",
+      "id": "kurumsal_mudurluk_basinyayinhalkla",
+      "community_name": "Kurumsal",
+      "icerik_hash": "027b7504e48b37cffbf403e114372f03"
+    },
+    {
+      "label": "Bilgi İşlem Müdürlüğü",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Mudurluk_BilgiIslem.txt",
+      "community": 1127,
+      "norm_label": "bilgi i̇şlem müdürlüğü",
+      "id": "kurumsal_mudurluk_bilgiislem",
+      "community_name": "Kurumsal",
+      "icerik_hash": "9af439857459ea7b09345a0bf7f1f72c"
+    },
+    {
+      "label": "Destek Hizmetleri Müdürlüğü",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Mudurluk_DestekHizmetleri.txt",
+      "community": 1128,
+      "norm_label": "destek hizmetleri müdürlüğü",
+      "id": "kurumsal_mudurluk_destekhizmetleri",
+      "community_name": "Kurumsal",
+      "icerik_hash": "353e7622d833484a280f0e42e9c32a91"
+    },
+    {
+      "label": "Fen İşleri Müdürlüğü",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Mudurluk_FenIsleri.txt",
+      "community": 1129,
+      "norm_label": "fen i̇şleri müdürlüğü",
+      "id": "kurumsal_mudurluk_fenisleri",
+      "community_name": "Kurumsal",
+      "icerik_hash": "fbaa5aa5caed3aab7d4599fdd5162a07"
+    },
+    {
+      "label": "Gelirler Müdürlüğü",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Mudurluk_Gelirler.txt",
+      "community": 1130,
+      "norm_label": "gelirler müdürlüğü",
+      "id": "kurumsal_mudurluk_gelirler",
+      "community_name": "Kurumsal",
+      "icerik_hash": "ff4b1ef53eef480d4f5eef2de294a52d"
+    },
+    {
+      "label": "Gençlik ve Spor Hizmetleri Müdürlüğü",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Mudurluk_GenclikSpor.txt",
+      "community": 1131,
+      "norm_label": "gençlik ve spor hizmetleri müdürlüğü",
+      "id": "kurumsal_mudurluk_genclikspor",
+      "community_name": "Kurumsal",
+      "icerik_hash": "61bc99b1293e363cc434cdd6d7d09d16"
+    },
+    {
+      "label": "Hukuk İşleri Müdürlüğü",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Mudurluk_HukukIsleri.txt",
+      "community": 1132,
+      "norm_label": "hukuk i̇şleri müdürlüğü",
+      "id": "kurumsal_mudurluk_hukukisleri",
+      "community_name": "Kurumsal",
+      "icerik_hash": "6afafddbc5da3f22a8ceaa6afa7f88e6"
+    },
+    {
+      "label": "İklim Değişikliği ve Sıfır Atık Müdürlüğü",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Mudurluk_IklimSifirAtik.txt",
+      "community": 1133,
+      "norm_label": "i̇klim değişikliği ve sıfır atık müdürlüğü",
+      "id": "kurumsal_mudurluk_iklimsifiratik",
+      "community_name": "Kurumsal",
+      "icerik_hash": "21fe9969ec511676dd86d1579f88c3bc"
+    },
+    {
+      "label": "İmar ve Şehircilik Müdürlüğü",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Mudurluk_ImarSehircilik.txt",
+      "community": 1134,
+      "norm_label": "i̇mar ve şehircilik müdürlüğü",
+      "id": "kurumsal_mudurluk_imarsehircilik",
+      "community_name": "Kurumsal",
+      "icerik_hash": "6e91f8376d3cabb7dcf4ed1544ccc168"
+    },
+    {
+      "label": "İnsan Kaynakları ve Eğitim Müdürlüğü",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Mudurluk_InsanKaynaklariEgitim.txt",
+      "community": 1135,
+      "norm_label": "i̇nsan kaynakları ve eğitim müdürlüğü",
+      "id": "kurumsal_mudurluk_insankaynaklariegitim",
+      "community_name": "Kurumsal",
+      "icerik_hash": "3233cd0edf9bf6ac6961d2fcaae38e09"
+    },
+    {
+      "label": "İşletme ve İştirakler Müdürlüğü",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Mudurluk_IsletmeIstirakler.txt",
+      "community": 1136,
+      "norm_label": "i̇şletme ve i̇ştirakler müdürlüğü",
+      "id": "kurumsal_mudurluk_isletmeistirakler",
+      "community_name": "Kurumsal",
+      "icerik_hash": "32e68ef1325d7e82f70247eb93b7f1ee"
+    },
+    {
+      "label": "Kentsel Tasarım Müdürlüğü",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Mudurluk_KentselTasarim.txt",
+      "community": 1137,
+      "norm_label": "kentsel tasarım müdürlüğü",
+      "id": "kurumsal_mudurluk_kentseltasarim",
+      "community_name": "Kurumsal",
+      "icerik_hash": "08010d05eee45c4d7fd73526f670fdbc"
+    },
+    {
+      "label": "Kültür, Sanat ve Sosyal İşler Müdürlüğü",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Mudurluk_KulturSanatSosyal.txt",
+      "community": 1138,
+      "norm_label": "kültür, sanat ve sosyal i̇şler müdürlüğü",
+      "id": "kurumsal_mudurluk_kultursanatsosyal",
+      "community_name": "Kurumsal",
+      "icerik_hash": "a72999a98a275036acec9508240bb774"
+    },
+    {
+      "label": "Mali Hizmetler Müdürlüğü",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Mudurluk_MaliHizmetler.txt",
+      "community": 1139,
+      "norm_label": "mali hizmetler müdürlüğü",
+      "id": "kurumsal_mudurluk_malihizmetler",
+      "community_name": "Kurumsal",
+      "icerik_hash": "864afb9787554c97fe68d6928823ad53"
+    },
+    {
+      "label": "Park ve Bahçeler Müdürlüğü",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Mudurluk_ParkBahceler.txt",
+      "community": 1140,
+      "norm_label": "park ve bahçeler müdürlüğü",
+      "id": "kurumsal_mudurluk_parkbahceler",
+      "community_name": "Kurumsal",
+      "icerik_hash": "aaa1c5c5add118e98b7621447a5d41ce"
+    },
+    {
+      "label": "Plan ve Proje Müdürlüğü",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Mudurluk_PlanProje.txt",
+      "community": 1141,
+      "norm_label": "plan ve proje müdürlüğü",
+      "id": "kurumsal_mudurluk_planproje",
+      "community_name": "Kurumsal",
+      "icerik_hash": "065b57b19838f64bd758a5b14a3b5609"
+    },
+    {
+      "label": "Ruhsat ve Denetim Müdürlüğü",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Mudurluk_RuhsatDenetim.txt",
+      "community": 1142,
+      "norm_label": "ruhsat ve denetim müdürlüğü",
+      "id": "kurumsal_mudurluk_ruhsatdenetim",
+      "community_name": "Kurumsal",
+      "icerik_hash": "622aed69f738b12f9eab8444019a8aba"
+    },
+    {
+      "label": "Sağlık İşleri Müdürlüğü",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Mudurluk_SaglikIsleri.txt",
+      "community": 1143,
+      "norm_label": "sağlık i̇şleri müdürlüğü",
+      "id": "kurumsal_mudurluk_saglikisleri",
+      "community_name": "Kurumsal",
+      "icerik_hash": "28171e3ee677301cd639b31ddf14be29"
+    },
+    {
+      "label": "Sosyal Hizmetler Müdürlüğü",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Mudurluk_SosyalHizmetler.txt",
+      "community": 1144,
+      "norm_label": "sosyal hizmetler müdürlüğü",
+      "id": "kurumsal_mudurluk_sosyalhizmetler",
+      "community_name": "Kurumsal",
+      "icerik_hash": "1741885fe61c4c6c8a2261a10bf1b301"
+    },
+    {
+      "label": "Strateji Geliştirme Müdürlüğü",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Mudurluk_StratejiGelistirme.txt",
+      "community": 1145,
+      "norm_label": "strateji geliştirme müdürlüğü",
+      "id": "kurumsal_mudurluk_stratejigelistirme",
+      "community_name": "Kurumsal",
+      "icerik_hash": "15afb7442f4c1913153fb05a86544997"
+    },
+    {
+      "label": "Temizlik İşleri Müdürlüğü",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Mudurluk_TemizlikIsleri.txt",
+      "community": 1146,
+      "norm_label": "temizlik i̇şleri müdürlüğü",
+      "id": "kurumsal_mudurluk_temizlikisleri",
+      "community_name": "Kurumsal",
+      "icerik_hash": "3f5a31749834d401de3105e1bec17ea7"
+    },
+    {
+      "label": "Ulaşım Hizmetleri Müdürlüğü",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Mudurluk_UlasimHizmetleri.txt",
+      "community": 1147,
+      "norm_label": "ulaşım hizmetleri müdürlüğü",
+      "id": "kurumsal_mudurluk_ulasimhizmetleri",
+      "community_name": "Kurumsal",
+      "icerik_hash": "5955af68356d0354c657524015a33cf6"
+    },
+    {
+      "label": "Veteriner İşleri Müdürlüğü",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Mudurluk_VeterinerIsleri.txt",
+      "community": 1148,
+      "norm_label": "veteriner i̇şleri müdürlüğü",
+      "id": "kurumsal_mudurluk_veterinerisleri",
+      "community_name": "Kurumsal",
+      "icerik_hash": "20da4d68cf45f25f1d6614c1638a05e8"
+    },
+    {
+      "label": "Zabıta Müdürlüğü",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Mudurluk_Zabita.txt",
+      "community": 1149,
+      "norm_label": "zabıta müdürlüğü",
+      "id": "kurumsal_mudurluk_zabita",
+      "community_name": "Kurumsal",
+      "icerik_hash": "12972fbd094afbeda0d61cb18cda13c5"
+    },
+    {
+      "label": "Gençlik Merkezi Yaz Okulu Başvuruları",
+      "file_type": "code",
+      "source_file": "KURS_Genclik_Merkezi_Yaz_Okulu.txt",
+      "community": 1150,
+      "norm_label": "gençlik merkezi yaz okulu başvuruları",
+      "id": "kurs_genclik_merkezi_yaz_okulu",
+      "community_name": "Kurs",
+      "icerik_hash": "0abaeb4e5c4ed97a6e8cae9913d67887"
+    },
+    {
+      "label": "Bağcılar Kariyer ve İstihdam Merkezi",
+      "file_type": "code",
+      "source_file": "KURS_Kariyer_Istihdam_Merkezi.txt",
+      "community": 1151,
+      "norm_label": "bağcılar kariyer ve i̇stihdam merkezi",
+      "id": "kurs_kariyer_istihdam_merkezi",
+      "community_name": "Hizmet",
+      "icerik_hash": "9b95f0ede1d04aea739f7eb946c82749"
+    },
+    {
+      "label": "Kentsel Dönüşüm Ön Başvurusu",
+      "file_type": "code",
+      "source_file": "KURS_Kentsel_Donusum_On_Basvuru.txt",
+      "community": 1152,
+      "norm_label": "kentsel dönüşüm ön başvurusu",
+      "id": "kurs_kentsel_donusum_on_basvuru",
+      "community_name": "Kurs",
+      "icerik_hash": "f2412f818ade58cf663682cc133298d3"
+    },
+    {
+      "label": "Spor Kursları Kayıt Başvurusu",
+      "file_type": "code",
+      "source_file": "KURS_Spor_Kurslari_Kayit_Basvuru.txt",
+      "community": 1153,
+      "norm_label": "spor kursları kayıt başvurusu",
+      "id": "kurs_spor_kurslari_kayit_basvuru",
+      "community_name": "Kurs",
+      "icerik_hash": "07f5d52b5fee66282bb06f9cb865336a"
+    },
+    {
+      "label": "Borç Ödeme",
+      "file_type": "code",
+      "source_file": "KURS_Borc_Odeme.txt",
+      "community": 1154,
+      "norm_label": "borç ödeme",
+      "id": "kurs_borc_odeme",
+      "community_name": "Hizmet",
+      "icerik_hash": "c1267f196d85ce7dd79746da5b4e8217"
+    },
+    {
+      "label": "Canlı Trafik Kameraları",
+      "file_type": "code",
+      "source_file": "KURS_Canli_Trafik_Kameralari.txt",
+      "community": 1155,
+      "norm_label": "canlı trafik kameraları",
+      "id": "kurs_canli_trafik_kameralari",
+      "community_name": "Hizmet",
+      "icerik_hash": "3f7d0b946fb68a791cefc8763a23c367"
+    },
+    {
+      "label": "Bilgi Evleri",
+      "file_type": "code",
+      "source_file": "KURS_Bilgi_Evleri.txt",
+      "community": 1156,
+      "norm_label": "bilgi evleri",
+      "id": "kurs_bilgi_evleri",
+      "community_name": "Hizmet",
+      "icerik_hash": "a99fc47357d304300a88f55fc7494e6b"
+    },
+    {
+      "label": "Bağcılar'a Dair",
+      "file_type": "code",
+      "source_file": "KURS_Bagcilara_Dair_Genel.txt",
+      "community": 1157,
+      "norm_label": "bağcılar'a dair",
+      "id": "kurs_bagcilara_dair_genel",
+      "community_name": "Hizmet",
+      "icerik_hash": "8867f9083b6fa3be535c74ce57024ad9"
+    },
+    {
+      "label": "Kurucu Belediye Başkanı Feyzullah Kıyıklık",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Kurucu_Belediye_Baskani.txt",
+      "community": 1158,
+      "norm_label": "kurucu belediye başkanı feyzullah kıyıklık",
+      "id": "kurumsal_kurucu_belediye_baskani",
+      "community_name": "Kurumsal",
+      "icerik_hash": "c26f5202c0736baa02b9a7be2030cf02"
+    },
+    {
+      "label": "Bağcılar Nüfus Müdürlüğü",
+      "file_type": "code",
+      "source_file": "KURS_Bagcilar_Nufus_Mudurlugu.txt",
+      "community": 1159,
+      "norm_label": "bağcılar nüfus müdürlüğü",
+      "id": "kurs_bagcilar_nufus_mudurlugu",
+      "community_name": "Hizmet",
+      "icerik_hash": "bb58f3e31b47e60ea4126fc7892e86dc"
+    },
+    {
+      "label": "Kamu Kurumları",
+      "file_type": "code",
+      "source_file": "KURS_Kamu_Kurumlari_Genel.txt",
+      "community": 1160,
+      "norm_label": "kamu kurumları",
+      "id": "kurs_kamu_kurumlari_genel",
+      "community_name": "Hizmet",
+      "icerik_hash": "4cf8ad379212255dac472fd9530f14dd"
+    },
+    {
+      "label": "Bağcılar Mal Müdürlüğü",
+      "file_type": "code",
+      "source_file": "KURS_Bagcilar_Mal_Mudurlugu.txt",
+      "community": 1397,
+      "norm_label": "bağcılar mal müdürlüğü",
+      "id": "kurs_bagcilar_mal_mudurlugu",
+      "community_name": "Hizmet",
+      "icerik_hash": "5361ac83ad15e06aadf92e7bfab81554"
+    },
+    {
+      "label": "Bağcılar Tapu ve Kadastro Müdürlüğü",
+      "file_type": "code",
+      "source_file": "KURS_Bagcilar_Tapu_Kadastro.txt",
+      "community": 1398,
+      "norm_label": "bağcılar tapu ve kadastro müdürlüğü",
+      "id": "kurs_bagcilar_tapu_kadastro",
+      "community_name": "Hizmet",
+      "icerik_hash": "99aef8f04209d4b13df74f51bd3023e3"
+    },
+    {
+      "label": "Bağcılar İlçe Müftülüğü",
+      "file_type": "code",
+      "source_file": "KURS_Bagcilar_Ilce_Muftulugu.txt",
+      "community": 1618,
+      "norm_label": "bağcılar i̇lçe müftülüğü",
+      "id": "kurs_bagcilar_ilce_muftulugu",
+      "community_name": "Hizmet",
+      "icerik_hash": "243faefd95febe0d39ed875c5494ecb5"
+    },
+    {
+      "label": "Bağcılar İlçe Sağlık Müdürlüğü",
+      "file_type": "code",
+      "source_file": "KURS_Bagcilar_Ilce_Saglik_Mudurlugu.txt",
+      "community": 1619,
+      "norm_label": "bağcılar i̇lçe sağlık müdürlüğü",
+      "id": "kurs_bagcilar_ilce_saglik_mudurlugu",
+      "community_name": "Hizmet",
+      "icerik_hash": "731d1c7d9c4da5ac2ee079c48e261263"
+    },
+    {
+      "label": "Bağcılar SGK",
+      "file_type": "code",
+      "source_file": "KURS_Bagcilar_SGK.txt",
+      "community": 1620,
+      "norm_label": "bağcılar sgk",
+      "id": "kurs_bagcilar_sgk",
+      "community_name": "Hizmet",
+      "icerik_hash": "9ff27a34f926532f6723a1a649c9fb66"
+    },
+    {
+      "label": "Kütüphane Randevu",
+      "file_type": "code",
+      "source_file": "KURS_Kutuphane_Randevu.txt",
+      "community": 1621,
+      "norm_label": "kütüphane randevu",
+      "id": "kurs_kutuphane_randevu",
+      "community_name": "Hizmet",
+      "icerik_hash": "413934917bb59ed10b0c63118686405d"
+    },
+    {
+      "label": "Muhtarlar",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Muhtarlar.txt",
+      "community": 1622,
+      "norm_label": "muhtarlar",
+      "id": "kurumsal_muhtarlar",
+      "community_name": "Kurumsal",
+      "icerik_hash": "a6fcb485dafc1d0b7c56e6971938c245"
+    },
+    {
+      "label": "Bağcılar Haritası",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Bagcilar_Haritasi.txt",
+      "community": 1623,
+      "norm_label": "bağcılar haritası",
+      "id": "kurumsal_bagcilar_haritasi",
+      "community_name": "Kurumsal",
+      "icerik_hash": "fbb1b17bfe1c4cfe6c1a3c2238914e05"
+    },
+    {
+      "label": "İlçemizin Sosyal Yapısı",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Ilcemizin_Sosyal_Yapisi.txt",
+      "community": 1624,
+      "norm_label": "i̇lçemizin sosyal yapısı",
+      "id": "kurumsal_ilcemizin_sosyal_yapisi",
+      "community_name": "Kurumsal",
+      "icerik_hash": "be4fd1f50621a35509ce8de085cb395f"
+    },
+    {
+      "label": "İlçemizin Tarihi",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Ilcemizin_Tarihi.txt",
+      "community": 1625,
+      "norm_label": "i̇lçemizin tarihi",
+      "id": "kurumsal_ilcemizin_tarihi",
+      "community_name": "Kurumsal",
+      "icerik_hash": "b4b48fc7b353c06f22c9c2cd732c0800"
+    },
+    {
+      "label": "Coğrafi Konumumuz",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Cografi_Konumumuz.txt",
+      "community": 1626,
+      "norm_label": "coğrafi konumumuz",
+      "id": "kurumsal_cografi_konumumuz",
+      "community_name": "Kurumsal",
+      "icerik_hash": "4b5f5b85e9496c014fcedc9f27c83925"
+    },
+    {
+      "label": "Hizmet Birimleri",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Hizmet_Birimleri.txt",
+      "community": 1627,
+      "norm_label": "hizmet birimleri",
+      "id": "kurumsal_hizmet_birimleri",
+      "community_name": "Kurumsal",
+      "icerik_hash": "e72214dabf87cd3994b4daf95cfb492c"
+    },
+    {
+      "label": "İlçemizi Tanıyalım",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Ilcemizi_Taniyalim.txt",
+      "community": 1628,
+      "norm_label": "i̇lçemizi tanıyalım",
+      "id": "kurumsal_ilcemizi_taniyalim",
+      "community_name": "Kurumsal",
+      "icerik_hash": "f23e0abe14ee5b02e3ad16af7860467e"
+    },
+    {
+      "label": "Kardeş Belediyeler",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Kardes_Belediyeler.txt",
+      "community": 1629,
+      "norm_label": "kardeş belediyeler",
+      "id": "kurumsal_kardes_belediyeler",
+      "community_name": "Kurumsal",
+      "icerik_hash": "3413a4943eb57babd76fd8576decc80b"
+    },
+    {
+      "label": "Üye Olunan Birlikler",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Uye_Olunan_Birlikler.txt",
+      "community": 1630,
+      "norm_label": "üye olunan birlikler",
+      "id": "kurumsal_uye_olunan_birlikler",
+      "community_name": "Kurumsal",
+      "icerik_hash": "f251c5b447af46e64f5eb9eb96cad5a9"
+    },
+    {
+      "label": "Mahalle Kitapçıkları",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Mahalle_Kitapciklari.txt",
+      "community": 1631,
+      "norm_label": "mahalle kitapçıkları",
+      "id": "kurumsal_mahalle_kitapciklari",
+      "community_name": "Kurumsal",
+      "icerik_hash": "47ff76b40fbc516f70579fb94be22ade"
+    },
+    {
+      "label": "Bağcılar Kent Konseyi",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Bagcilar_Kent_Konseyi.txt",
+      "community": 1632,
+      "norm_label": "bağcılar kent konseyi",
+      "id": "kurumsal_bagcilar_kent_konseyi",
+      "community_name": "Kurumsal",
+      "icerik_hash": "f8342473335cfb26b243f18610dad8dc"
+    },
+    {
+      "label": "Misyon ve Vizyon",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Misyon_Vizyon.txt",
+      "community": 1633,
+      "norm_label": "misyon ve vizyon",
+      "id": "kurumsal_misyon_vizyon",
+      "community_name": "Kurumsal",
+      "icerik_hash": "b041733917cd4c82c9c4e3cba52947ab"
+    },
+    {
+      "label": "Belge Doğrulama",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Belge_Dogrulama.txt",
+      "community": 1647,
+      "norm_label": "belge doğrulama",
+      "id": "kurumsal_belge_dogrulama",
+      "community_name": "Hizmet",
+      "icerik_hash": "6e9fa4043a56c57cfe6096e7148ed0a7"
+    },
+    {
+      "label": "e-İmar",
+      "file_type": "code",
+      "source_file": "KURUMSAL_E_Imar.txt",
+      "community": 1648,
+      "norm_label": "e-i̇mar",
+      "id": "kurumsal_e_imar",
+      "community_name": "Hizmet",
+      "icerik_hash": "260d7b71df3744b3fba70ab69cc6179e"
+    },
+    {
+      "label": "Hayvan Sahiplendirme",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Hayvan_Sahiplendirme.txt",
+      "community": 1649,
+      "norm_label": "hayvan sahiplendirme",
+      "id": "kurumsal_hayvan_sahiplendirme",
+      "community_name": "Hizmet",
+      "icerik_hash": "341f6a1df5d1e6589abb9c74bc5a18a5"
+    },
+    {
+      "label": "İhbarnamelerim",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Ihbarnamelerim.txt",
+      "community": 1650,
+      "norm_label": "i̇hbarnamelerim",
+      "id": "kurumsal_ihbarnamelerim",
+      "community_name": "Hizmet",
+      "icerik_hash": "6241cff669eea545f46109a7de9770e9"
+    },
+    {
+      "label": "Makbuz Doğrulama",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Makbuz_Dogrulama.txt",
+      "community": 1651,
+      "norm_label": "makbuz doğrulama",
+      "id": "kurumsal_makbuz_dogrulama",
+      "community_name": "Hizmet",
+      "icerik_hash": "f01884b3ca1f652b4e3cafa8dc713a6d"
+    },
+    {
+      "label": "Adres Tespit Başvurusu",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Adres_Tespit_Basvurusu.txt",
+      "community": 1652,
+      "norm_label": "adres tespit başvurusu",
+      "id": "kurumsal_adres_tespit_basvurusu",
+      "community_name": "Hizmet",
+      "icerik_hash": "bb34bbc0e8417e440b4957969f7b2655"
+    },
+    {
+      "label": "Gayrisıhhi İşyeri Ruhsat Başvurusu",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Gayrisihhi_Isyeri_Ruhsat_Basvurusu.txt",
+      "community": 1653,
+      "norm_label": "gayrisıhhi i̇şyeri ruhsat başvurusu",
+      "id": "kurumsal_gayrisihhi_isyeri_ruhsat_basvurusu",
+      "community_name": "Hizmet",
+      "icerik_hash": "7f6c4287a4eb6ab8c7f6e7fc85dc6446"
+    },
+    {
+      "label": "Hamam Talebi",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Hamam_Talebi.txt",
+      "community": 1654,
+      "norm_label": "hamam talebi",
+      "id": "kurumsal_hamam_talebi",
+      "community_name": "Hizmet",
+      "icerik_hash": "185e410672f629fe4a702d9fac6b323a"
+    },
+    {
+      "label": "Havuz Talepleri",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Havuz_Talepleri.txt",
+      "community": 1655,
+      "norm_label": "havuz talepleri",
+      "id": "kurumsal_havuz_talepleri",
+      "community_name": "Hizmet",
+      "icerik_hash": "3ead8cd963176a645880fadb0a3fdca1"
+    },
+    {
+      "label": "KVKK Kişisel Veri Başvurusu",
+      "file_type": "code",
+      "source_file": "KURUMSAL_KVKK_Kisisel_Veri_Basvurusu.txt",
+      "community": 1656,
+      "norm_label": "kvkk kişisel veri başvurusu",
+      "id": "kurumsal_kvkk_kisisel_veri_basvurusu",
+      "community_name": "Hizmet",
+      "icerik_hash": "686c5fc30ca16a95ae1170f04a1c4ec0"
+    },
+    {
+      "label": "Kapalı Çocuk Oyun Parkı",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Kapali_Cocuk_Oyun_Parki.txt",
+      "community": 1657,
+      "norm_label": "kapalı çocuk oyun parkı",
+      "id": "kurumsal_kapali_cocuk_oyun_parki",
+      "community_name": "Tesis",
+      "icerik_hash": "e865512687331f8ad1dba0204fdf2d0a"
+    },
+    {
+      "label": "Sıhhi İşyeri Ruhsat Başvurusu",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Sihhi_Isyeri_Ruhsat_Basvurusu.txt",
+      "community": 1658,
+      "norm_label": "sıhhi i̇şyeri ruhsat başvurusu",
+      "id": "kurumsal_sihhi_isyeri_ruhsat_basvurusu",
+      "community_name": "Hizmet",
+      "icerik_hash": "c5b77af07f4e080b3ccf8a4c9fdf4807"
+    },
+    {
+      "label": "Yenidoğan Hediye Paketi",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Yenidogan_Hediye_Paketi.txt",
+      "community": 1659,
+      "norm_label": "yenidoğan hediye paketi",
+      "id": "kurumsal_yenidogan_hediye_paketi",
+      "community_name": "Hizmet",
+      "icerik_hash": "c1a6a2cc632d86c98d58dcd785844fc4"
+    },
+    {
+      "label": "Arsa Bildirimi",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Arsa_Bildirimi.txt",
+      "community": 1660,
+      "norm_label": "arsa bildirimi",
+      "id": "kurumsal_arsa_bildirimi",
+      "community_name": "Hizmet",
+      "icerik_hash": "f0086c970677eeb0d877b16ae0c27a65"
+    },
+    {
+      "label": "Bilirkişi Dosya İnceleme Başvurusu",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Bilirkisi_Dosya_Inceleme_Basvurusu.txt",
+      "community": 1661,
+      "norm_label": "bilirkişi dosya i̇nceleme başvurusu",
+      "id": "kurumsal_bilirkisi_dosya_inceleme_basvurusu",
+      "community_name": "Hizmet",
+      "icerik_hash": "f52d371dc8f7d5f2f970bb043e4abdf7"
+    },
+    {
+      "label": "Bina Bildirimi",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Bina_Bildirimi.txt",
+      "community": 1662,
+      "norm_label": "bina bildirimi",
+      "id": "kurumsal_bina_bildirimi",
+      "community_name": "Hizmet",
+      "icerik_hash": "76fa970191ddadc3e2d064c711af274d"
+    },
+    {
+      "label": "Çevre Temizlik Bildirimi",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Cevre_Temizlik_Bildirimi.txt",
+      "community": 1663,
+      "norm_label": "çevre temizlik bildirimi",
+      "id": "kurumsal_cevre_temizlik_bildirimi",
+      "community_name": "Hizmet",
+      "icerik_hash": "7553c370db94bb98648c94048b82ec24"
+    },
+    {
+      "label": "Dosya İnceleme Uygulaması Kullanım Kılavuzu",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Dosya_Inceleme_Kullanim_Kilavuzu.txt",
+      "community": 1664,
+      "norm_label": "dosya i̇nceleme uygulaması kullanım kılavuzu",
+      "id": "kurumsal_dosya_inceleme_kullanim_kilavuzu",
+      "community_name": "Hizmet",
+      "icerik_hash": "b5a1a6d762cf58c0a13ce403dbd3166c"
+    },
+    {
+      "label": "e-Başvuru",
+      "file_type": "code",
+      "source_file": "KURUMSAL_E_Basvuru.txt",
+      "community": 1665,
+      "norm_label": "e-başvuru",
+      "id": "kurumsal_e_basvuru",
+      "community_name": "Hizmet",
+      "icerik_hash": "ffab585dfd479eb079c0c589979b3757"
+    },
+    {
+      "label": "e-Beyan",
+      "file_type": "code",
+      "source_file": "KURUMSAL_E_Beyan.txt",
+      "community": 1666,
+      "norm_label": "e-beyan",
+      "id": "kurumsal_e_beyan",
+      "community_name": "Hizmet",
+      "icerik_hash": "9ac5f97ded7ebb5a2ff07c962da17f5f"
+    },
+    {
+      "label": "e-Bilgi",
+      "file_type": "code",
+      "source_file": "KURUMSAL_E_Bilgi.txt",
+      "community": 1667,
+      "norm_label": "e-bilgi",
+      "id": "kurumsal_e_bilgi",
+      "community_name": "Hizmet",
+      "icerik_hash": "d6a729b760bb8fcca20f2f52b8daece5"
+    },
+    {
+      "label": "e-Eksper",
+      "file_type": "code",
+      "source_file": "KURUMSAL_E_Eksper.txt",
+      "community": 1668,
+      "norm_label": "e-eksper",
+      "id": "kurumsal_e_eksper",
+      "community_name": "Hizmet",
+      "icerik_hash": "ad619184c64895093c4e0934e5e53165"
+    },
+    {
+      "label": "Eksper Dosya İnceleme Başvurusu",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Eksper_Dosya_Inceleme_Basvurusu.txt",
+      "community": 1669,
+      "norm_label": "eksper dosya i̇nceleme başvurusu",
+      "id": "kurumsal_eksper_dosya_inceleme_basvurusu",
+      "community_name": "Hizmet",
+      "icerik_hash": "c677e78e9a90448050a42f83ba7a6f97"
+    },
+    {
+      "label": "İlan Reklam Bildirimi",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Ilan_Reklam_Bildirimi.txt",
+      "community": 1670,
+      "norm_label": "i̇lan reklam bildirimi",
+      "id": "kurumsal_ilan_reklam_bildirimi",
+      "community_name": "Hizmet",
+      "icerik_hash": "cf598a4cf67b2b4b588b011fafa13bf1"
+    },
+    {
+      "label": "e-Belediye Sık Sorulan Sorular",
+      "file_type": "code",
+      "source_file": "KURUMSAL_E_Belediye_Sik_Sorulan_Sorular.txt",
+      "community": 1671,
+      "norm_label": "e-belediye sık sorulan sorular",
+      "id": "kurumsal_e_belediye_sik_sorulan_sorular",
+      "community_name": "Hizmet",
+      "icerik_hash": "285df29e50b9344e738a32382b9c09b4"
+    },
+    {
+      "label": "e-Kütüphane",
+      "file_type": "code",
+      "source_file": "KURUMSAL_E_Kutuphane.txt",
+      "community": 1672,
+      "norm_label": "e-kütüphane",
+      "id": "kurumsal_e_kutuphane",
+      "community_name": "Hizmet",
+      "icerik_hash": "b36c722803bddba56cd6d10ab6a4f696"
+    },
+    {
+      "label": "Günlük Nikah Programı",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Gunluk_Nikah_Programi.txt",
+      "community": 1673,
+      "norm_label": "günlük nikah programı",
+      "id": "kurumsal_gunluk_nikah_programi",
+      "community_name": "Kurumsal",
+      "icerik_hash": "ec16cecec3501b042c315f495ea8dfec"
+    },
+    {
+      "label": "Halk Sarayı Nikah Salonu",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Halk_Sarayi_Nikah_Salonu.txt",
+      "community": 1674,
+      "norm_label": "halk sarayı nikah salonu",
+      "id": "kurumsal_halk_sarayi_nikah_salonu",
+      "community_name": "Kurumsal",
+      "icerik_hash": "268f6b8d187e152943889e4a9794d116"
+    },
+    {
+      "label": "İş Arayan Başvurusu",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Is_Arayan_Basvurusu.txt",
+      "community": 1675,
+      "norm_label": "i̇ş arayan başvurusu",
+      "id": "kurumsal_is_arayan_basvurusu",
+      "community_name": "Hizmet",
+      "icerik_hash": "3a278613db84f6a4b4352b80e2f29df8"
+    },
+    {
+      "label": "İşveren Başvurusu",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Isveren_Basvurusu.txt",
+      "community": 1676,
+      "norm_label": "i̇şveren başvurusu",
+      "id": "kurumsal_isveren_basvurusu",
+      "community_name": "Hizmet",
+      "icerik_hash": "d5c6d7503681e3d0cf8d9ed47a17c6bf"
+    },
+    {
+      "label": "Kentsel Dönüşüm Kira Taksit Bilgileri",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Kentsel_Donusum_Kira_Taksit_Bilgileri.txt",
+      "community": 1677,
+      "norm_label": "kentsel dönüşüm kira taksit bilgileri",
+      "id": "kurumsal_kentsel_donusum_kira_taksit_bilgileri",
+      "community_name": "Hizmet",
+      "icerik_hash": "8bd572cb067f8b4b37a2a71ed5ba5015"
+    },
+    {
+      "label": "Meclis Kararları",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Meclis_Kararlari.txt",
+      "community": 1678,
+      "norm_label": "meclis kararları",
+      "id": "kurumsal_meclis_kararlari",
+      "community_name": "Kurumsal",
+      "icerik_hash": "e0fea61fb831fd2434dce01580a092ec"
+    },
+    {
+      "label": "Belediye Encümeni",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Belediye_Encumeni.txt",
+      "community": 1679,
+      "norm_label": "belediye encümeni",
+      "id": "kurumsal_belediye_encumeni",
+      "community_name": "Kurumsal",
+      "icerik_hash": "547969e60d3ec3a4d55234379bc46f77"
+    },
+    {
+      "label": "Belediye Meclisi",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Belediye_Meclisi.txt",
+      "community": 1680,
+      "norm_label": "belediye meclisi",
+      "id": "kurumsal_belediye_meclisi",
+      "community_name": "Kurumsal",
+      "icerik_hash": "c1d544ab0c4a82cf316c1f4b67cf86c9"
+    },
+    {
+      "label": "Etik Komisyonu",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Etik_Komisyonu.txt",
+      "community": 1681,
+      "norm_label": "etik komisyonu",
+      "id": "kurumsal_etik_komisyonu",
+      "community_name": "Kurumsal",
+      "icerik_hash": "816dac84a4288c63a62a85225b30f482"
+    },
+    {
+      "label": "Faaliyet Raporları",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Faaliyet_Raporlari.txt",
+      "community": 1682,
+      "norm_label": "faaliyet raporları",
+      "id": "kurumsal_faaliyet_raporlari",
+      "community_name": "Kurumsal",
+      "icerik_hash": "017539414c68f6874c6e787d89d533e3"
+    },
+    {
+      "label": "Hizmet Standartları Tablosu",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Hizmet_Standartlari_Tablosu.txt",
+      "community": 1683,
+      "norm_label": "hizmet standartları tablosu",
+      "id": "kurumsal_hizmet_standartlari_tablosu",
+      "community_name": "Kurumsal",
+      "icerik_hash": "60534abe018507d67511086b1cd2c59a"
+    },
+    {
+      "label": "İş Sürekliliği Yönetim Politikası",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Is_Surekliligi_Yonetim_Politikasi.txt",
+      "community": 1684,
+      "norm_label": "i̇ş sürekliliği yönetim politikası",
+      "id": "kurumsal_is_surekliligi_yonetim_politikasi",
+      "community_name": "Kurumsal",
+      "icerik_hash": "ba1bae3c33ca78a2ad629a4a9c477a32"
+    },
+    {
+      "label": "Kalite Politikamız",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Kalite_Politikamiz.txt",
+      "community": 1685,
+      "norm_label": "kalite politikamız",
+      "id": "kurumsal_kalite_politikamiz",
+      "community_name": "Kurumsal",
+      "icerik_hash": "fbdab177f6e936ccb623f50f74770e62"
+    },
+    {
+      "label": "Mevzuat",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Mevzuat.txt",
+      "community": 1686,
+      "norm_label": "mevzuat",
+      "id": "kurumsal_mevzuat",
+      "community_name": "Kurumsal",
+      "icerik_hash": "de9baa60e9177102e31959c68f9d4c2a"
+    },
+    {
+      "label": "Sayıştay Raporları",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Sayistay_Raporlari.txt",
+      "community": 1687,
+      "norm_label": "sayıştay raporları",
+      "id": "kurumsal_sayistay_raporlari",
+      "community_name": "Kurumsal",
+      "icerik_hash": "f1f7ee39f971d540b3050763b0d83400"
+    },
+    {
+      "label": "Stratejik Plan",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Stratejik_Plan.txt",
+      "community": 1688,
+      "norm_label": "stratejik plan",
+      "id": "kurumsal_stratejik_plan",
+      "community_name": "Kurumsal",
+      "icerik_hash": "68341c12156a3148b4b778038e897725"
+    },
+    {
+      "label": "Vergi Takvimi",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Vergi_Takvimi.txt",
+      "community": 1689,
+      "norm_label": "vergi takvimi",
+      "id": "kurumsal_vergi_takvimi",
+      "community_name": "Kurumsal",
+      "icerik_hash": "6f017b82d13aa3ff1a0350b4ce66b230"
+    },
+    {
+      "label": "Vizyon Projelerimiz",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Vizyon_Projelerimiz.txt",
+      "community": 1690,
+      "norm_label": "vizyon projelerimiz",
+      "id": "kurumsal_vizyon_projelerimiz",
+      "community_name": "Kurumsal",
+      "icerik_hash": "2180309b8c3224db9ed36a0435b2b215"
+    },
+    {
+      "label": "2026-2027 Lise Staj Başvuruları Başladı",
+      "file_type": "code",
+      "source_file": "2026-2027_Lise_Staj_Başvuruları_Başladı.txt",
+      "community": 1691,
+      "norm_label": "2026-2027 lise staj başvuruları başladı",
+      "id": "2026_2027_lise_staj_ba_vurular_ba_lad",
+      "community_name": "Duyuru",
+      "icerik_hash": "696cd87ad2d629e9f2194a4d92ebcc7d"
+    },
+    {
+      "label": "Bağcılar İlçesi, Kirazlı Mahallesi, 3215 ada, 1 parsel, 2 parselin bir kısmı, 3199 ada, 4 parseller Plan Tadilatı hk.",
+      "file_type": "code",
+      "source_file": "Bağcılar_İlçesi__Kirazlı_Mahallesi__3215_ada__1_parsel__2_parselin_bir_kısmı__31.txt",
+      "community": 1692,
+      "norm_label": "bağcılar i̇lçesi, kirazlı mahallesi, 3215 ada, 1 parsel, 2 parselin bir kısmı, 3199 ada, 4 parseller plan tadilatı hk.",
+      "id": "ba_c_lar_i_l_esi_kirazl_mahallesi_3215_ada_1_parsel_2_parselin_bir_k_sm_31",
+      "community_name": "Duyuru",
+      "icerik_hash": "47f75cabe6cc55e9a85791444955101a"
+    },
+    {
+      "label": "Bağcılar Belediyesi Çalışma Saatleri",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Bagcilar_Belediyesi_Calisma_Saatleri.txt",
+      "community": 1693,
+      "norm_label": "bağcılar belediyesi çalışma saatleri",
+      "id": "kurumsal_bagcilar_belediyesi_calisma_saatleri",
+      "community_name": "Kurumsal",
+      "icerik_hash": "333c45250be1f3b678584b5e5235d947"
+    },
+    {
+      "label": "Bağcılar Belediyesi Hakkında Her Şey",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Bagcilar_Belediyesi_Hakkinda.txt",
+      "community": 1694,
+      "norm_label": "bağcılar belediyesi hakkında her şey",
+      "id": "kurumsal_bagcilar_belediyesi_hakkinda",
+      "community_name": "Kurumsal",
+      "icerik_hash": "718a09ff3a445f0cff409fd4e3374be3"
+    },
+    {
+      "label": "Bağcılar Belediyesine Nasıl Giderim",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Bagcilar_Belediyesine_Nasil_Giderim.txt",
+      "community": 1695,
+      "norm_label": "bağcılar belediyesine nasıl giderim",
+      "id": "kurumsal_bagcilar_belediyesine_nasil_giderim",
+      "community_name": "Kurumsal",
+      "icerik_hash": "84a461efa6d841098ab96dc095bd483b"
+    },
+    {
+      "label": "Belediye Otoparkı Ücret Bilgisi",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Belediye_Otoparki.txt",
+      "community": 1696,
+      "norm_label": "belediye otoparkı ücret bilgisi",
+      "id": "kurumsal_belediye_otoparki",
+      "community_name": "Hizmet",
+      "icerik_hash": "59302c1b8c35176d99698851e7fe5733"
+    },
+    {
+      "label": "Beyaz Masa",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Beyaz_Masa.txt",
+      "community": 1697,
+      "norm_label": "beyaz masa",
+      "id": "kurumsal_beyaz_masa",
+      "community_name": "Hizmet",
+      "icerik_hash": "d130fe2815aaeda283e27bbba93d69b0"
+    },
+    {
+      "label": "Kaçak Yapı İhbarı",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Kacak_Yapi_Ihbari.txt",
+      "community": 1698,
+      "norm_label": "kaçak yapı i̇hbarı",
+      "id": "kurumsal_kacak_yapi_ihbari",
+      "community_name": "Hizmet",
+      "icerik_hash": "18302c751beaebe6b55322ddc0bec758"
+    },
+    {
+      "label": "Medikal Yardım",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Medikal_Yardim.txt",
+      "community": 1699,
+      "norm_label": "medikal yardım",
+      "id": "kurumsal_medikal_yardim",
+      "community_name": "Hizmet",
+      "icerik_hash": "1548680aa827bf3e2a4136b8c0607ffe"
+    },
+    {
+      "label": "Sünnet Desteği",
+      "file_type": "code",
+      "source_file": "KURUMSAL_Sunnet_Destegi.txt",
+      "community": 1700,
+      "norm_label": "sünnet desteği",
+      "id": "kurumsal_sunnet_destegi",
+      "community_name": "Hizmet",
+      "icerik_hash": "c59cb8159ba7c7f7144075ae72fa262d"
+    },
+    {
+      "label": "2026-2027 Eğitim Öğretim Yılı Kırtasiye Desteği",
+      "file_type": "code",
+      "source_file": "2026-2027_Eğitim_Öğretim_Yılı_Kırtasiye_Desteği.txt",
+      "community": 1701,
+      "norm_label": "2026-2027 eğitim öğretim yılı kırtasiye desteği",
+      "id": "2026_2027_e_itim_retim_y_l_k_rtasiye_deste_i",
+      "community_name": "Duyuru",
+      "icerik_hash": "360988d30aa31ae90db728111856d99f"
+    },
+    {
+      "label": "15 Temmuz Ruhu Bağcılar’da Yaşatıldı",
+      "file_type": "code",
+      "source_file": "HABER_15_Temmuz_Ruhu_Bağcılar_da_Yaşatıldı.txt",
+      "community": 1702,
+      "norm_label": "15 temmuz ruhu bağcılar’da yaşatıldı",
+      "id": "haber_15_temmuz_ruhu_ba_c_lar_da_ya_at_ld",
+      "community_name": "Haber",
+      "icerik_hash": "efc843538343b256f8a7cf6fb628fb5a"
+    },
+    {
+      "label": "Haziran - Temmuz 2026 Hizmet Bülteni",
+      "file_type": "code",
+      "source_file": "YAYIN_Haziran_-_Temmuz_2026_Hizmet_Bülteni.txt",
+      "community": 1703,
+      "norm_label": "haziran - temmuz 2026 hizmet bülteni",
+      "id": "yayin_haziran_temmuz_2026_hizmet_b_lteni",
+      "community_name": "Yayin",
+      "icerik_hash": "dc14f84cd9c855f827362f487c190417"
+    },
+    {
+      "label": "Bağcılar Belediyesi’nin Dijital Şehir İkizi Platformu, Uluslararası “İyi Uygulama” Olarak Yayımlandı",
+      "file_type": "code",
+      "source_file": "HABER_Bağcılar_Belediyesi_nin_Dijital_Şehir_İkizi_Platformu__Uluslararası__İyi_Uygulam.txt",
+      "community": 1704,
+      "norm_label": "bağcılar belediyesi’nin dijital şehir i̇kizi platformu, uluslararası “i̇yi uygulama” olarak yayımlandı",
+      "id": "haber_ba_c_lar_belediyesi_nin_dijital_ehir_i_kizi_platformu_uluslararas_i_yi_uygulam",
+      "community_name": "Haber",
+      "icerik_hash": "c9a2b8632d80bc265c30abaf9d91bbde"
+    },
+    {
+      "label": "Bağcılar Sporcusu Fatma Gürbüzer Bronz Madalya Kazandı",
+      "file_type": "code",
+      "source_file": "HABER_Bağcılar_Sporcusu_Fatma_Gürbüzer_Bronz_Madalya_Kazandı.txt",
+      "community": 1705,
+      "norm_label": "bağcılar sporcusu fatma gürbüzer bronz madalya kazandı",
+      "id": "haber_ba_c_lar_sporcusu_fatma_g_rb_zer_bronz_madalya_kazand",
+      "community_name": "Haber",
+      "icerik_hash": "e3a72b9e5434cc5549e4e582f87ad617"
+    },
+    {
+      "label": "Bağ Burger Meydan",
+      "file_type": "code",
+      "source_file": "TESIS_Bağ_Burger_Meydan.txt",
+      "community": 1706,
+      "norm_label": "bağ burger meydan",
+      "id": "tesis_ba_burger_meydan",
+      "community_name": "Tesis",
+      "icerik_hash": "98ef5d3a5a3f054f9e1f3c72ed1fe257"
+    },
+    {
+      "label": "Bağcılar ilçesi - Kazım Karabekir Mahallesi, 283. (SOKAK), No: 23 adresinde yer alan riskli yapı hk. açık artırma usulü hisse satış ilanı",
+      "file_type": "code",
+      "source_file": "Bağcılar_ilçesi_-_Kazım_Karabekir_Mahallesi__283___SOKAK___No__23_adresinde_yer_.txt",
+      "community": 1751,
+      "norm_label": "bağcılar ilçesi - kazım karabekir mahallesi, 283. (sokak), no: 23 adresinde yer alan riskli yapı hk. açık artırma usulü hisse satış ilanı",
+      "id": "ba_c_lar_il_esi_kaz_m_karabekir_mahallesi_283_sokak_no_23_adresinde_yer",
+      "community_name": "Duyuru",
+      "icerik_hash": "e03e119692fec69ee79a9eb68d5ee155"
+    },
+    {
+      "label": "Bağcılar ilçesi - Yenimahalle Mahallesi, 1513. (SOKAK), No: 9 adresinde yer alan riskli yapı hk. açık artırma usulü hisse satış ilanı",
+      "file_type": "code",
+      "source_file": "Bağcılar_ilçesi_-_Yenimahalle_Mahallesi__1513___SOKAK___No__9_adresinde_yer_alan.txt",
+      "community": 1752,
+      "norm_label": "bağcılar ilçesi - yenimahalle mahallesi, 1513. (sokak), no: 9 adresinde yer alan riskli yapı hk. açık artırma usulü hisse satış ilanı",
+      "id": "ba_c_lar_il_esi_yenimahalle_mahallesi_1513_sokak_no_9_adresinde_yer_alan",
+      "community_name": "Duyuru",
+      "icerik_hash": "67ac94a88e280e67ca224f957a75332d"
+    },
+    {
+      "label": "Kırtasiye Başvuru Formu",
+      "file_type": "code",
+      "source_file": "KURS_Kirtasiye_Basvuru_Formu.txt",
+      "community": 2097,
+      "norm_label": "kırtasiye başvuru formu",
+      "id": "kurs_kirtasiye_basvuru_formu",
+      "community_name": "Hizmet",
+      "icerik_hash": "20d459de885e8155b0fd1175d80117c0"
+    },
+    {
+      "label": "Bağcılar’da 7 Bin 600 Asansör Denetleniyor",
+      "file_type": "code",
+      "source_file": "HABER_Bağcılar_da_7_Bin_600_Asansör_Denetleniyor.txt",
+      "community": 2098,
+      "norm_label": "bağcılar’da 7 bin 600 asansör denetleniyor",
+      "id": "haber_ba_c_lar_da_7_bin_600_asans_r_denetleniyor",
+      "community_name": "Haber",
+      "icerik_hash": "758d3e01c1dbbd18dd5b29ac408d0980"
+    },
+    {
+      "label": "Bulgaristanlı Öğrenciler Bağcılar’ın Misafiri Oldu",
+      "file_type": "code",
+      "source_file": "HABER_Bulgaristanlı_Öğrenciler_Bağcılar_ın_Misafiri_Oldu.txt",
+      "community": 2099,
+      "norm_label": "bulgaristanlı öğrenciler bağcılar’ın misafiri oldu",
+      "id": "haber_bulgaristanl_renciler_ba_c_lar_n_misafiri_oldu",
+      "community_name": "Haber",
+      "icerik_hash": "16f2db5a6286b41b9389183e0eae8792"
+    },
+    {
+      "label": "Mahallenin Yıldızları-3 ve Yaz Okulu’na Görkemli Kapanış",
+      "file_type": "code",
+      "source_file": "HABER_Mahallenin_Yıldızları-3_ve_Yaz_Okulu_na_Görkemli_Kapanış.txt",
+      "community": 2100,
+      "norm_label": "mahallenin yıldızları-3 ve yaz okulu’na görkemli kapanış",
+      "id": "haber_mahallenin_y_ld_zlar_3_ve_yaz_okulu_na_g_rkemli_kapan",
+      "community_name": "Haber",
+      "icerik_hash": "2fd70fcfb31e5d6e8a3a2b9922ac22aa"
+    },
+    {
+      "label": "Çocuklar, Açık Hava Kütüphanesi’nde Kitap Okuma Alışkanlığı Kazanıyorlar",
+      "file_type": "code",
+      "source_file": "HABER_Çocuklar__Açık_Hava_Kütüphanesi_nde_Kitap_Okuma_Alışkanlığı_Kazanıyorlar.txt",
+      "community": 2101,
+      "norm_label": "çocuklar, açık hava kütüphanesi’nde kitap okuma alışkanlığı kazanıyorlar",
+      "id": "haber_ocuklar_a_k_hava_k_t_phanesi_nde_kitap_okuma_al_kanl_kazan_yorlar",
+      "community_name": "Haber",
+      "icerik_hash": "3a7740eb369681eae785bfe839e8c204"
+    }
+  ],
+  "links": [
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 1.0,
+      "source_file": "100_Yıllık_Emanet_Cumhuriyet.txt",
+      "source": "100_yillik_emanet_cumhuriyet_yarismasi",
+      "target": "bagcilar_belediyesi"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Bağcılar_Belediyesi_Yeni_Binası_Hizmete_Girdi.txt",
+      "source": "bagcilar_belediyesi_yeni_hizmet_binasi",
+      "target": "lokman_cagirici"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 1.0,
+      "source_file": "15_Temmuz_Etkinlik_Programı.txt",
+      "source": "15_temmuz_etkinlik_programi",
+      "target": "bagcilar_belediyesi"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Basın_Açıklaması_-_Albayraklar_Sitesi.txt",
+      "source": "albayraklar_sitesi_basin_aciklamasi",
+      "target": "bagcilar_belediyesi"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Asburçaklar_Sitesi_Hakkında_Basın_Duyurusu.txt",
+      "source": "asburcaklar_sitesi_duyurusu",
+      "target": "bagcilar_belediyesi"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Çocuklarımızın_Sevincine_Ortak_Oluyoruz.txt",
+      "source": "bag_kart",
+      "target": "bagcilar_belediyesi"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 1.0,
+      "source_file": "Bağ-Kart_Başvuru_Formu_ve_Anlaşmalı_Olan_Yerler.txt",
+      "source": "bag_kart_basvuru",
+      "target": "bagcilar_belediyesi"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Riskli_Yapılar_İle_İlgili_Plan_Tadilatı_İşlemleri_Hakkında.txt",
+      "source": "bagcilar_belediyesi",
+      "target": "istanbul_buyuksehir_belediyesi"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "BAĞCILAR_DA_DİKKAT_ÇEKEN_BİNA_İLE_İLGİLİ_BAĞCILAR_BELEDİYESİ_BASIN_AÇIKLAMASI_14.txt",
+      "source": "bagcilar_belediyesi_basin_aciklamasi_bina",
+      "target": "bagcilar_belediyesi"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 1.0,
+      "source_file": "Bağcılar_Millet_Bahçesi_Açılıyor.txt",
+      "source": "bagcilar_millet_bahcesi_acilis",
+      "target": "bagcilar_belediyesi"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Rehberlik_ve_Teftiş_Kurulu_Müdürlüğü_Yönetmeliğinde_Değişiklik_Yapılması_hakkınd.txt",
+      "source": "rehberlik_ve_teftis_kurulu_yonetmelik_degisikligi",
+      "target": "bagcilar_belediyesi"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Taşınmazların_satış_ihale_ilanı.txt",
+      "source": "tasinmazlarin_satis_ihale_ilani_ihale",
+      "target": "bagcilar_belediyesi"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Türk_Halk_Müziği_Korosu_Seçmeleri_Başlıyor.txt",
+      "source": "turk_halk_muzigi_korosu_secmeleri_etkinlik",
+      "target": "bagcilar_belediyesi"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Yarısı_Bizden_Bilgilendirme_Noktaları.txt",
+      "source": "yarisi_bizden_kampanyasi",
+      "target": "bagcilar_belediyesi"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Yaz_Spor_Okulları_Kapanış_Programı_-_2023.txt",
+      "source": "yaz_spor_okullari_kapanis_programi_2023_etkinlik",
+      "target": "bagcilar_belediyesi"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "1_Mayıs_Emek_ve_Dayanışma_Günü_kutlu_olsun_.txt",
+      "source": "1_mayis_emek_ve_dayanisma_gunu",
+      "target": "abdullah_ozdemir"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "2023-2024_Eğitim__Öğretim_Yılı_Hayırlı_Olsun.txt",
+      "source": "2023_2024_egitim_ogretim_yili",
+      "target": "abdullah_ozdemir"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "24_Kasım_Öğretmenler_Günü.txt",
+      "source": "24_kasim_ogretmenler_gunu",
+      "target": "abdullah_ozdemir"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "30_Ağustos_Zafer_Bayramı_Kutlu_Olsun.txt",
+      "source": "30_agustos_zafer_bayrami_mesaji",
+      "target": "abdullah_ozdemir"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Abdullah_Özdemir_den_yeni_yıl_mesajı.txt",
+      "source": "abdullah_ozdemir_yeni_yil_mesaji",
+      "target": "abdullah_ozdemir"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "Afet_Çantanı_Hazırla_ki_Canın_Sağolsun.txt",
+      "source": "afet_cantasi_hazirligi",
+      "target": "afad_acil_mobil_uygulamasi"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Deprem_Öncesi__Anında_ve_Sonrasında_Yapılması_Gerekenler.txt",
+      "source": "deprem_bilgilendirme_rehberi",
+      "target": "afet_cantasi_hazirligi"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Bağcılar_Belediyesi_Avrupa_Finalinde.txt",
+      "source": "bagcilar_belediyesi_avrupa_finali",
+      "target": "bag_kart_basvuru"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.5,
+      "source_file": "Bağcılar_Millet_Bahçesi_Açılıyor.txt",
+      "source": "bagcilar_millet_bahcesi_acilis",
+      "target": "ucretsiz_diyetisyen_hizmeti"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Bağcılar_da_Nikah_Masasında_06_06_2026_Yoğunluğu.txt",
+      "source": "bagcilar_nikah_yogunlugu_2026",
+      "target": "yasin_yildiz"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Geçici_Gece_Barınma_Noktaları_ve_Afet_Toplanma_Alanları.txt",
+      "source": "gecici_barinma_ve_toplanma_alanlari",
+      "target": "yasin_yildiz"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Riskli_Yapı_Yıkım_Tebligatı_İlanı_-__Yıldıztepe_Mah__997_ada_16_parsel_.txt",
+      "source": "riskli_yapi_yikim_tebligati_ilani_yildiztepe_mah_997_ada_16_parsel_hasan_caba",
+      "target": "riskli_yapi_yikim_tebligati_ilani_yildiztepe_mah_997_ada_16_parsel_tasinmaz"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Riskli_Yapı_Yıkım_Tebligatı_İlanı_-__Yıldıztepe_Mah__997_ada_16_parsel_.txt",
+      "source": "riskli_yapi_yikim_tebligati_ilani_yildiztepe_mah_997_ada_16_parsel_huseyin_caba",
+      "target": "riskli_yapi_yikim_tebligati_ilani_yildiztepe_mah_997_ada_16_parsel_tasinmaz"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Riskli_Yapı_Yıkım_Tebligatı_İlanı_-__Yıldıztepe_Mah__997_ada_16_parsel_.txt",
+      "source": "riskli_yapi_yikim_tebligati_ilani_yildiztepe_mah_997_ada_16_parsel_sati_genc",
+      "target": "riskli_yapi_yikim_tebligati_ilani_yildiztepe_mah_997_ada_16_parsel_tasinmaz"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Riskli_Yapı_Yıkım_Tebligatı_İlanı_-__Yıldıztepe_Mah__997_ada_16_parsel_.txt",
+      "source": "riskli_yapi_yikim_tebligati_ilani_yildiztepe_mah_997_ada_16_parsel_tasinmaz",
+      "target": "6306_sayili_kanun"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Riskli_Yapı_Çalışmaları_-_Mahmutbey_Mahallesi__2481__Sokak__No_1__1775_ada__7_pa.txt",
+      "source": "riskli_yapi_calismalari_mahmutbey_mahallesi_2481_sokak_no_1_1775_ada_7_pa_tamer_gultekin",
+      "target": "riskli_yapi_calismalari_mahmutbey_mahallesi_2481_sokak_no_1_1775_ada_7_pa_tasinmaz"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Riskli_Yapı_Çalışmaları_-_Mahmutbey_Mahallesi__2481__Sokak__No_1__1775_ada__7_pa.txt",
+      "source": "riskli_yapi_calismalari_mahmutbey_mahallesi_2481_sokak_no_1_1775_ada_7_pa_tasinmaz",
+      "target": "7201_sayili_tebligat_kanunu"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Yavuzselim_Mahallesi__458_ada_42_43_parsellere_ilişkin_1_1000_Ölçekli_Uygulama_İ.txt",
+      "source": "yavuzselim_mahallesi_458_ada_42_43_parsellere_iliskin_1_1000_olcekli_uygulama_i_tasinmaz",
+      "target": "istanbul_buyuksehir_belediyesi"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Sûfisinema_Günleri.txt",
+      "source": "sufisinema_gunleri_etkinlik",
+      "target": "sufisinema_gunleri_konya"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TEKNOFEST_2024_te_Toplam_75_Milyon_TL_Ödül_ve_Maddi_Destek_.txt",
+      "source": "teknofest_2024",
+      "target": "t3_vakfi"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Aile_ve_Evlilik_Hayatı_Eğitim_Başvurusu_Başladı.txt",
+      "source": "aile_ve_evlilik_hayatı_eğitim_başvurusu_başladı_aile_ve_evlilik_hayatı_eğitimi",
+      "target": "meb_onaylı_sertifika"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Aile_ve_Evlilik_Hayatı_Eğitim_Başvurusu_Başladı.txt",
+      "source": "aile_ve_evlilik_hayatı_eğitim_başvurusu_başladı_aile_ve_evlilik_hayatı_eğitimi",
+      "target": "mehmed_akif_ersoy_kültür_sanat_merkezi"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Diksiyon_Eğitimi_Başlıyor_-_Şubat_2024.txt",
+      "source": "diksiyon_eğitimi",
+      "target": "mehmed_akif_ersoy_kültür_sanat_merkezi"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "İş_ve_Sosyal_Hayatta_İletişim_Kursu.txt",
+      "source": "iş_ve_sosyal_hayatta_iletişim_kursu",
+      "target": "mehmed_akif_ersoy_kültür_sanat_merkezi"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Osmanlı_Türkçesi_Eğitimleri_1_Kasım_2023_te_Başlıyor.txt",
+      "source": "osmanlı_türkçesi_kursu",
+      "target": "mehmed_akif_ersoy_kültür_sanat_merkezi"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Mahallenin_Yıldızları_3_Başvuruları_Başladı_.txt",
+      "source": "mahallenin_yıldızları_3_yaz_spor_okulu",
+      "target": "bağcılar_belediyesi_gençlik_ve_spor_hizmetleri_müdürlüğü"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "İzcilik_Kampı_Kayıtlarımız_Başladı.txt",
+      "source": "izcilik_kampı",
+      "target": "bağcılar_belediyesi_gençlik_ve_spor_hizmetleri_müdürlüğü"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "Sıkça_Sorulan_Sorular_-_Ücretsiz_Biletli_Etkinliklere_Başvuru.txt",
+      "source": "bağcılar_belediyesi_mobil_uygulaması",
+      "target": "bağcılar_belediyesi_kültür_ve_sosyal_işler_müdürlüğü"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "İzcilik_Kampı_Kayıtlarımız_Başladı.txt",
+      "source": "izcilik_kampı",
+      "target": "göztepe_spor_kompleksi"
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "kentsel_donusum_surecleri",
+      "label": "Kentsel Dönüşüm ve İmar Süreçleri",
+      "nodes": [
+        "6306_sayili_kanun",
+        "yarisi_bizden_kampanyasi",
+        "bagcilar_belediyesi",
+        "istanbul_buyuksehir_belediyesi"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "Yarısı_Bizden_Bilgilendirme_Noktaları.txt"
+    },
+    {
+      "id": "belediye_sosyal_hizmetler",
+      "label": "Belediye Sosyal ve Kültürel Etkinlikleri",
+      "nodes": [
+        "turk_halk_muzigi_korosu_secmeleri_etkinlik",
+        "yaz_spor_okullari_kapanis_programi_2023_etkinlik",
+        "bag_kart"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "Çocuklarımızın_Sevincine_Ortak_Oluyoruz.txt"
+    },
+    {
+      "id": "mehmed_akif_ersoy_center_courses",
+      "label": "Courses at Mehmed Akif Ersoy Cultural Center",
+      "nodes": [
+        "aile_ve_evlilik_hayatı_eğitim_başvurusu_başladı_aile_ve_evlilik_hayatı_eğitimi",
+        "diksiyon_eğitimi",
+        "osmanlı_türkçesi_kursu",
+        "iş_ve_sosyal_hayatta_iletişim_kursu"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Aile_ve_Evlilik_Hayatı_Eğitim_Başvurusu_Başladı.txt"
+    },
+    {
+      "id": "bağcılar_municipality_educational_services",
+      "label": "Bağcılar Municipality Educational and Social Services",
+      "nodes": [
+        "bilgi_evleri_kayıtları",
+        "mahallenin_yıldızları_3_yaz_spor_okulu",
+        "izcilik_kampı",
+        "çocuklarda_duygu_ve_davranış_geliştirme_kursu"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Bilgi_Evleri_2024-2025_Kayıtları_Başladı.txt"
+    },
+    {
+      "id": "bagcilar_kentsel_donusum_projeleri",
+      "label": "Bağcılar Kentsel Dönüşüm ve İmar Projeleri",
+      "nodes": [
+        "albayraklar_sitesi_tapu_teslim",
+        "asburcaklar_sitesi_duyurusu",
+        "albayraklar_sitesi_basin_aciklamasi",
+        "15_temmuz_mahallesi_imar_plani",
+        "yavuzselim_mah_imar_plani_degisikligi",
+        "fevzi_cakmak_mah_imar_plani_degisikligi",
+        "plan_notu_degisikligi_2025"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9
+    },
+    {
+      "id": "bagcilar_egitim_ve_kurs_faaliyetleri",
+      "label": "Bağcılar Belediyesi Eğitim ve Kurs Faaliyetleri",
+      "nodes": [
+        "2024_universite_hazirlik_kursu",
+        "barista_kursu",
+        "barista_ve_servis_komisi_kursu",
+        "kisacik_film_akademisi",
+        "bagcilar_tiyatro_akademisi",
+        "bilgi_evi_yaz_donemi_kayitlari",
+        "bilgi_evleri_yeni_donem_kayitlari",
+        "diksiyon_egitimi",
+        "hitabet_ve_diksiyon_kursu",
+        "osmanli_turkcesi_kursu",
+        "mehmet_akif_ersoy_ksm_kurslar"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95
+    },
+    {
+      "id": "bagcilar_afet_ve_guvenlik_yonetimi",
+      "label": "Bağcılar Afet ve Güvenlik Yönetimi",
+      "nodes": [
+        "afad_acil_mobil_uygulamasi",
+        "afet_gonullusu_basvurusu",
+        "afet_cantasi_hazirligi",
+        "deprem_bilgilendirme_rehberi",
+        "gecici_barinma_ve_toplanma_alanlari",
+        "kar_yagisi_uyarisi_ve_onlemler",
+        "kopeginiz_bir_hayat_kurtarabilir"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+flask
+google-genai
+chromadb
+requests
+beautifulsoup4
+pypdf

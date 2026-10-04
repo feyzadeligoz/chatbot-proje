@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Bağcılar Chatbot</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
+    color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    padding: 40px 10px;
+    margin: 0;
+  }
+
+  #chat-container {
+    width: 100%;
+    max-width: 600px;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+    position: relative; /* overlay'in tam bu kutunun uzerine oturmasi icin */
+  }
+
+  #chat-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #1e88e5;
+    color: #fff;
+    margin: -20px -20px 14px -20px;
+    padding: 14px 16px;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+  }
+  #chat-header h2 { margin: 0; color: #fff; font-size: 16px; }
+
+  #chat-container.genisletilmis { max-width: 900px; }
+  #chat-container.genisletilmis #messages { height: 640px; }
+
+  #header-icons { display: flex; align-items: center; gap: 2px; }
+  .header-icon-btn {
+    background: none;
+    border: none;
+    font-size: 17px;
+    color: #fff;
+    cursor: pointer;
+    padding: 5px 8px;
+    border-radius: 6px;
+    line-height: 1;
+  }
+  .header-icon-btn:hover { background: rgba(255,255,255,0.18); }
+
+  /* ---- AYARLAR PANELI ---- */
+  #ayarlar-panel {
+    display: none;
+    position: absolute;
+    top: calc(100% + 6px);
+    right: 8px;
+    width: 240px;
+    background: #ffffff;
+    color: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 6px 22px rgba(0,0,0,0.22);
+    z-index: 60;
+    overflow: hidden;
+    text-align: left;
+  }
+  .ayarlar-baslik-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 14px;
+    font-weight: 700;
+    border-bottom: 1px solid #eee;
+  }
+  .ayarlar-kapat { background: none; border: none; cursor: pointer; font-size: 15px; color: #888; }
+  .ayarlar-satir {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+    background: none;
+    border: none;
+    padding: 12px 14px;
+    font-size: 13.5px;
+    color: #1a1a1a;
+    cursor: pointer;
+  }
+  .ayarlar-satir:hover { background: #f5f5f5; }
+  .ayarlar-toggle-row { display: flex; justify-content: space-between; align-items: center; cursor: default; }
+  .ayarlar-toggle-row:hover { background: none; }
+  .ayarlar-dil-baslik {
+    padding: 10px 14px 4px 14px;
+    font-size: 11.5px;
+    font-weight: 700;
+    color: #999;
+    text-transform: uppercase;
+  }
+  .dil-secenek.aktif-dil { color: #1e88e5; font-weight: 700; }
+  .dil-secenek.aktif-dil::after { content: " ✓"; }
+
+  .toggle-switch { position: relative; display: inline-block; width: 38px; height: 22px; }
+  .toggle-switch input { opacity: 0; width: 0; height: 0; }
+  .toggle-slider {
+    position: absolute; cursor: pointer; inset: 0;
+    background: #ccc; border-radius: 22px; transition: 0.2s;
+  }
+  .toggle-slider:before {
+    content: ""; position: absolute; height: 16px; width: 16px;
+    left: 3px; bottom: 3px; background: #fff; border-radius: 50%; transition: 0.2s;
+  }
+  .toggle-switch input:checked + .toggle-slider { background: #1e88e5; }
+  .toggle-switch input:checked + .toggle-slider:before { transform: translateX(16px); }
+
+  #messages {
+    height: 460px;
+    overflow-y: auto;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 14px 0 10px 0;
+    background: #f7f8fa;
+  }
+  .msg {
+    display: table;
+    margin: 8px 0;
+    padding: 8px 12px;
+    border-radius: 8px;
+    max-width: 80%;
+    word-wrap: break-word;
+  }
+  .user-msg { background: #1e88e5; color: #ffffff; margin-left: auto; text-align: right; }
+  .bot-msg { background: #ffffff; color: #1a1a1a; border: 1px solid #e0e0e0; white-space: pre-wrap; text-align: justify; }
+  .bot-msg strong { color: #111; }
+
+  /* Chat icinde cikan hizli-yanit balonlari (Evet/Hayir, menu secenekleri) */
+  .hizli-yanitlar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 6px 0 14px 0;
+  }
+  .hizli-buton {
+    padding: 8px 14px;
+    border: 1px solid #1e88e5;
+    border-radius: 20px;
+    background: #ffffff;
+    color: #1e88e5;
+    font-size: 13px;
+    cursor: pointer;
+  }
+  .hizli-buton:hover { background: #1e88e5; color: white; }
+  .hizli-buton:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+
+  /* PDF ek dosyasi balonu */
+  .dosya-balonu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #f0f2f5;
+    border: 1px solid #e0e0e0;
+    padding: 10px 14px;
+    border-radius: 8px;
+    max-width: 80%;
+    margin: 8px 0;
+    text-decoration: none;
+    color: #1a1a1a;
+  }
+  .dosya-balonu:hover { background: #e8eaed; }
+  .dosya-ikon { font-size: 22px; }
+  .dosya-adi { font-size: 13.5px; }
+
+  #input-row { display: flex; gap: 8px; }
+  #question {
+    flex: 1;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background: #ffffff;
+    color: #1a1a1a;
+  }
+  #question:disabled { opacity: 0.5; }
+  button.gonder-btn {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    background: #1e88e5;
+    color: white;
+    cursor: pointer;
+  }
+  button.gonder-btn:disabled { background: #bbb; cursor: not-allowed; }
+  button.gonder-btn:not(:disabled):hover { background: #1976d2; }
+
+  /* ---- ALT BAR IKON BUTONLARI (dosya, mikrofon, ana sayfa) ---- */
+  .ikon-buton {
+    background: none;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    padding: 8px 10px;
+    cursor: pointer;
+    color: #555;
+  }
+  .ikon-buton:hover { background: #f0f2f5; }
+
+  /* ---- KUCUK GECICI BILDIRIM (toast) ---- */
+  .toast-bildirim {
+    position: absolute;
+    bottom: 76px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 12.5px;
+    z-index: 70;
+    opacity: 0.95;
+    white-space: nowrap;
+  }
+
+  /* ---- ALTA ALINCA CIKAN YUZEN ROBOT BALONU ---- */
+  #minimize-bubble {
+    display: none;
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: #1e88e5;
+    color: #fff;
+    border: none;
+    font-size: 26px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.28);
+    z-index: 100;
+  }
+  #minimize-bubble:hover { background: #1976d2; }
+
+  /* ---- SOHBETI SONLANDIRMA / DEGERLENDIRME OVERLAY'I ---- */
+  #overlay {
+    display: none;
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .overlay-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 28px 24px;
+    width: 100%;
+    max-width: 340px;
+    text-align: center;
+    box-shadow: 0 8px 28px rgba(0,0,0,0.25);
+  }
+  .overlay-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: #e53935;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px auto;
+    color: #fff;
+    font-size: 24px;
+  }
+  .overlay-title {
+    font-size: 16.5px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #1a1a1a;
+    line-height: 1.35;
+  }
+  .overlay-text {
+    font-size: 13.5px;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.4;
+  }
+  .overlay-buttons {
+    display: flex;
+    border-top: 1px solid #eee;
+    margin: 0 -24px -28px -24px;
+  }
+  .overlay-buttons button {
+    flex: 1;
+    padding: 14px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+  }
+  .overlay-buttons button + button {
+    border-left: 1px solid #eee;
+    font-weight: 700;
+    color: #1a1a1a;
+  }
+  .overlay-buttons button:hover { background: #f5f5f5; }
+
+  .puan-satiri { display: flex; justify-content: center; gap: 10px; margin-bottom: 18px; }
+  .puan-buton {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    background: #fff;
+    color: #1a1a1a;
+    cursor: pointer;
+    font-size: 13px;
+  }
+  .puan-buton.secili { background: #1e88e5; color: #fff; border-color: #1e88e5; }
+
+  #degerlendirme-yorum {
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 70px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    font-family: inherit;
+    font-size: 13.5px;
+    resize: none;
+    margin-bottom: 14px;
+  }
+  .atla-buton {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .atla-buton:hover { background: #f5f5f5; }
+</style>
+</head>
+<body>
+
+  <div id="chat-container">
+    <div id="chat-header">
+      <h2>Bağcılar Chatbot</h2>
+      <div id="header-icons">
+        <button class="header-icon-btn" onclick="ayarlarPanelAcKapat()" title="Ayarlar">⋮</button>
+        <button class="header-icon-btn" id="buyut-kucult-buton" onclick="buyutKucult()" title="Büyüt/Küçült">⤢</button>
+        <button class="header-icon-btn" onclick="sohbetiKucultVeAltaAl()" title="Ekranı alta al">⌄</button>
+        <button class="header-icon-btn" onclick="sohbetiSonlandirmaSorusunuGoster()" title="Sohbeti sonlandır">✕</button>
+
+        <div id="ayarlar-panel">
+          <div class="ayarlar-baslik-row">
+            <span>Ayarlar</span>
+            <button class="ayarlar-kapat" onclick="ayarlarPanelKapat()">✕</button>
+          </div>
+          <button class="ayarlar-satir" onclick="sohbetiEpostaOlarakGonder()">E-posta Olarak Gönder</button>
+          <div class="ayarlar-satir ayarlar-toggle-row">
+            <span>Bildirimler</span>
+            <label class="toggle-switch">
+              <input type="checkbox" id="bildirim-toggle" checked onchange="bildirimAyariDegisti()">
+              <span class="toggle-slider"></span>
+            </label>
+          </div>
+          <div class="ayarlar-dil-baslik">Dil</div>
+          <button class="ayarlar-satir dil-secenek aktif-dil" data-dil="tr" onclick="dilSec('tr')">Türkçe</button>
+          <button class="ayarlar-satir dil-secenek" data-dil="en" onclick="dilSec('en')">English (İngilizce)</button>
+        </div>
+      </div>
+    </div>
+    <div id="messages"></div>
+
+    <!-- Bir PDF yuklendiginde burada gorunur, "kaldir" ile normal moda donulebilir -->
+    <div id="ekli-belge-satiri" style="display:none; align-items:center; gap:8px; background:#eef4fc; border:1px solid #cfe2f7; border-radius:8px; padding:8px 12px; margin-bottom:8px; font-size:13px;">
+      <span id="ekli-belge-adi"></span>
+      <button onclick="ekliBelgeyiKaldir()" style="margin-left:auto; background:none; border:none; cursor:pointer; color:#888; font-size:15px;" title="Belgeyi kaldır">✕</button>
+    </div>
+
+    <div id="input-row">
+      <input type="file" id="dosya-input" accept="application/pdf" style="display:none" onchange="dosyaSecildi(event)">
+      <button class="ikon-buton" onclick="dosyaSeciciAc()" title="PDF yükle">📎</button>
+      <input type="text" id="question" placeholder="Önce KVKK onayını yanıtlayın..." disabled>
+      <button class="ikon-buton" onclick="ozellikYakinda('Sesli mesaj')" title="Sesli mesaj">🎤</button>
+      <button class="ikon-buton" onclick="sohbetiYenidenBaslat()" title="Baştan başla">🏠</button>
+      <button class="gonder-btn" id="gonder-buton" onclick="sorGonder()" disabled>➤</button>
+    </div>
+
+    <!-- Sohbeti sonlandirma onayi + degerlendirme + tesekkur ekranlari buraya dinamik olarak yuklenir -->
+    <div id="overlay"></div>
+  </div>
+
+  <!-- Sohbet "alta alinca" burada, sag alt kosede yuzen bir robot balonu olarak gorunur -->
+  <button id="minimize-bubble" onclick="sohbetiGeriAc()" title="Bagbi'yi tekrar aç">🤖</button>
+
+<script>
+  const messagesDiv = document.getElementById("messages");
+  const questionInput = document.getElementById("question");
+  const gonderButon = document.getElementById("gonder-buton");
+  const overlay = document.getElementById("overlay");
+
+  let kvkkOnaylandi = false;
+  let aktifDil = "tr";
+  let bildirimlerAcik = true;
+  let genisletilmisMi = false;
+
+  const UI_METINLERI = {
+    tr: {
+      placeholder_bekliyor: "Önce KVKK onayını yanıtlayın...",
+      placeholder_hazir: "Bir soru sor...",
+      oneri_basligi: "Bunlar da ilginizi çekebilir:",
+    },
+    en: {
+      placeholder_bekliyor: "Please respond to the KVKK consent first...",
+      placeholder_hazir: "Ask a question...",
+      oneri_basligi: "You might also be interested in:",
+    },
+  };
+
+  // Metni guvenli sekilde HTML'e cevirir:
+  // - **kalin** yazilari <strong> yapar
+  // - ozel ||LINK:Etiket||url isaretleyicilerini (BIRDEN FAZLA olabilir), URL'si gizli,
+  //   tiklanabilir metinlere cevirir (her biri kendi etiketiyle, alt alta)
+  // - duz http(s) linklerini de tiklanabilir yapar (yedek durum icin)
+  function metinFormatiUygula(text) {
+    let escaped = text
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;");
+
+    // **kalin** -> <strong>kalin</strong>
+    escaped = escaped.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+
+    // Satir basindaki "* " maddelerini nokta ile degistir (daha temiz gorunsun)
+    escaped = escaped.replace(/^\* /gm, "• ");
+
+    // Kalan duz http(s) linklerini tiklanabilir yap (yedek durum)
+    // ONEMLI DUZELTME: Eger link bir cumlenin/parantezin SONUNDA geciyorsa
+    // (ornek: "...(detaylar icin: https://site.com)"), eski regex kapanan
+    // parantezi ")" de linkin bir PARCASI saniyordu - bu da bozuk gorunen
+    // linkler ("[)](url))" gibi) uretiyordu. Simdi URL'nin sonuna yapisan
+    // noktalama isaretlerini (), ., ,, ], >, ;, :, !, ?) linkin DISINA
+    // cikariyoruz.
+    escaped = escaped.replace(
+      /(https?:\/\/[^\s<]+)/g,
+      function(tamEslesme, url) {
+        var sonEkEslesme = url.match(/[).,\]>;:!?]+$/);
+        var sonEk = "";
+        if (sonEkEslesme) {
+          sonEk = sonEkEslesme[0];
+          url = url.slice(0, url.length - sonEk.length);
+        }
+        return '<a href="' + url + '" target="_blank" style="color:#4caf50; text-decoration:underline;">' +
+               url + '</a>' + sonEk;
+      }
+    );
+
+    // ONEMLI: satir atlamalarini (\n) tarayicinin yorumuna BIRAKMIYORUZ, direkt HTML
+    // <br> etiketine ceviriyoruz - bu, %100 garantili, kesin bir satir atlamasi saglar.
+    escaped = escaped.replace(/\n/g, "<br>");
+
+    return escaped;
+  }
+
+  // Cevabin SONUNDAKI "||ONERI||İsim1||İsim2||İsim3" isaretleyicisini metinden
+  // ayiklar (varsa). Bu isaretleyici normal metin gibi GORUNMEMELI - onun yerine
+  // asagida ayri, tiklanabilir oneri butonlarina cevrilecek.
+  function onerileriAyikla(text) {
+    const match = text.match(/\|\|ONERI\|\|(.+)$/s);
+    if (!match) {
+      return { temizMetin: text, oneriler: [] };
+    }
+    const temizMetin = text.slice(0, match.index).replace(/\n+$/, "");
+    const oneriler = match[1].split("||").map(function(s) { return s.trim(); }).filter(Boolean);
+    return { temizMetin: temizMetin, oneriler: oneriler };
+  }
+
+  function metniGuvenliGoster(text) {
+    // ||LINK:Etiket||url VE ||IMG||url isaretleyicilerini, METIN ICINDEKI TAM YERLERINDE
+    // isliyoruz (en alta atmiyoruz, nereye yazildiysa orada kalsin).
+    const isaretRegex = /\|\|LINK:([^|]+)\|\|(\S+)|\|\|IMG\|\|(\S+)/g;
+    let html = "";
+    let sonIndex = 0;
+    let match;
+
+    while ((match = isaretRegex.exec(text)) !== null) {
+      const oncekiMetin = text.slice(sonIndex, match.index);
+      html += metinFormatiUygula(oncekiMetin);
+
+      if (match[3]) {
+        // ||IMG||url - gercek bir resim goster
+        const resimUrl = match[3];
+        html += '<br><img src="' + resimUrl + '" alt="Etkinlik görseli" ' +
+                'style="max-width:200px; width:100%; border-radius:8px; margin-top:6px; display:block;">';
+      } else {
+        // ||LINK:Etiket||url - tiklanabilir link
+        const etiket = match[1];
+        const url = match[2];
+        html += '<a href="' + url + '" target="_blank" ' +
+                'style="color:#2196f3; font-style:italic; text-decoration:underline; margin-left:6px;">' +
+                etiket + '</a> ';
+      }
+
+      sonIndex = isaretRegex.lastIndex;
+    }
+
+    html += metinFormatiUygula(text.slice(sonIndex));
+    return html;
+  }
+
+  function botMesajEkle(text) {
+    const div = document.createElement("div");
+    div.className = "msg bot-msg";
+    div.innerHTML = metniGuvenliGoster(text);
+    messagesDiv.appendChild(div);
+    messagesDiv.scrollTop = messagesDiv.scrollHeight;
+    return div;
+  }
+
+  function kullaniciMesajEkle(text) {
+    const div = document.createElement("div");
+    div.className = "msg user-msg";
+    div.textContent = text;
+    messagesDiv.appendChild(div);
+    messagesDiv.scrollTop = messagesDiv.scrollHeight;
+  }
+
+  // PDF/dosya ek balonu ekler, tiklaninca dosyayi yeni sekmede acar
+  function dosyaBalonuEkle(dosyaAdi, dosyaUrl) {
+    const a = document.createElement("a");
+    a.className = "dosya-balonu";
+    a.href = dosyaUrl;
+    a.target = "_blank";
+    a.innerHTML = '<span class="dosya-ikon">📄</span><span class="dosya-adi">' + dosyaAdi + '</span>';
+    messagesDiv.appendChild(a);
+    messagesDiv.scrollTop = messagesDiv.scrollHeight;
+  }
+
+  // Chat akisi icine tiklanabilir hizli-yanit butonlari ekler.
+  // secenekler: [{label: "Evet", onClick: fn}, ...]
+  function hizliYanitEkle(secenekler) {
+    const div = document.createElement("div");
+    div.className = "hizli-yanitlar";
+    secenekler.forEach(function(sec) {
+      const btn = document.createElement("button");
+      btn.className = "hizli-buton";
+      btn.textContent = sec.label;
+      btn.onclick = function() {
+        // Bu grup icindeki tum butonlari devre disi birak (tekrar tiklanmasin)
+        div.querySelectorAll("button").forEach(function(b) { b.disabled = true; });
+        sec.onClick();
+      };
+      div.appendChild(btn);
+    });
+    messagesDiv.appendChild(div);
+    messagesDiv.scrollTop = messagesDiv.scrollHeight;
+  }
+
+  // ---- KVKK ONAY AKISI ----
+  function kvkkSor() {
+    dosyaBalonuEkle("KVKK_aydinlatma_metni.pdf", "/static/KVKK_aydinlatma_metni.pdf");
+    botMesajEkle(
+      "Merhaba, sohbete başlamadan önce Kişisel Veri Aydınlatma Metni'ni okuyup " +
+      "anladığınıza dair sizden onay almam gerekiyor. Onay veriyor musunuz?"
+    );
+    hizliYanitEkle([
+      { label: "Evet", onClick: kvkkKabulEt },
+      { label: "Hayır", onClick: kvkkReddet }
+    ]);
+  }
+
+  function kvkkReddet() {
+    kullaniciMesajEkle("Hayır");
+    botMesajEkle("Maalesef KVKK onayı almadan sohbete başlayamıyorum. Onay veriyor musunuz?");
+    hizliYanitEkle([
+      { label: "Evet", onClick: kvkkKabulEt },
+      { label: "Hayır", onClick: kvkkReddet }
+    ]);
+  }
+
+  function kvkkKabulEt() {
+    kullaniciMesajEkle("Evet");
+    kvkkOnaylandi = true;
+
+    questionInput.disabled = false;
+    gonderButon.disabled = false;
+    questionInput.placeholder = UI_METINLERI[aktifDil].placeholder_hazir;
+    questionInput.focus();
+
+    botMesajEkle("Merhaba, size nasıl yardımcı olabilirim?");
+    hizliIslemleriGoster();
+  }
+
+  // 10 hizli islem + "Baska sorum var" - hem KVKK sonrasi hem "hizli islemler"
+  // yazildiginda gosterilen ORTAK menu.
+  function hizliIslemleriGoster() {
+    botMesajEkle("Bu konular hakkında bilgi alabilirsiniz 😊");
+    hizliYanitEkle([
+      { label: "🗺️ Kent Rehberi", onClick: function() { hizliSoru("Kent Rehberi nedir?"); } },
+      { label: "💳 Bağ-Kart Başvuru Formu", onClick: function() { hizliSoru("Bağ kart nedir, nasıl başvurulur?"); } },
+      { label: "💊 Nöbetçi Eczaneler", onClick: function() { hizliSoru("Nöbetçi eczaneler"); } },
+      { label: "🎭 Kültür Sanat Etkinlikleri", onClick: function() { hizliSoru("Hangi etkinlikler var?"); } },
+      { label: "📘 Yayınlarımız", onClick: function() { hizliSoru("Tüm yayınlar listesi"); } },
+      { label: "🚌 Nasıl Giderim (İETT)", onClick: function() { hizliSoru("İETT nasıl giderim?"); } },
+      { label: "🪧 Değişen Sokak İsim Listesi", onClick: function() { hizliSoru("Değişen sokak isimleri"); } },
+      { label: "🏃 Afet Toplanma Alanları", onClick: function() { hizliSoru("Afet toplanma alanları"); } },
+      { label: "🏦 Banka Hesap Numaraları", onClick: function() { hizliSoru("Banka hesap numaraları"); } },
+      { label: "🌐 e-Belediye", onClick: function() { hizliSoru("e-Belediye nedir?"); } },
+      { label: "❓ Başka sorum var", onClick: function() { baskaSorumVar(); } }
+    ]);
+  }
+
+  // "Baska sorum var" - backend'e hic gitmeden, hazir cevabi direkt gosterir
+  function baskaSorumVar() {
+    kullaniciMesajEkle("Başka sorum var");
+    botMesajEkle(
+      "Tabii ki, size nasıl yardımcı olabilirim? Bağcılar Belediyesi ile ilgili merak " +
+      "ettiğiniz her türlü konuda (imar durumu, çöp toplama, kurslar, sosyal tesisler, " +
+      "yardımlar ve daha birçok konuda) bana soru sorabilirsiniz. Sizi dinliyorum."
+    );
+  }
+
+  // ---- SORU-CEVAP AKISI ----
+  async function soruGonderVeCevapAl(soru) {
+    kullaniciMesajEkle(soru);
+    const loadingMsg = botMesajEkle("...");
+
+    try {
+      const res = await fetch("/ask", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ question: soru })
+      });
+      const data = await res.json();
+      const { temizMetin, oneriler } = onerileriAyikla(data.answer);
+      loadingMsg.innerHTML = metniGuvenliGoster(temizMetin);
+
+      // Eger cevapta ilgili oneriler varsa, tiklanabilir kucuk butonlar olarak
+      // ekliyoruz - birine tiklaninca, o baslik SANKI KULLANICI YAZMIS GIBI
+      // yeni bir soru olarak gonderiliyor (hizliSoru zaten bunu yapiyor).
+      if (oneriler.length > 0) {
+        const oneriBasligi = document.createElement("div");
+        oneriBasligi.style.cssText = "font-size:12.5px; color:#777; margin:4px 0 2px 4px;";
+        oneriBasligi.textContent = UI_METINLERI[aktifDil].oneri_basligi;
+        messagesDiv.appendChild(oneriBasligi);
+
+        hizliYanitEkle(oneriler.map(function(baslik) {
+          return { label: baslik, onClick: function() { hizliSoru(baslik); } };
+        }));
+      }
+    } catch (err) {
+      loadingMsg.textContent = "Bağlantı hatası: " + err;
+    }
+  }
+
+  function sorGonder() {
+    if (!kvkkOnaylandi) return;
+    const soru = questionInput.value.trim();
+    if (!soru) return;
+    questionInput.value = "";
+
+    // "hizli islemler" yazarsa, backend'e gitmeden direkt menuyu goster
+    const soru_kucuk = soru.toLocaleLowerCase("tr-TR");
+    if (soru_kucuk.includes("hızlı işlem") || soru_kucuk.includes("hizli islem")) {
+      kullaniciMesajEkle(soru);
+      hizliIslemleriGoster();
+      return;
+    }
+
+    soruGonderVeCevapAl(soru);
+  }
+
+  function hizliSoru(soru) {
+    soruGonderVeCevapAl(soru);
+  }
+
+  questionInput.addEventListener("keydown", function(e) {
+    if (e.key === "Enter") sorGonder();
+  });
+
+  // ---- SOHBETI SONLANDIRMA + DEGERLENDIRME AKISI ----
+  // (X butonuna basinca) -> onay sorusu -> "Sonlandır" -> 1-5 puan + yorum
+  // ekrani -> "Değerlendirmeyi Gönder" ya da "Atla" -> tesekkur ekrani ->
+  // "Yeniden Bağlan" -> sohbet sifirlanip KVKK akisi bastan baslar.
+
+  let secilenPuan = null;
+
+  function overlayGoster(html) {
+    overlay.innerHTML = html;
+    overlay.style.display = "flex";
+  }
+
+  function overlayGizle() {
+    overlay.style.display = "none";
+    overlay.innerHTML = "";
+  }
+
+  function sohbetiSonlandirmaSorusunuGoster() {
+    overlayGoster(
+      '<div class="overlay-card">' +
+        '<div class="overlay-icon">⏻</div>' +
+        '<div class="overlay-title">Sohbeti Sonlandır</div>' +
+        '<div class="overlay-text">Sohbeti sonlandırmak istediğinize emin misiniz?</div>' +
+        '<div class="overlay-buttons">' +
+          '<button onclick="overlayGizle()">Vazgeç</button>' +
+          '<button onclick="degerlendirmeEkraniniGoster()">Sonlandır</button>' +
+        '</div>' +
+      '</div>'
+    );
+  }
+
+  function degerlendirmeEkraniniGoster() {
+    secilenPuan = null;
+
+    overlayGoster(
+      '<div class="overlay-card">' +
+        '<div class="overlay-title">Size daha iyi bir deneyim sunabilmem için beni değerlendirin!</div>' +
+        '<div class="overlay-text">Sanal asistan deneyiminizi 1-5 arasında puanlayabilir misiniz?</div>' +
+        '<div class="puan-satiri" id="puan-satiri"></div>' +
+        '<textarea id="degerlendirme-yorum" placeholder="Önerilerinizi Yazın"></textarea>' +
+        '<button class="gonder-btn" id="degerlendirme-gonder-buton" style="width:100%;" disabled onclick="degerlendirmeGonder()">Değerlendirmeyi Gönder</button>' +
+        '<button class="atla-buton" onclick="degerlendirmeAtla()">Atla</button>' +
+      '</div>'
+    );
+
+    const puanSatiri = document.getElementById("puan-satiri");
+    const gonderBtn = document.getElementById("degerlendirme-gonder-buton");
+
+    for (let i = 1; i <= 5; i++) {
+      const b = document.createElement("button");
+      b.className = "puan-buton";
+      b.textContent = i;
+      b.onclick = function() {
+        secilenPuan = i;
+        puanSatiri.querySelectorAll("button").forEach(function(btn) {
+          btn.classList.remove("secili");
+        });
+        b.classList.add("secili");
+        gonderBtn.disabled = false;
+      };
+      puanSatiri.appendChild(b);
+    }
+  }
+
+  async function degerlendirmeGonder() {
+    if (!secilenPuan) return;
+    const yorum = document.getElementById("degerlendirme-yorum").value.trim();
+
+    // Puan ve yorumu backend'e gonderip degerlendirmeler.jsonl dosyasina kaydettiriyoruz.
+    try {
+      await fetch("/degerlendirme", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ puan: secilenPuan, yorum: yorum })
+      });
+    } catch (err) {
+      console.error("Değerlendirme gönderilirken bir sorun oluştu:", err);
+    }
+
+    tesekkurEkraniniGoster(
+      "Teşekkürler!",
+      "Değerlendirmeniz bize ulaştı. Görüşlerinizi dikkate alacağız."
+    );
+  }
+
+  function degerlendirmeAtla() {
+    tesekkurEkraniniGoster(
+      "Görüşmek üzere!",
+      "Sohbet sonlandırıldı."
+    );
+  }
+
+  function tesekkurEkraniniGoster(baslik, metin) {
+    overlayGoster(
+      '<div class="overlay-card">' +
+        '<div class="overlay-icon" style="background:#43a047;">✓</div>' +
+        '<div class="overlay-title">' + baslik + '</div>' +
+        '<div class="overlay-text">' + metin + '</div>' +
+        '<button class="gonder-btn" style="width:100%;" onclick="sohbetiYenidenBaslat()">Yeniden Bağlan</button>' +
+      '</div>'
+    );
+  }
+
+  async function sohbetiYenidenBaslat() {
+    overlayGizle();
+    messagesDiv.innerHTML = "";
+    kvkkOnaylandi = false;
+    questionInput.disabled = true;
+    gonderButon.disabled = true;
+    questionInput.placeholder = UI_METINLERI[aktifDil].placeholder_bekliyor;
+
+    // Yuklu bir belge varsa onu da temizleyelim - "bastan basla" gercekten
+    // her seyi sifirlasin.
+    document.getElementById("ekli-belge-satiri").style.display = "none";
+    try {
+      await fetch("/dosya_kaldir", { method: "POST" });
+    } catch (err) {
+      console.error("Belge temizlenirken hata:", err);
+    }
+
+    kvkkSor();
+  }
+
+  // ---- PDF YUKLEME AKISI ----
+  const dosyaInput = document.getElementById("dosya-input");
+
+  function dosyaSeciciAc() {
+    dosyaInput.click();
+  }
+
+  async function dosyaSecildi(event) {
+    const dosya = event.target.files[0];
+    event.target.value = ""; // ayni dosyayi tekrar secebilsin diye sifirla
+
+    if (!dosya) return;
+
+    if (dosya.type !== "application/pdf") {
+      ozellikYakinda("Şu an sadece PDF");
+      return;
+    }
+
+    const yukleniyorMsg = botMesajEkle("📄 " + dosya.name + " yükleniyor ve okunuyor...");
+
+    const formData = new FormData();
+    formData.append("dosya", dosya);
+
+    try {
+      const res = await fetch("/dosya_yukle", { method: "POST", body: formData });
+      const data = await res.json();
+
+      if (data.status !== "ok") {
+        yukleniyorMsg.textContent = "Hata: " + (data.mesaj || "Dosya yüklenemedi.");
+        return;
+      }
+
+      yukleniyorMsg.textContent =
+        "📄 " + data.dosya_adi + " yüklendi (" + data.sayfa_sayisi + " sayfa). " +
+        "Şimdi bu belge hakkında soru sorabilirsiniz.";
+      ekliBelgeGoster(data.dosya_adi);
+    } catch (err) {
+      yukleniyorMsg.textContent = "Bağlantı hatası: " + err;
+    }
+  }
+
+  function ekliBelgeGoster(dosyaAdi) {
+    const satir = document.getElementById("ekli-belge-satiri");
+    satir.style.display = "flex";
+    document.getElementById("ekli-belge-adi").textContent = "📄 " + dosyaAdi;
+  }
+
+  async function ekliBelgeyiKaldir() {
+    try {
+      await fetch("/dosya_kaldir", { method: "POST" });
+    } catch (err) {
+      console.error("Belge kaldırılırken hata:", err);
+    }
+    document.getElementById("ekli-belge-satiri").style.display = "none";
+    botMesajEkle("Belge kaldırıldı, artık Bağcılar Belediyesi hakkında sorularınızı yanıtlayabilirim.");
+  }
+
+  // ---- AYARLAR PANELI (⋮ ikonu) ----
+  function ayarlarPanelAcKapat() {
+    const panel = document.getElementById("ayarlar-panel");
+    panel.style.display = (panel.style.display === "block") ? "none" : "block";
+  }
+
+  function ayarlarPanelKapat() {
+    document.getElementById("ayarlar-panel").style.display = "none";
+  }
+
+  function bildirimAyariDegisti() {
+    bildirimlerAcik = document.getElementById("bildirim-toggle").checked;
+  }
+
+  // Tum sohbet gecmisini duz metne cevirip, kullanicinin e-posta istemcisini
+  // (Outlook, Gmail masaustu uygulamasi vb.) hazir bir taslakla acar.
+  function sohbetiEpostaOlarakGonder() {
+    const satirlar = [];
+    messagesDiv.querySelectorAll(".msg").forEach(function(el) {
+      const kim = el.classList.contains("user-msg") ? "Siz" : "Bagbi";
+      satirlar.push(kim + ": " + el.innerText.trim());
+    });
+    const govde = satirlar.length > 0 ? satirlar.join("\n\n") : "(henüz bir sohbet geçmişi yok)";
+    const konu = "Bağcılar Chatbot Sohbet Kaydı";
+    const mailtoUrl = "mailto:?subject=" + encodeURIComponent(konu) + "&body=" + encodeURIComponent(govde);
+    window.location.href = mailtoUrl;
+    ayarlarPanelKapat();
+  }
+
+  // Dil secimi - SADECE arayuz metinlerini (yer tutucu, oneri basligi gibi)
+  // degistirir. Bagbi'nin GERCEK cevaplari yine de Turkce uretilir, cunku
+  // chatbot_logic.py ve bilgi tabani Turkce olarak kurulu - bunu kullaniciya
+  // ayri bir mesajla acikca belirtiyoruz (yanlis beklenti olusturmamak icin).
+  function dilSec(dil) {
+    aktifDil = dil;
+    document.querySelectorAll(".dil-secenek").forEach(function(btn) {
+      btn.classList.toggle("aktif-dil", btn.getAttribute("data-dil") === dil);
+    });
+
+    questionInput.placeholder = kvkkOnaylandi
+      ? UI_METINLERI[dil].placeholder_hazir
+      : UI_METINLERI[dil].placeholder_bekliyor;
+
+    if (dil === "en") {
+      botMesajEkle(
+        "Note: The interface labels are now shown in English, but Bagbi's " +
+        "answers are still generated in Turkish, since the underlying knowledge " +
+        "base and AI model are configured for Turkish. Full English answer " +
+        "support would require an additional backend update."
+      );
+    }
+
+    ayarlarPanelKapat();
+  }
+
+  // ---- BUYUT / KUCULT ----
+  function buyutKucult() {
+    genisletilmisMi = !genisletilmisMi;
+    document.getElementById("chat-container").classList.toggle("genisletilmis", genisletilmisMi);
+    document.getElementById("buyut-kucult-buton").textContent = genisletilmisMi ? "⤡" : "⤢";
+  }
+
+  // ---- EKRANI ALTA ALMA (yuzen robot balonuna kucultme) ----
+  function sohbetiKucultVeAltaAl() {
+    ayarlarPanelKapat();
+    document.getElementById("chat-container").style.display = "none";
+    document.getElementById("minimize-bubble").style.display = "flex";
+  }
+
+  function sohbetiGeriAc() {
+    document.getElementById("chat-container").style.display = "block";
+    document.getElementById("minimize-bubble").style.display = "none";
+  }
+
+  // ---- HENUZ DESTEKLENMEYEN OZELLIKLER ICIN KISA BILDIRIM (dosya/ses) ----
+  function ozellikYakinda(ozellikAdi) {
+    const eskiToast = document.querySelector(".toast-bildirim");
+    if (eskiToast) eskiToast.remove();
+
+    const toast = document.createElement("div");
+    toast.className = "toast-bildirim";
+    toast.textContent = ozellikAdi + " özelliği yakında eklenecek.";
+    document.getElementById("chat-container").appendChild(toast);
+    setTimeout(function() { toast.remove(); }, 2200);
+  }
+
+  // Ayarlar panelinin disina tiklaninca otomatik kapansin
+  document.addEventListener("click", function(e) {
+    const panel = document.getElementById("ayarlar-panel");
+    const ayarlarIkonu = document.querySelector('[onclick="ayarlarPanelAcKapat()"]');
+    if (panel.style.display === "block" && !panel.contains(e.target) && e.target !== ayarlarIkonu) {
+      panel.style.display = "none";
+    }
+  });
+
+  // Sayfa acilir acilmaz KVKK sorusuyla basla
+  kvkkSor();
+</script>
+</body>
+</html>
